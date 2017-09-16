@@ -29,7 +29,7 @@
                     <td><?php echo $banner['tour_id'];  ?></td>
                     <td><?php echo $banner['banner'];  ?></td>
                      
-                    <td class="right-align tour-btn">
+                    <td class="align tour-btn">
                       <a data-banner-id="<?php echo $banner['id']; ?>" class="btn-floating waves-effect waves-light blue-grey banner-edit-btn"><i class="material-icons">mode_edit</i></a>
                       <a data-banner-id="<?php echo $banner['id']; ?>" class="btn-floating waves-effect waves-light red banner-delete-btn"><i class="material-icons">delete</i></a>
                     </td>

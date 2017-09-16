@@ -148,7 +148,7 @@ class Tour extends CI_Controller {
 	public function updateBanner()
 	{
 
-		$bannerID=$_POST['bannerID'];
+		echo $bannerID=$_POST['bannerID'];
 
 		$this->load->model('Tour_model');		
 

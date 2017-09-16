@@ -39,7 +39,7 @@ $(function(){
 
   });*/
 
-  $(function(){
+
       $("#addBannerBtn").on("click",function(){
         var formData = new FormData($("#addBannerModel form")[0]);
         var baseURL = $("#base_url").val(); 
@@ -57,9 +57,9 @@ $(function(){
         }); 
 
       });
-  });
 
-   $(function(){
+
+  
     $("#updatebannerButton").on("click",function(){
         var formData = new FormData($("#updateForm")[0]);
         var baseURL = $("#base_url").val();
@@ -75,6 +75,5 @@ $(function(){
           }
         });
     });
-  });
-
+ 
 });
