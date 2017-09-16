@@ -61,7 +61,7 @@ class Tour extends CI_Controller {
 		$this->tour_model->updateTour($updateData,$tourID);
 
 		//set configuration for the upload library
-		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images\tours';
+		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
@@ -95,7 +95,7 @@ class Tour extends CI_Controller {
 
 
 			//set configuration for the upload library
-		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images\tours';
+		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
@@ -135,7 +135,7 @@ class Tour extends CI_Controller {
 
 		$tourid = $this->Tour_model->addbanner($result);
 		
-	    $config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images\tours';
+	    $config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
@@ -148,7 +148,7 @@ class Tour extends CI_Controller {
 	public function updateBanner()
 	{
 
-		echo $bannerID=$_POST['bannerID'];
+		$bannerID=$_POST['bannerID'];
 
 		$this->load->model('Tour_model');		
 
@@ -159,10 +159,10 @@ class Tour extends CI_Controller {
 					"tour_id"=>$_POST['tour_id'],						
 					"banner"=>$banner					
 			);
-			$this->Tour_model->updatebanner($result,$bannerID);
+		$this->Tour_model->updatebanner($result,$bannerID);
 
 			//set configuration for the upload library
-		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images\tours';
+		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;

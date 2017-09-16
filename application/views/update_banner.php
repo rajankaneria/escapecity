@@ -5,7 +5,7 @@
 	        <div class="input-field col s12">
 	          <input placeholder="enter your name" name="banner" id="banner" type="file" class="validate">
 	          <label for="file">file</label>
-	          <img src="<?php echo base_url(); ?>html/images/tours/<?php echo $bannerDetail['banner']; ?>" />
+	          <img src="<?php echo base_url(); ?>html/images/<?php echo $bannerDetail['banner']; ?>" style="height: 200px;width: 200px;" />
 	        </div>
 	      </div>
 	       <div class="input-field col s12">
@@ -17,7 +17,7 @@
            <label>Materialize Select</label>
            </div>
 
-		   <input type="hidden" name="bannerID" id="bannerID" value="<?php echo $bannerDetail["id"]; ?>" />	
+		<input type="hidden" name="bannerID" id="bannerID" value="<?php echo $bannerDetail['id']; ?>" />	
 
            	 
          </form>

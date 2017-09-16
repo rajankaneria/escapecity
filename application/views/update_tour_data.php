@@ -58,7 +58,7 @@
 	        <div class="input-field col s12">
 	        <label for="name" style="margin-top: -42px !important;">Home Banner</label>
 	          <input  name="home_banner" id="home_banner" type="file" class="validate">	
-	          <img src="<?php echo base_url(); ?>html/images/tours/<?php echo $tourDetails['home_banner'];  ?>" style="width: 200px;height: 200px;" />          
+	          <img src="<?php echo base_url(); ?>html/images/<?php echo $tourDetails['home_banner'];  ?>" style="width: 200px;height: 200px;" />          
 	        </div>
 	      </div> 
 

@@ -51,7 +51,7 @@ class Admin extends CI_Controller {
 		$typename = $this->tour_model->tourname();
 
 		$headerData = array(
-			"pageTitle" => "Admin_Tour",
+			"pageTitle" => "Banner",
 			"stylesheet" => array("header.css","admin.css")
 		);
 		$footerData = array(

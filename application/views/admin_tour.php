@@ -15,11 +15,13 @@
           <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
             <thead>
               <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>tour-type</th>
-                <th>region_id</th>
-                <th >action</th>
+                <th>Order</th>
+                <th>Name</th>
+                <th>Tour Type</th>
+                <th>Region Id</th>
+                <th>Map Title</th>
+                <th>Banner</th>
+                <th>action</th>
               </tr>
             </thead>
               <tbody>
@@ -29,6 +31,8 @@
                     <td><?php echo $tourdata["name"]; ?></td>
                     <td><?php echo $tourdata["tour_type"]; ?></td>
                     <td><?php echo $tourdata["region_name"]; ?></td>
+                    <td><?php echo $tourdata["map_title"]; ?></td>
+                    <td><img src="<?php echo base_url(); ?>html/images/<?php echo $tourdata["home_banner"]; ?>" /></td>
                     <td class="align tour-btn">
                       <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light blue-grey tour-edit-btn"><i class="material-icons">mode_edit</i></a>
                       <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light red tour-delete-btn"><i class="material-icons">delete</i></a>

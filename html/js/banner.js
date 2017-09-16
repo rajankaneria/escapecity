@@ -14,7 +14,6 @@ $(function(){
         $("#upbannermodal").modal("open");
         $('select').material_select();
       Materialize.updateTextFields();
-
       });
 
   });

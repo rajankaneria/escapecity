@@ -15,9 +15,9 @@
           <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
             <thead>
               <tr>
-                <th >id</th>       
-                <th>tour_id</th>
-                <th>banner</th>                
+                <th>Order</th>       
+                <th>Tour Id</th>
+                <th>Banner</th>                
                 <th>action</th>    
               </tr>
             </thead>
@@ -27,7 +27,7 @@
                   
                     <td><?php echo $banner['id'];  ?></td>
                     <td><?php echo $banner['tour_id'];  ?></td>
-                    <td><?php echo $banner['banner'];  ?></td>
+                    <td><img src="<?php echo base_url(); ?>html/images/<?php echo $banner['banner'];  ?>" width="200" height="200"/></td>
                      
                     <td class="align tour-btn">
                       <a data-banner-id="<?php echo $banner['id']; ?>" class="btn-floating waves-effect waves-light blue-grey banner-edit-btn"><i class="material-icons">mode_edit</i></a>
