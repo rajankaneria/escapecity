@@ -1,0 +1,449 @@
+/*css for header navigation*/
+
+/* css for slider */
+.main-slider-item-title {
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* left: 45%; */
+    /* width: 100%; */
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    background: rgba(0,0,0,0.7);
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* css for header logo*/
+#logo{
+    height: 90px;
+    width: 121px;
+    margin-top: 5px;
+}
+
+.row .card_panel {
+    width: 33.3333333333%;
+    margin-left: auto;  
+    left: auto;
+    right: auto;
+}
+/*slider heading*/
+#item1{
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 30px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 235px;
+
+}
+.location-title {
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+/**css for heading of card*/
+.page-main-title {
+        font-size: 2.4em;
+    line-height: 110%;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+   
+}
+/*css for sub title of home page*/
+.page-sub-title {
+        font-size: 1.2em;
+    line-height: 110%;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+  
+}
+/* css for parallax*/
+.home_parallax {
+      height: 840px ;
+    }
+ /*css for tour slider*/   
+#toursSlider{
+    height: 800px !important;
+}
+/* css for main slider*/
+#mainSlider{
+    height: 600px;
+}
+
+.carousel.carousel-slider .carousel-fixed-item{
+    z-index: 0 !important;
+}
+
+
+/* css for carousel botton*/
+.btn, .btn-large {
+    text-decoration: none;
+    color: #9bb2ca;
+    margin-top: 8px;
+    background-color: rgb(20,20,20);
+    padding: 5px 55px 40px 50px;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+/*css for view button hover effect*/
+.btn:hover, .btn-large:hover {
+    background-color: white;
+}
+/* css for carousel*/
+.carousel.carousel-slider .carousel_card {
+    width: 100% !important;
+    height: 100%;
+    min-height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* css for view botton text color*/
+.Viewbtn{
+    color:#9bb2ca !important;
+}
+
+/* css for carousel point*/
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 45px 4px;
+    background-color: rgba(255,255,255,0.5);
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border-radius: 50%;
+}
+/*css for card button*/
+#cardBTN {
+    margin: 12px;
+    background-color: rgb(71, 160, 255);
+    padding: 5px 50px;
+}
+/*+++++++++++++card++++++++++*/
+
+.carousel .indicators {
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    right: 0;
+    bottom: -45px;
+    margin: 0;
+}
+.card .card-image img {
+    height: 200px;
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+/* css for card*/
+.card {
+    position: relative;
+    height: auto;
+   
+    background-color: #fff;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 2px;
+}
+
+.card-title{
+    font-weight: 500px !important;
+    margin-top: 0px;
+    margin-bottom: 0px !important;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.card-sub-title{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #a9a8a8;
+    font-weight: 300;
+    font-weight: 700px !important;
+    text-transform: capitalize;
+    font-size: 15px;
+
+}
+/*======slid====*/
+#toursSlider .carousel-fixed-item{
+    top:0px;
+}
+
+#toursSlider .carousel-item{
+    top:200px;
+}
+.parallax-overlay{
+    display: block;
+    position: absolute;
+    top: 0;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.7);
+}
+/* css for main slider image*/
+#mainSlider .carousel-item .col img {
+    height: 500px !important;
+    width: auto !important;
+    display: block;
+}
+
+#mainSlider .carousel-item .col {
+    overflow: hidden;
+    padding: 0px;
+    position: relative !important;
+}
+/* css for parallax overlay*/
+#mainSlider .parallax-overlay {
+    background: rgba(0,0,0,0.4);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/* css for parallax overlay hover effect*/
+#mainSlider .parallax-overlay:hover {
+    background: rgba(0,0,0,0.0);
+}
+
+/* css for slider */
+.main-slider-item-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* left: 45%; */
+    /* width: 100%; */
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    background: rgba(0,0,0,0.7);
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* css for header logo*/
+#logo{
+    height: 90px;
+    width: 121px;
+    margin-top: 5px;
+}
+
+.row .card_panel {
+    width: 33.3333333333%;
+    margin-left: auto;  
+    left: auto;
+    right: auto;
+}
+/*slider heading*/
+#item1{
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 30px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 235px;
+
+}
+/**css for heading of card*/
+.page-main-title {
+        font-size: 2.4em;
+    line-height: 110%;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin: .82rem 0 3.656rem 0;
+}
+/*css for sub title of home page*/
+.page-sub-title {
+        font-size: 1.2em;
+    line-height: 110%;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+   margin: 5.82rem 0 .656rem 0;
+}
+/* css for parallax*/
+.home_parallax {
+      height: 840px ;
+    }
+ /*css for tour slider*/   
+#toursSlider{
+	height: 800px !important;
+}
+/* css for main slider*/
+#mainSlider{
+	height: 600px;
+}
+
+.carousel.carousel-slider .carousel-fixed-item{
+    z-index: 0 !important;
+}
+
+
+/* css for carousel botton*/
+.btn, .btn-large {
+    text-decoration: none;
+    color: #9bb2ca;
+    margin-top: 8px;
+    background-color: rgb(20,20,20);
+    padding: 5px 55px 40px 50px;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+/*css for view button hover effect*/
+.btn:hover, .btn-large:hover {
+    background-color: white;
+}
+/* css for view botton text color*/
+.Viewbtn{
+    color:#9bb2ca !important;
+}
+
+/* css for carousel point*/
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 45px 4px;
+    background-color: rgba(255,255,255,0.5);
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border-radius: 50%;
+}
+/*css for card button*/
+#cardBTN {
+    margin: 12px;
+    background-color: rgb(71, 160, 255);
+    padding: 5px 50px;
+}
+/*+++++++++++++card++++++++++*/
+
+.carousel .indicators {
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    right: 0;
+    bottom: -45px;
+    margin: 0;
+}
+.container .row {
+    margin-left: -.75rem;
+    margin-top: -25px;
+    margin-right: -.75rem;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+/* css for card*/
+.card {
+    position: relative;
+    height: auto;
+    margin: 2.5rem 0 1rem 0;
+    background-color: #fff;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 2px;
+}
+/*======slid====*/
+#toursSlider .carousel-fixed-item{
+	top:0px;
+}
+
+#toursSlider .carousel-item{
+	top:200px;
+}
+.parallax-overlay{
+	display: block;
+	position: absolute;
+	top: 0;
+	width:100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0,0,0,0.7);
+}
+/* css for main slider image*/
+#mainSlider .carousel-item .col img {
+    height: 500px !important;
+    width: auto !important;
+    display: block;
+}
+
+#mainSlider .carousel-item .col {
+    overflow: hidden;
+    padding: 0px;
+    position: relative !important;
+}
+/* css for parallax overlay*/
+#mainSlider .parallax-overlay {
+    background: rgba(0,0,0,0.4);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/* css for parallax overlay hover effect*/
+#mainSlider .parallax-overlay:hover {
+    background: rgba(0,0,0,0.0);
+}
