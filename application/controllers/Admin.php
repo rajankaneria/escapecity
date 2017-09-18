@@ -137,4 +137,20 @@ class Admin extends CI_Controller {
 		$bannerdata = $this->tour_model->banner_row($bannerID);
 		
 	}*/
+	public function login(){
+		$headerData = array(
+			"pageTitle" => "Admin Login",
+			"stylesheet" => array("admin.css","header.css")
+		);
+		$footerData = array(
+			"jsFiles" => array("admin.js","header.js")
+		);
+		$viewData = array(
+			"viewName" => "login",
+            "viewData" => array(),
+			"headerData" => $headerData,
+			"footerData" => $footerData	
+		);
+		$this->load->view('admin-templete',$viewData);
+	}
 }

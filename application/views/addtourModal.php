@@ -3,7 +3,7 @@
   <div class="modal-content">
 
     <div class="container">
-      <div class="row">
+      <div class="row"><center><h5>Add New Tour</h5></center>
          <form class="col s12" enctype="multipart/form-data" id="addForm" method="post">
 	      <div class="row">
 	        <div class="input-field col s12">
@@ -20,7 +20,7 @@
 	       </div>-->
 
 	       <div class="row">
-	        <div class="input-field col s12">
+	        <div class="input-field col s12 m6">
 			  
 				<select name="type_id" id="type_id">
 			  <?php foreach ($touritem as $key => $touritemRow) { ?>
@@ -29,22 +29,24 @@
 			  </select>
 			
 			</div>
+
 		   </div>	
 
 		   	 <div class="row">
 		     <div class="input-field col s12">
 			    <select name="region_id" id="region_id">
+
 			     <?php foreach ($region_type as $key => $type) { ?>
 			      <option value="<?php echo $type["id"]; ?>"><?php echo $type["name"]; ?></option>
 			      <?php  } ?>
 			    </select>
 			   
 			  </div>
-			  </div>
+			</div>
 
 
 			<div class="row">
-	        <div class="input-field col s6">			  
+	        <div class="input-field col s6 m6">			  
 			 <select name="period_to" id="period_to">
 			  <option>Period To</option>			  
 			  <option <?php if($period_to=="January"){ echo "selected='selected'"; } ?> value="January">January</option>
@@ -62,7 +64,7 @@
 			  </select>			
 			</div>
 		  
-	        <div class="input-field col s6">			  
+	        <div class="input-field col s6 m6">			  
 			  <select name="period_from" id="period_from">
 			  <option>Period From</option>			  
 			  <option value="January">January</option>
@@ -81,45 +83,41 @@
 			</div>
 		   </div>
 
-			<div class="row">
+			<div class="row" style="display: none;">
 		        <div class="input-field col s12">
 		          <input placeholder="Enter your Map Title" name="map_title" id="map_title" type="text" class="validate">
 		          <label for="name">Map Title</label>
 		        </div>
 	      	</div> 
 
-	         <div class="row">
-	        <div class="input-field col s12">
-	          <input placeholder="Enter your Map" name="map" id="map" type="text" class="validate">
-	          <label for="name">Map</label>
+	        <div class="row">
+	        	<div class="input-field col s12">
+	          		<input placeholder="Enter your Map" name="map" id="map" type="text" class="validate">
+	          		<label for="name">Map</label>
+	        	</div>
 	        </div>
-	      </div>
+
 	       <div class="row">
 	        <div class="input-field col s12">
-
-	        	<label for="price">Price</label>
-	          <input  name="price" id="price" type="text" class="validate"  placeholder="Enter your Price">	          
+	          <input  name="price" id="price" type="text" class="validate"  placeholder="Enter your Price">
+	          <label for="price">Price</label>          
 	        </div>
 	      </div>  
 
 	        <div class="row">
 	        <div class="input-field col s12">
-
-	        	<label for="name" style="margin-top: -42px !important;">Home Banner</label>
-	          <input  name="home_banner" id="home_banner" type="file" class="validate">	          
+	          <input  name="home_banner" id="home_banner" type="file" class="validate">	
+	          <label for="name" style="margin-top: -42px !important;">Home Banner</label>
 	        </div>
 	      </div> 
 
 			<div class="row">
-	        <div class="input-field col s12">	          
-	          <textarea class="validate" id="detail" name="detail" style="height: 15rem !important;"></textarea>
-	          <label for="name" style="margin-top: -42px !important;">Details</label>
-	        </div>
+				<div class="input-field col s12">
+		          <textarea id="textarea1" class="validate materialize-textarea"  id="detail" name="detail">
+		          </textarea>
+		          <label for="details">Details</label>
+		        </div>
 	      </div>     
-
-
-
-		     
          </form>
        </div>
     </div>

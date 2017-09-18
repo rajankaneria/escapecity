@@ -56,7 +56,7 @@
           <li><a class="tab-title" href="sass.html">trekking Trips</a></li>
           <li><a  class="tab-title" href="sass.html">Booking</a></li>
           <li><a class="tab-title" href="badges.html">Blog</a></li>
-          <li><a class="tab-title" href="collapsible.html">About Us</a></li>
+          <li><a class="tab-title" href="<?php echo base_url(); ?>about">About Us</a></li>
           <li><a class="tab-title" href="<?php echo base_url(); ?>contact">contact Us</a></li>
         </ul>
       </div>

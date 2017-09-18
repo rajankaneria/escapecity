@@ -1,0 +1,64 @@
+.about-content-area{
+	padding: 25px;
+	width: 90%;
+	margin: 0 auto;
+}
+.about-logo{
+	text-align: center;
+	padding: 25px;
+}
+.about-logo img {
+    width: 18%;
+}
+.about-content-area p{
+	text-align: justify;
+	color: #333;
+}
+
+/*sidebar*/
+.sidebar{
+    background: rgba(238, 238, 238, 0.38);
+    margin-top: 20px;
+    padding-bottom: 20px !important;
+    border: 1px solid rgba(170, 170, 170, 0.44);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.sidebar-top{
+
+}
+.search-area-sidebar{
+	padding-bottom: 20px !important;
+	margin-bottom: 20px;
+}
+.sidebar-top h5{
+    color: #141414;
+    padding: 10px;
+    text-align: center;
+    background: #eee;
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.10);
+}
+.inquiry-form h5{
+	color: #141414;
+    padding: 10px;
+    text-align: center;
+    background: #eee;
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.10);	
+}
+input[type=search]:not(.browser-default):focus:not([readonly]){
+	border-bottom: 1px solid #141414;
+    -webkit-box-shadow: 0 1px 0 0 #141414;
+    box-shadow: 0 1px 0 0 #141414;
+}
+input[type=search]:not(.browser-default):focus:not([readonly])+label {
+	color: #141414;
+	font-weight: 500;
+}
+.btn-search{
+	width: 100%;
+}
+.input-field input[type=search]:focus{
+	background: transparent;
+}

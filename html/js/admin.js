@@ -8,6 +8,9 @@ $(function(){
 		$("#addtourModal").modal("open");
 	});
 
+	$('#textarea1').val('');
+  	$('#textarea1').trigger('autoresize')
+
 	//edit modal open
 	$(".tour-edit-btn").on("click",function(){
 		var tourID = $(this).data("tour-id");

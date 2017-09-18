@@ -30,11 +30,20 @@
 </head>
 
 <body class="grey lighten-2" >
-
+    <?php if($this->session->userdata("admin")){ ?>
    <nav class="admin-header-area">
       <div class="nav-wrapper">
-        <a href="<?php base_url(); ?>admin" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
+        <a href="<?php echo base_url(); ?>admin" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
         
       </div>
     </nav>
+    <?php }else{ ?>
+     
+      <div class="login-page">
+        <center>
+        <a href="<?php echo base_url(); ?>admin" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
+        </center>
+      </div>
+    
+    <?php } ?>
         
