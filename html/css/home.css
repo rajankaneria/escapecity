@@ -57,6 +57,7 @@
     letter-spacing: 1px;
     font-size: 20px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    bottom: 50%;
 }
 /**css for heading of card*/
 .page-main-title {
@@ -84,6 +85,75 @@
 #toursSlider{
     height: 800px !important;
 }
+
+
+/*Tour slider for responsive*/
+#mobileSlider{
+    height: 400px !important;
+}
+.tourBox-area{
+    min-height: 400px;
+    background-color: #fff;
+}
+.imagesBox-area {
+    width: 100%;
+}
+.imagesBox-area img{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: 0px;
+}
+.tourContent-area{
+    position: absolute;
+    background: rgba(5,5,5,0.7);
+    top: 0;
+    right: 10px;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+.tourTitle-name h5{
+    padding: 25px 5px 15px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 0px;
+    line-height: 2rem;
+    max-height: 100px;
+}
+.tourSubtitle-area p{
+    color: #ddd;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+.tourDescripton-area{
+    min-height: 180px;
+    max-height: 180px;
+    text-overflow: ellipsis;
+}
+.tourDescripton-area p{
+    color: #bbb;
+    text-overflow: ellipsis;
+    padding: 0px 15px;
+    text-align: justify;
+    
+}
+.tourDetails-button{
+    padding: 5px 10px;
+}
+.tourdetails-black-btn{
+    width: 100%;
+    background: rgba(55,55,55,0.7);
+    color: #fff !important;
+    top: 10px;
+}
+
+
+
+
 /* css for main slider*/
 #mainSlider{
     height: 600px;
@@ -210,10 +280,10 @@ ul, menu, dir {
     top:0px;
 }
 
-#toursSlider .carousel-item{
+/*#toursSlider .carousel-item{
     top:200px;
 }
-.parallax-overlay{
+*/.parallax-overlay{
     display: block;
     position: absolute;
     top: 0;
@@ -304,12 +374,12 @@ ul, menu, dir {
 }
 /*css for sub title of home page*/
 .page-sub-title {
-        font-size: 1.2em;
-    line-height: 110%;
+    font-size: 1.2em;
+    line-height: 1rem;
     color: white;
     text-align: center;
     font-weight: normal;
-   margin: 5.82rem 0 .656rem 0;
+   margin: 5rem 0 .656rem 0;
 }
 /* css for parallax*/
 .home_parallax {
@@ -410,11 +480,11 @@ ul, menu, dir {
 #toursSlider .carousel-fixed-item{
 	top:0px;
 }
-
+/*
 #toursSlider .carousel-item{
 	top:200px;
 }
-.parallax-overlay{
+*/.parallax-overlay{
 	display: block;
 	position: absolute;
 	top: 0;
@@ -446,4 +516,17 @@ ul, menu, dir {
 /* css for parallax overlay hover effect*/
 #mainSlider .parallax-overlay:hover {
     background: rgba(0,0,0,0.0);
+}
+
+
+
+/*Media Responsive*/
+@media(max-width: 768px){
+    .parallax-container{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .page-main-title{
+        font-size: 26px;
+    }
 }

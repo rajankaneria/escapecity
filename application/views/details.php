@@ -1,10 +1,10 @@
 <div id="detailpage" class="parallax-container">
   <div class="parallax">
-    <div class="parallax-overlay"></div><img src="http://localhost/escape_city/html/images/<?php echo $tourDetail['home_banner']; ?>">
+    <div class="parallax-overlay"></div><img src="http://localhost/escape_city/html/images/">
     </div>
    <div class="container">
-      <div class="page-main-title">      
-      <?php echo $tourDetail["name"]; ?></div>   
+      <div class="page-main-title">
+      <?php echo $tourDetail['name']; ?></div>   
  </div>
 </div> 
  <!--===================== START full or main container container =================--> 

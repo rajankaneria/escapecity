@@ -1,0 +1,140 @@
+.contact-area{
+	padding: 25px;
+}
+.form-area{
+	border-right: 2px solid rgba(173, 173, 173, 0.49);
+}
+.contact-area h5 {
+    font-size: 28px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.contact-btn{
+	width: 100%;
+    background: #141414;
+    border: 1px solid #141414;
+}
+.contact-btn:hover,.contact-btn:focus,.contact-btn.active{
+	width: 100%;
+    background: #e0e0e0 !important;
+    border: 1px solid #141414;
+    color: #141414;
+    font-weight: 500;
+}
+.quick-link-area{
+
+}
+address{
+	text-align: justify;
+	text-transform: capitalize;
+	font-style: normal;
+	color: #666;
+}
+.phone{
+	padding-bottom: 20px !important;
+}
+.fa-phone-square{
+	color: #666 !important;
+	display: block !important;
+	line-height: 1rem;
+	padding: 5px 0px;
+}
+
+.fa-envelope{
+	color: #666 !important;
+	display: block !important;
+	line-height: 1rem;
+	padding: 5px 0px;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.fa-envelope:hover{
+	color: #000 !important;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.phone label {
+    color: #1f1a17;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.e-mail label {
+    color: #1f1a17;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.social-links label {
+    color: #1f1a17;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.social-links hr{
+	margin-bottom: 15px;
+}
+
+/*
+	SOCIAL LINKS
+*/
+
+.social-links a{
+    color: #666666;
+    font-size: 26px;
+    padding:8px 10px;
+    border: 1px solid #aaa;
+    margin: 5px;
+    margin-left: 0px;
+    border-radius: 50px; 
+    display: inline-flex;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+}
+.social-links a:hover {
+    color: #141414;
+    font-size: 26px;
+    border: 1px solid #aaa;
+    margin: 5px;
+    margin-left: 0px;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 3px rgba(135, 135, 135, 0.5);
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+}
+
+/*======== INPUT FOCUS ==========*/
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]), 
+input[type=password]:not(.browser-default):focus:not([readonly]), 
+input[type=email]:not(.browser-default):focus:not([readonly]), 
+textarea.materialize-textarea:focus:not([readonly]){
+	border-bottom: 1px solid #1f1a17;
+    -webkit-box-shadow: 0 1px 0 0 #1f1a17;
+    box-shadow: 0 1px 0 0 #1f1a17;
+}
+
+input:not([type]):focus:not([readonly])+label, 
+input[type=text]:not(.browser-default):focus:not([readonly])+label, 
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label{
+	color: #1f1a17;
+}
+
+
+
+
+/*========== Mobile Responisve area ============*/
+@media(max-width: 768px){
+	.form-area {
+    border-right: 0px solid rgba(173, 173, 173, 0.49);
+	}
+}
