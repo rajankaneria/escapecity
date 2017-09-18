@@ -38,13 +38,13 @@ class Tour extends CI_Controller {
 		$this->load->view('template',$viewData);
 	}
 	public function add(){
-		$this->load->model("tour_model");
+		
+		$this->load->model("tour_model");		
 
 		//get text data which has been bosted
 		$result=array(
 			"name"=>$_POST['name'],
-<<<<<<< HEAD
-			"type_id"=>$_POST['tourtype'],
+			"type_id"=>$_POST['type_id'],
 			"region_id"=>$_POST['region_id'],
 			"detail"=>$_POST['detail'],
 			"map_title"=>$_POST['map_title'],
@@ -52,14 +52,32 @@ class Tour extends CI_Controller {
 			"period_to"=>$_POST['period_to'],
 			"period_from"=>$_POST['period_from'],
 			"price"=>$_POST['price']
-=======
-			"type_id"=>$_POST['tourtype']
->>>>>>> bd69f159a152ad4d1ff941d59745fceb3bdea136
+
 		);
 
 		//add blog with the text data and get the blog id
-		$tourID = $this->tour_model->addTour($result);	
-		//$this->tour_model->updateTour($updateData,$tourID);
+		$tourID = $this->tour_model->addTour($result);
+
+		//Define the file names with blog id with same extension which has been uploaded
+		$home_banner = $tourID."_tourbanner.".pathinfo($_FILES['home_banner']['name'], PATHINFO_EXTENSION);		
+		$updateData = array(
+			"home_banner" => $home_banner			
+		);
+
+		// update the name of the images in the database
+		$this->tour_model->updateTour($updateData,$tourID);
+
+		//set configuration for the upload library
+		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
+	    $config['allowed_types'] = 'gif|jpg|png';
+	    $config['overwrite'] = TRUE;
+	    $config['encrypt_name'] = FALSE;
+	    $config['remove_spaces'] = TRUE;
+	    
+	    //set name in the config file for the feature image
+	    $config['file_name'] = $tourID."__tourbanner";
+	    $this->load->library('upload', $config);
+	    $this->upload->do_upload('home_banner');
 	}
 	
 	public function update(){
@@ -69,7 +87,6 @@ class Tour extends CI_Controller {
 
 		//$tourImage = $tourID."_tour".pathinfo($_FILES['banner']['name'],PATHINFO_EXTENSION);
 
-<<<<<<< HEAD
 		$result=array(
 					"name"=>$_POST['name'],
 					"type_id"=>$_POST['tourtype'],
@@ -87,25 +104,15 @@ class Tour extends CI_Controller {
 
 			//set configuration for the upload library
 		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
-=======
-		$result = array
-	     (
-			"name" =>$_POST['name'] ,
-			"type_id" =>$_POST['tour-type'],
-			"region_id"=>$_POST["region-type"]
-			//"home_benner" =>$tourImage
-		 );
-	    $this->Tour_model->update($result,$tourID);
-	    /*$config['upload_path'] = 'C:\xampp\htdocs\aahvanadventures\html\images\tours';
->>>>>>> bd69f159a152ad4d1ff941d59745fceb3bdea136
+
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
 	    $config['remove_spaces'] = TRUE; 
 
-	    $config['file_name'] = $tourID."_benner";
+	    $config['file_name'] = $tourID."_banner";
 	    $this->load->library('upload', $config);
-	    $this->upload->do_upload('banner');*/
+	    $this->upload->do_upload('home_banner');
 
 	}
 	
