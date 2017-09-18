@@ -9,12 +9,12 @@
                 <img src="<?php echo base_url(); ?>html/images/logo_black.png" class="responsive-img" width="200">
             </li>
             <li ng-class="url == '' ? 'active' : ''" >
-                <a href="<?php base_url() ?>admin_tour" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'admin_tour') !== false) { ?> active-menu <?php } ?>">
+                <a href="<?php echo base_url() ?>admin/admin_tour" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'admin_tour') !== false) { ?> active-menu <?php } ?>">
                     <span>add tour</span>
                 </a>
             </li>
             <li ng-class="url == 'download' ? 'active' : ''">
-                <a href="<?php base_url() ?>banner" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                <a href="<?php echo base_url() ?>admin/banner" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
                     <span>banner</span>
                 </a>
             </li>
