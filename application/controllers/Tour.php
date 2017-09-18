@@ -38,7 +38,7 @@ class Tour extends CI_Controller {
 		$this->load->view('template',$viewData);
 	}
 	public function add(){
-		
+
 		$this->load->model("tour_model");		
 
 		//get text data which has been bosted
@@ -75,7 +75,7 @@ class Tour extends CI_Controller {
 	    $config['remove_spaces'] = TRUE;
 	    
 	    //set name in the config file for the feature image
-	    $config['file_name'] = $tourID."__tourbanner";
+	    $config['file_name'] = $tourID."_tourbanner";
 	    $this->load->library('upload', $config);
 	    $this->upload->do_upload('home_banner');
 	}
@@ -85,11 +85,11 @@ class Tour extends CI_Controller {
 
 		$this->load->model('Tour_model');
 
-		//$tourImage = $tourID."_tour".pathinfo($_FILES['banner']['name'],PATHINFO_EXTENSION);
+		$home_banner = $tourID."_tourbanner.".pathinfo($_FILES['home_banner']['name'], PATHINFO_EXTENSION);
 
 		$result=array(
 					"name"=>$_POST['name'],
-					"type_id"=>$_POST['tourtype'],
+					"type_id"=>$_POST['type_id'],
 					"region_id"=>$_POST['region_id'],
 					"detail"=>$_POST['detail'],
 					"map_title"=>$_POST['map_title'],
@@ -101,7 +101,6 @@ class Tour extends CI_Controller {
 			);
 			$this->Tour_model->updateTour($result,$tourID);
 
-
 			//set configuration for the upload library
 		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
 
@@ -110,7 +109,7 @@ class Tour extends CI_Controller {
 	    $config['encrypt_name'] = FALSE;
 	    $config['remove_spaces'] = TRUE; 
 
-	    $config['file_name'] = $tourID."_banner";
+	    $config['file_name'] = $tourID."_tourbanner";
 	    $this->load->library('upload', $config);
 	    $this->upload->do_upload('home_banner');
 
@@ -141,7 +140,7 @@ class Tour extends CI_Controller {
 
 		$tourid = $this->Tour_model->addbanner($result);
 		
-	    $config['upload_path'] = 'C:\xampp\htdocs\aahvanadventures\html\images\tours';
+	    $config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
@@ -166,7 +165,7 @@ class Tour extends CI_Controller {
 
 		$tourid = $this->Tour_model->updatebanner($result,$bannerID);
 		
-	    $config['upload_path'] = 'C:\xampp\htdocs\aahvanadventures\html\images\tours';
+	    $config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;

@@ -108,7 +108,7 @@ class Tour_model extends  CI_Model{
 	}
 	public function bannerDetail($bannerID)
 	{
-		$query = $this->db->query("select * from  banner");
+		$query = $this->db->query("select * from  banner where id='$bannerID' ");
 		$result = $query->row_array();
 		return $result;
 	}
