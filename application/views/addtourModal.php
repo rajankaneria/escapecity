@@ -42,6 +42,85 @@
 			  </div>
 			  </div>
 
+
+			<div class="row">
+	        <div class="input-field col s6">			  
+			 <select name="period_to" id="period_to">
+			  <option>Period To</option>			  
+			  <option value="January">January</option>
+			  <option value="February">February</option>	
+			  <option value="March">March</option>
+			  <option value="April">April</option>
+			  <option value="May">May</option>
+			  <option value="June">June</option>
+			  <option value="July">July</option>
+			  <option value="August">August</option>
+			  <option value="">September</option>
+			  <option value="September"></option>
+			  <option value="October">October</option>
+			  <option value="November">November</option>
+			  <option value="December">December</option>			  
+			  </select>			
+			</div>
+		  
+	        <div class="input-field col s6">			  
+			  <select name="period_from" id="period_from">
+			  <option>Period From</option>			  
+			  <option value="January">January</option>
+			  <option value="February">February</option>
+			  <option value="March">March</option>
+			  <option value="April">April</option>
+			  <option value="May">May</option>
+			  <option value="June">June</option>
+			  <option value="July">July</option>
+			  <option value="August">August</option>
+			  <option value="">September</option>
+			  <option value="September"></option>
+			  <option value="October">October</option>
+			  <option value="November">November</option>
+			  <option value="December">December</option>			  
+			  </select>			
+			</div>
+		   </div>
+
+			<div class="row">
+		        <div class="input-field col s12">
+		          <input placeholder="Enter your Map Title" name="map_title" id="map_title" type="text" class="validate">
+		          <label for="name">Map Title</label>
+		        </div>
+	      	</div> 
+
+	         <div class="row">
+	        <div class="input-field col s12">
+	          <input placeholder="Enter your Map" name="map" id="map" type="text" class="validate">
+	          <label for="name">Map</label>
+	        </div>
+	      </div>
+	       <div class="row">
+	        <div class="input-field col s12">
+
+	        	<label for="price">Price</label>
+	          <input  name="price" id="price" type="text" class="validate"  placeholder="Enter your Price">	          
+	        </div>
+	      </div>  
+
+	        <div class="row">
+	        <div class="input-field col s12">
+
+	        	<label for="name" style="margin-top: -42px !important;">Home Banner</label>
+	          <input  name="home_banner" id="home_banner" type="file" class="validate">	          
+	        </div>
+	      </div> 
+
+			<div class="row">
+	        <div class="input-field col s12">	          
+	          <textarea class="validate" id="detail" name="detail" style="height: 15rem !important;"></textarea>
+	          <label for="name" style="margin-top: -42px !important;">Details</label>
+	        </div>
+	      </div>     
+
+
+
 		     
          </form>
        </div>

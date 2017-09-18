@@ -15,16 +15,26 @@ class Tour_model extends  CI_Model{
 		$result = $query->result_array();
 		return $result;
 	}
-	public function tourprice($tourID)
+	/*public function tourprice($tourID)
 	{
 		$query = $this->db->query("select * from price where tour_id='$tourID' ");
 		$result = $query->result_array();
 		return $result;
-	}
+	}*/
 	public function tourphot($tourID)
 	{
 		$query = $this->db->query("select * from  photos where tour_id='$tourID' ");
 		$result = $query->result_array();
+		return $result;
+	}
+	public function tourAttractions($tourID){
+		$query=$this->db->query("select * from attractions where tour_id='$tourID'");
+		$result= $query->result_array();
+		return $result;
+	}
+	public function tourRate($tourID){
+		$query=$this->db->query("select * from rate where tour_id='$tourID'");
+		$result= $query->result_array();
 		return $result;
 	}
 	public function tourList()

@@ -10,7 +10,6 @@
 	        </div>
 	      </div>
 
-
 	       <div class="input-field col s12">
            <select name="tour_name">
            <?php foreach ($typename as $key => $alltype) { ?>
