@@ -22,16 +22,20 @@
 	       <div class="row">
 	        <div class="input-field col s12 m6">
 			  
-				<select name="tourtype">
+				<select name="type_id" id="type_id">
 			  <?php foreach ($touritem as $key => $touritemRow) { ?>
-			  <option value="<?php echo $touritemRow["name"]; ?>"><?php echo $touritemRow["name"]; ?></option>
+			  <option value="<?php echo $touritemRow["id"]; ?>"><?php echo $touritemRow["name"]; ?></option>
 			  <?php  } ?>
 			  </select>
 			
 			</div>
-		  
-		     <div class="input-field col s12 m6">
-			    <select name="regiontype">
+
+		   </div>	
+
+		   	 <div class="row">
+		     <div class="input-field col s12">
+			    <select name="region_id" id="region_id">
+
 			     <?php foreach ($region_type as $key => $type) { ?>
 			      <option value="<?php echo $type["id"]; ?>"><?php echo $type["name"]; ?></option>
 			      <?php  } ?>
@@ -53,8 +57,7 @@
 			  <option value="June">June</option>
 			  <option value="July">July</option>
 			  <option value="August">August</option>
-			  <option value="">September</option>
-			  <option value="September"></option>
+			  <option value="September">September</option>			  
 			  <option value="October">October</option>
 			  <option value="November">November</option>
 			  <option value="December">December</option>			  
@@ -72,8 +75,7 @@
 			  <option value="June">June</option>
 			  <option value="July">July</option>
 			  <option value="August">August</option>
-			  <option value="">September</option>
-			  <option value="September"></option>
+			  <option value="September">September</option>			
 			  <option value="October">October</option>
 			  <option value="November">November</option>
 			  <option value="December">December</option>			  

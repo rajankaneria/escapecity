@@ -29,20 +29,20 @@ address{
 	text-align: justify;
 	text-transform: capitalize;
 	font-style: normal;
-	color: #666;
+	color: #333;
 }
 .phone{
 	padding-bottom: 20px !important;
 }
 .fa-phone-square{
-	color: #666 !important;
+	color: #333 !important;
 	display: block !important;
 	line-height: 1rem;
 	padding: 5px 0px;
 }
 
 .fa-envelope{
-	color: #666 !important;
+	color: #333 !important;
 	display: block !important;
 	line-height: 1rem;
 	padding: 5px 0px;
@@ -83,7 +83,7 @@ address{
 */
 
 .social-links a{
-    color: #666666;
+    color: #333;
     font-size: 26px;
     padding:8px 10px;
     border: 1px solid #aaa;
@@ -127,6 +127,7 @@ input[type=email]:not(.browser-default):focus:not([readonly])+label,
 input[type=search]:not(.browser-default):focus:not([readonly])+label,
 textarea.materialize-textarea:focus:not([readonly])+label{
 	color: #1f1a17;
+    font-weight: 500;
 }
 
 

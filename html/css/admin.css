@@ -27,8 +27,11 @@
     left: 0.75rem;
 }
 .ADD{
-float: right;
-margin-bottom: 15px;
+  float: right;
+  margin-bottom: 15px;
+  position: absolute;
+  right: 50px;
+  top: 170px;
 }
 section.content {
   padding: 25px;
@@ -133,10 +136,17 @@ a#addTourButton {
     background: #eee;
     border: 1px solid rgba(188, 188, 188, 0.58);
 }
+#addBannerBtn{
+     background: #eee;
+    border: 1px solid rgba(188, 188, 188, 0.58);
+}
 .dropdown-content li>a, .dropdown-content li>span{
   color:#141414;
 }
 
+.login-page {
+    padding: 50px 0px 0px;
+}
 
 input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
   border-bottom: 1px solid #141414;

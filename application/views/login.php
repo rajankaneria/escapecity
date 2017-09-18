@@ -1,10 +1,7 @@
-<?php $this->load->view("admin-nav"); ?>
-
-<section class="content">
+<section class="content1">
   <div class="row clearfix">
     <div class="">
       <div class="header">
-        <center><h5>Login</h5></center>
       </div>
 
       <div class="body">

@@ -3,25 +3,21 @@
       <div class="container">
       <div class="row">
          <form class="col s12" enctype="multipart/form-data" id="addbanner" method="post">
-	      <div class="row">
-	        <div class="input-field col s12">
-	          <input placeholder="enter your name" name="banner" id="name" type="file" class="validate">
-	          <label for="file">file</label>
-	        </div>
-	      </div>
+  	      <div class="row">
+  	        <div class="input-field col s12">
+  	          <input placeholder="enter your name" name="banner" id="name" type="file" class="validate">
+  	          <label for="file">file</label>
+  	        </div>
+  	      </div>
 
-	       <div class="input-field col s12">
+	        <div class="input-field col s12">
            <select name="tour_name">
            <?php foreach ($typename as $key => $alltype) { ?>
            <option value="<?php echo $alltype['id']; ?>"><?php echo $alltype['name']; ?></option>
            <?php } ?>
-		    
-		    
-		   </select>
-           <label>Materialize Select</label>
-           </div>
-
-
+		       </select>
+            <label>Select Tour</label>
+          </div>
          </form>
        </div>
     </div>

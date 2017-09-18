@@ -45,6 +45,7 @@ $(function(){
 			processData:false,
 			data:formData,
 			success:function(result){
+				alert("Added successfully.");
 				$("#addtourModal").modal("close");
 			    }
 		     });

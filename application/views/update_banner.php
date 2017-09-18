@@ -4,6 +4,7 @@
 	      <div class="row">
 	        <div class="input-field col s12">
 	          <input placeholder="enter your name" name="banner" id="banner" type="file" value="<?php echo $bannerDetail['banner']; ?>" class="validate">
+	          <img src="<?php echo base_url() ?>html/images/<?php echo $bannerDetail['banner']; ?>" width="150" height="150"/>
 	          <label for="file">file</label>
 	        </div>
 	      </div>
