@@ -11,11 +11,13 @@ class Tour extends CI_Controller {
 
 		$tourItinrary = $this->tour_model->tourItinrary($tourid);
 
-		$tourprice = $this->tour_model->tourprice($tourid);
+		$tourprice = $this->tour_model->tourRate($tourid);
 
 		$tourphoto = $this->tour_model->tourphot($tourid);
 
 		$tourlist = $this->tour_model->tourList($tourid);
+
+		$tourattractions=$this->tour_model->tourAttractions($tourid);
 
 		$headerData = array(
 			"pageTitle" => "Details",
@@ -26,8 +28,8 @@ class Tour extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "details",
-            "viewData" => array("tourDetail"=>$tourDetails,"tourItinrary"=>$tourItinrary,
-            	"tourprice"=>$tourprice,"tourphoto"=>$tourphoto,"tourlist"=>$tourlist
+            "viewData" => array("tourDetail"=>$tourDetails,"tourItinrary"=>$tourItinrary
+            	,"tourphoto"=>$tourphoto,"tourlist"=>$tourlist,"tourattractions"=>$tourattractions,"tourprice"=>$tourprice
             	),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
@@ -44,7 +46,10 @@ class Tour extends CI_Controller {
 			"region_id"=>$_POST['region_id'],
 			"detail"=>$_POST['detail'],
 			"map_title"=>$_POST['map_title'],
-			"map"=>$_POST['map']			
+			"map"=>$_POST['map'],
+			"period_to"=>$_POST['period_to'],
+			"period_from"=>$_POST['period_from'],
+			"price"=>$_POST['price']
 		);
 
 		//add blog with the text data and get the blog id
@@ -88,8 +93,11 @@ class Tour extends CI_Controller {
 					"region_id"=>$_POST['region_id'],
 					"detail"=>$_POST['detail'],
 					"map_title"=>$_POST['map_title'],
-					"map"=>$_POST['map'],					
-					"home_banner"	=>$home_banner					
+					"map"=>$_POST['map'],
+					"period_to"=>$_POST['period_to'],
+					"period_from"=>$_POST['period_from'],					
+					"home_banner"	=>$home_banner,
+					"price"=>$_POST['price']				
 			);
 			$this->Tour_model->updateTour($result,$tourID);
 

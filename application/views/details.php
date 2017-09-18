@@ -17,7 +17,7 @@
             <li class="tab col s3 tab-title"><a  href="#test-swipe-1" class="active">DETAILS</a></li>
             <li class="tab col s3 "><a  href="#test-swipe-2" >ITINRARY</a></li>
             <li class="tab col s3 "><a href="#test-swipe-3" >Attractions</a></li>
-            <li class="tab col s3 "><a href="#test-swipe-4" >DATES</a></li>
+            <!-- <li class="tab col s3 "><a href="#test-swipe-4" >DATES</a></li> -->
             <li class="tab  col s3"><a href="#test-swipe-5" >RATES</a></li>
             <li class="tab col s3"><a href="#map" >MAPS</a></li>
           
@@ -82,32 +82,20 @@
 
      <!--===================3 swipe start=======================================-->
   <div id="test-swipe-3" class="col s12 details-box-content">
+    <?php foreach($tourattractions as $key => $tourattractionsRow){ ?>
+
+   
   <div class="contantt">
-    <h6 class="attractions-title">RIDERS ESSENTIALS:</h6>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Personal Medicines, Sunscreen lotion, Lip balm, Glucose</p>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Couple of water bottles</p>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Chocolates, biscuits and nuts:</p>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Other essentials: Paper soap, toothbrush, toothpaste, comb and toilet paper.</p>
+    <h6 class="attractions-title"><?php echo $tourattractionsRow['title']; ?>:</h6>
+    <?php echo $tourattractionsRow['details']; ?>
     </div>
     
-     <div class="contantt">
-    <h6 class="attractions-title">RIDING GEAR ESSENTIALS:</h6>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Full Face Helmet with Clear Visor.</p>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>UV sunglasses</p>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Gloves</p>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Riding Jacket</p>
-    </div>
+    <?php  } ?>
 
-     <div class="contantt">
-    <h6 class="attractions-title">CLOTHING ESSENTIALS: </h6>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Jeans/pants</p>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Shirts/t-shirts/sweatshirt</p>
-    <p><i class="fa fa-arrow-right attractions-icon" aria-hidden="true"></i>Sweater, Socks</p>
-    </div>
   </div>
  
   <!--===================4 swipe start=======================================-->
-  <div id="test-swipe-4" class="col s12 details-box-content">
+<!--   <div id="test-swipe-4" class="col s12 details-box-content">
     <div class="row detail_contant">
      <h5 class="date-title">Dates</h5> 
      <p class="date-content">July 30 to August 10 (CLOSE)</p>
@@ -116,41 +104,24 @@
      <p class="date-content">August 27 to September 07 (CLOSE)</p>
      <p class="date-content">September 10 to September 21 (CLOSE)</p>
     </div>
-  </div>
+  </div> -->
   <!--===================5 swipe start=======================================-->
   <div id="test-swipe-5" class="col s12 details-box-content">
     <div>
       <h5 class="row rate_contant">RATES</h5>
     </div>
-    <div class="row rate">
-     <?php foreach($tourprice as $key=>$rateRow){ ?>
-      <h5><?php echo $rateRow["rate"]; ?></h5>
-       <?php } ?>
-    </div>
-   
+    <div class="row rate">   
+      <h5><?php echo $tourDetail["price"]; ?> </h5>      
+    </div> 
      
-  <div class="row">
-      <h5 class="inclusion-title">
-      <?php if("inclusion_details" != '') { ?>
-      INCLUSION
-      <?php } ?>
-      </h5>
       <?php foreach($tourprice as $key=>$rateRow){ ?>
-      <p class="inclusion-content"><i class="fa fa-arrow-right" aria-hidden="true"></i> 
-         <?php echo $rateRow["inclusion_details"]; ?></p>  <?php } ?> 
-           
-  </div>
-  <div class="row">  
-      <h5 class="inclusion-title">
-      <?php if("exclusion_details"!='') { ?>
-      EXCLUSION</h5>
-      <?php } ?>
-      <?php foreach($tourprice as $key=>$exclusionRow){ ?>
-      <p class="inclusion-content"><i class="fa fa-arrow-right" aria-hidden="true"></i> 
-         <?php echo $exclusionRow["exclusion_details"] ?></p>
-    <?php } ?>
-    
-  </div> 
+
+      <div class="row">  
+      <h5 class="inclusion-title"><?php echo $rateRow['title']; ?></h5>          
+         <?php echo $rateRow["detail"]; ?>
+    </div>
+    <?php } ?> 
+ 
     
 </div>
   <!--===================6 swipe start=======================================-->
@@ -170,7 +141,7 @@
    
      <?php foreach($tourphoto as $key=>$photoRow) { ?>
      <div class="col m3 itinrary-img ">
-       <img class="materialboxed responsive-img" src="http://localhost/escape_city/html/images/matheran/<?php echo $photoRow['photos'];  ?>">
+       <img class="materialboxed responsive-img" src="<?php echo base_url(); ?>html/images/<?php echo $photoRow['photos'];  ?>">
      </div>
      <?php } ?>
 
@@ -189,10 +160,8 @@
             <div class="icon">
               <i class="fa awesome fa-tag icon-flipped"></i></div>
               <span class="white-text">
-                  <center> 
-                   <?php foreach($tourprice as $key=>$rateRow){ ?>
-                   <?php echo $rateRow["rate"]; ?> 
-                   <?php } ?>
+                  <center>                   
+                   <?php echo $tourDetail["price"]; ?>                 
                    </center>
               </span>
               <center><p>par person +5% GST</p></center>
