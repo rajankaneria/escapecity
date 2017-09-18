@@ -76,13 +76,15 @@
     </div>
 <!--=====================start container=====================================-->
     <div class="container">
-      <div id="toursSlider" class="carousel carousel-slider center" data-indicators="true">
         <div class="carousel-fixed-item center">
           <div class="page-sub-title">Take a Look at Our</div>
-            <div class="page-main-title">MOST POPULAR TOURS</div>
+          <div class="page-main-title">MOST POPULAR TOURS</div>
         </div>
+
+      <div id="toursSlider" class="carousel carousel-slider center hide-on-med-and-down" data-indicators="true">
+        
 <!--======================1.North India ==================================-->          
-        <div class="carousel-item carousel_card" href="#one!" >
+        <div class="carousel-item carousel_card hide-on-med-and-down" href="#one!" >
           <div class="row">
 <!--========================first card========================================-->
             <div class="col s4 card_panel">
@@ -140,7 +142,7 @@
 
 
 <!--=======================start East India carousel===============================-->
-    <div class="carousel-item carousel_card" href="#one!" >
+    <div class="carousel-item carousel_card hide-on-med-and-down" href="#one!" >
       <div class="row">
 <!--==========================forth card========================================-->     
         <div class="col s4 card_panel">
@@ -197,7 +199,7 @@
 <!--=============================END East India carousel==============================-->
 
 <!--=======================start West India carousel===============================-->
-    <div class="carousel-item carousel_card" href="#one!" >
+    <div class="carousel-item carousel_card hide-on-med-and-down" href="#one!" >
       <div class="row">
 <!--==========================Bhimashankar card========================================-->     
         <div class="col s4 card_panel">
@@ -254,7 +256,7 @@
 <!--=============================END West India carousel==============================-->
 
 <!--=======================start South India carousel===============================-->
-    <div class="carousel-item carousel_card" href="#one!" >
+    <div class="carousel-item carousel_card hide-on-med-and-down" href="#one!" >
       <div class="row">
 <!--==========================Coorg, Karnataka, card========================================-->     
         <div class="col s4 card_panel">
@@ -310,11 +312,89 @@
      </div>
 <!--=============================END South India carousel==============================-->
   </div> 
+<!-- Ende Deskotop tour slider -->  
+
+<!-- Start here mobile responsive single slider  -->
+<div class="row">
+<div id="mobileSlider" class="carousel carousel-slider-mobile center">
+    
+      <div class="carousel-item col s12" href="#one!" height="500">
+          <div class="tourBox-area">
+            <div class="imagesBox-area">
+              <img src="<?php echo base_url(); ?>html/images/Roopkundcard.jpg" class="responsive-img">
+            </div>
+            <div class="tourContent-area">
+              <div class="tourTitle-name">
+                <h5>Roopkund Trek</h5>
+              </div>
+              <div class="tourSubtitle-area">
+                <p>North India</p>
+              </div>
+              <div class="tourDescripton-area">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="tourDetails-button">
+                <a class="waves-effect tourdetails-black-btn waves-light btn">Details</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="carousel-item col s12" href="#two!">
+           <div class="tourBox-area">
+            <div class="imagesBox-area">
+              <img src="<?php echo base_url(); ?>html/images/leh.jpg" class="responsive-img">
+            </div>
+            <div class="tourContent-area">
+              <div class="tourTitle-name">
+                <h5>Leh Ladakh</h5>
+              </div>
+              <div class="tourSubtitle-area">
+                <p>North India</p>
+              </div>
+              <div class="tourDescripton-area">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="tourDetails-button">
+                <a class="waves-effect tourdetails-black-btn waves-light btn">Details</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="carousel-item col s12" href="#three!">
+           <div class="tourBox-area">
+            <div class="imagesBox-area">
+              <img src="<?php echo base_url(); ?>html/images/rishikes.jpg" class="responsive-img">
+            </div>
+            <div class="tourContent-area">
+              <div class="tourTitle-name">
+                <h5>Rishikesh, Shivpuri</h5>
+              </div>
+              <div class="tourSubtitle-area">
+                <p>North India</p>
+              </div>
+              <div class="tourDescripton-area">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="tourDetails-button">
+                <a class="waves-effect tourdetails-black-btn waves-light btn">Details</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Over here mobile responsive single slider  -->
+
+
+
+
  </div> 
+ 
  <!--============================END container====================================-->  
 </div>
 <!--============================END MAIN tours card ===================================-->
-
 
 
 

@@ -7,7 +7,7 @@
          <form class="col s12" enctype="multipart/form-data" id="addForm" method="post">
 	      <div class="row">
 	        <div class="input-field col s12">
-	          <input placeholder="Enter your Name" name="name" id="name" type="text" class="validate">
+	          <input placeholder="enter your name" name="name" id="name" type="text" class="validate">
 	          <label for="name">Name</label>
 	        </div>
 	      </div>  
@@ -20,26 +20,28 @@
 	       </div>-->
 
 	       <div class="row">
-	        <div class="input-field col s12">			  
-			 <select name="tourtype" id="tourtype">
-			  <option>Select Tourtype</option>
+	        <div class="input-field col s12">
+			  
+				<select name="tourtype">
 			  <?php foreach ($touritem as $key => $touritemRow) { ?>
-			  <option value="<?php echo $touritemRow["id"]; ?>"><?php echo $touritemRow["name"]; ?></option>
+			  <option value="<?php echo $touritemRow["name"]; ?>"><?php echo $touritemRow["name"]; ?></option>
 			  <?php  } ?>
-			  </select>			
+			  </select>
+			
 			</div>
 		   </div>	
 
 		   	 <div class="row">
 		     <div class="input-field col s12">
-			    <select name="region_id" id="region_id">
-			    	<option>Select Region</option>
+			    <select name="regiontype">
 			     <?php foreach ($region_type as $key => $type) { ?>
 			      <option value="<?php echo $type["id"]; ?>"><?php echo $type["name"]; ?></option>
 			      <?php  } ?>
-			    </select>			   
+			    </select>
+			   
 			  </div>
 			  </div>
+
 
 			<div class="row">
 	        <div class="input-field col s6">			  
@@ -116,6 +118,7 @@
 	          <label for="name" style="margin-top: -42px !important;">Details</label>
 	        </div>
 	      </div>     
+
 
 
 		     

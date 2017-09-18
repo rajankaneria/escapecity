@@ -14,6 +14,7 @@ $(function(){
         $("#upbannermodal").modal("open");
         $('select').material_select();
       Materialize.updateTextFields();
+
       });
 
   });
@@ -38,7 +39,7 @@ $(function(){
 
   });*/
 
-
+  $(function(){
       $("#addBannerBtn").on("click",function(){
         var formData = new FormData($("#addBannerModel form")[0]);
         var baseURL = $("#base_url").val(); 
@@ -49,16 +50,15 @@ $(function(){
           processData:false,
           data:formData,
           success:function(result){
-              alert("Add successfully..");
             $("#addBannerModel").modal("close");
           }
 
         }); 
 
       });
+  });
 
-
-  
+   $(function(){
     $("#updatebannerButton").on("click",function(){
         var formData = new FormData($("#updateForm")[0]);
         var baseURL = $("#base_url").val();
@@ -69,10 +69,11 @@ $(function(){
           processData:false,
           data:formData,
           success:function(result){
-             alert("Update successfully..");
+             
             $("#upbannermodal").modal("close");
           }
         });
     });
- 
+  });
+
 });

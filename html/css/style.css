@@ -1,0 +1,81 @@
+/*mobile navigation*/
+nav .button-collapse{
+	float: left;
+	position: relative;
+	z-index: 1;
+	height: 56px;
+	background: #1f1a17;
+	color: #fcdb00;
+	padding: 0px 15px;
+	border-radius: 3px;
+	top: 25%;
+}
+
+.side-nav{
+	background: #111 !important;
+}
+.side-nav li{
+	color: rgb(35, 35, 35) !important;
+	background: rgb(17, 17, 17);
+	border-bottom: 1px solid rgba(236, 205, 0, 0.15);
+}
+.side-nav li>a{
+	color: rgb(252, 219, 0);
+	font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+
+
+/**============= Footer =====================*/
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color:#141414;
+}
+
+/**============== mobile Responsive area ==============*/
+
+@media(max-width: 798px){
+	nav{
+		padding: 0px !important;
+	}
+
+	.location-title {
+    position: absolute;
+    color: #fcdb00 !important;
+    z-index: 100;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    transform: rotate(270deg);
+    bottom: 50%;
+    width: 250px !important;
+    left: -50px;
+    text-shadow: -2px -2px 2px #000 !important;
+	}
+	.page-sub-title {
+    font-size: 1.2em;
+    line-height: 1rem;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    line-height: 3rem !important;
+  	margin: 2.7rem 0 .656rem 0 !important;
+	}
+	.page-main-title{
+		line-height: 2rem !important;
+	}
+
+}
+
+/*============== Responsive for teblate ==========*/
+@media(max-width: 1024px) {
+	#mobileSlider.carousel .carousel-item{
+		display: block !important;
+	}
+}

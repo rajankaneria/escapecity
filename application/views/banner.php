@@ -12,12 +12,12 @@
 
       <div class="body">
         <div class="table-responsive">
-          <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+          <table class="table responsive-table centered">
             <thead>
               <tr>
-                <th>Order</th>       
-                <th>Tour Id</th>
-                <th>Banner</th>                
+                <th>id</th>       
+                <th>tour_id</th>
+                <th>banner</th>
                 <th>action</th>    
               </tr>
             </thead>
@@ -27,9 +27,9 @@
                   
                     <td><?php echo $banner['id'];  ?></td>
                     <td><?php echo $banner['tour_id'];  ?></td>
-                    <td><img src="<?php echo base_url(); ?>html/images/<?php echo $banner['banner'];  ?>" width="200" height="200"/></td>
+                    <td><?php echo $banner['banner'];  ?></td>
                      
-                    <td class="align tour-btn">
+                    <td class="right-align tour-btn">
                       <a data-banner-id="<?php echo $banner['id']; ?>" class="btn-floating waves-effect waves-light blue-grey banner-edit-btn"><i class="material-icons">mode_edit</i></a>
                       <a data-banner-id="<?php echo $banner['id']; ?>" class="btn-floating waves-effect waves-light red banner-delete-btn"><i class="material-icons">delete</i></a>
                     </td>

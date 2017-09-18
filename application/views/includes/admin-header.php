@@ -33,7 +33,7 @@
 
    <nav class="admin-header-area">
       <div class="nav-wrapper">
-        <a href="<?php base_url(); ?>home" class="brand-logo"><img src="http://localhost/aahvanadventures/html/images/logo_black.png" height="100px" id="logo"></a>
+        <a href="<?php base_url(); ?>admin" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
         
       </div>
     </nav>

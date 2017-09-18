@@ -30,7 +30,8 @@ $(function(){
 		}
 	});
 
-	//add tour	
+	//add tour
+	$(function(){
 	$("#addTourButton").on("click",function(){
 		var formData = new FormData($("#addForm")[0]);
 		var baseURL = $("#base_url").val();
@@ -41,12 +42,11 @@ $(function(){
 			processData:false,
 			data:formData,
 			success:function(result){
-				alert("successfully add data...")
 				$("#addtourModal").modal("close");
 			    }
 		     });
 	      });
-      
+       });
 
 	//update tour
 	$("#updateTourButton").on("click",function(){

@@ -31,7 +31,7 @@ float: right;
 margin-bottom: 15px;
 }
 section.content {
-  margin: 25px 15px 0 315px;
+  padding: 25px;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -39,15 +39,17 @@ section.content {
 
 /* Card ======================================== */
 .card {
-background: #fff;
-min-height: 50px;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-position: relative;
-margin-bottom: 30px;
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
--ms-border-radius: 2px;
-border-radius: 2px; }
+  padding: 25px;
+  background: #fff;
+  min-height: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; 
+}
 .card .card-inside-title {
 margin-top: 25px;
 margin-bottom: 15px;
@@ -114,3 +116,58 @@ section.content {
   margin-top: 115px;
 }
 
+
+
+
+
+/*=========== Admin Responsive Area =========*/
+ 
+
+.admin-menu-slide-logo{
+  background-color: #eee;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px;
+}
+.admin-navigation{
+  background-color: #fff !important;
+}
+.admin-navigation li:first-child{
+  background: #eee;
+  padding: 25px;
+}
+.admin-navigation li{
+  background: transparent;
+}
+.admin-navigation li:hover{
+  background: rgba(38,38,38,0.1);
+}
+.mobile-menu-btn {
+  background: #ddd;
+  color: #000;
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  z-index: 100;
+  padding: 11px 15px;
+  border-radius: 50px;
+  padding-top: 15px;
+}
+.active-menu{
+  background: rgba(55,55,55,0.2);
+}
+/**========== Mobile Responsive ============*/
+@media(max-width: 768px){
+  section.content{
+    padding: 15px;
+  }
+  .card{
+    padding: 15px;
+  }
+  table.responsive-table th{
+    text-align: left;
+  }
+  table.responsive-table tbody tr:nth-child(odd){
+    background-color: #eee;
+  }
+}
