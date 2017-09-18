@@ -96,22 +96,30 @@ class Tour extends CI_Controller {
 					"map"=>$_POST['map'],
 					"period_to"=>$_POST['period_to'],
 					"period_from"=>$_POST['period_from'],					
-					"home_banner"	=>$home_banner,
-					"price"=>$_POST['price']				
+					"price"=>$_POST['price']
+									
 			);
+			if($_FILES['home_banner']['name']!=""){
+			//if (isset($result["home_banner"]) && !empty($result["home_banner"])) {
+			//if($result["home_banner"]==""){ // check if user have selected an image
+				$result["home_banner"] = $home_banner;
+
+				//set configuration for the upload library
+				$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
+
+			    $config['allowed_types'] = 'gif|jpg|png';
+			    $config['overwrite'] = TRUE;
+			    $config['encrypt_name'] = FALSE;
+			    $config['remove_spaces'] = TRUE; 
+
+			    $config['file_name'] = $tourID."_tourbanner";
+			    $this->load->library('upload', $config);	
+			    $this->upload->do_upload('home_banner');		    
+			}
+			
 			$this->Tour_model->updateTour($result,$tourID);
 
-			//set configuration for the upload library
-		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
-
-	    $config['allowed_types'] = 'gif|jpg|png';
-	    $config['overwrite'] = TRUE;
-	    $config['encrypt_name'] = FALSE;
-	    $config['remove_spaces'] = TRUE; 
-
-	    $config['file_name'] = $tourID."_tourbanner";
-	    $this->load->library('upload', $config);
-	    $this->upload->do_upload('home_banner');
+		
 
 	}
 	
@@ -159,12 +167,10 @@ class Tour extends CI_Controller {
 		$bannerImage = $fileName.".".pathinfo($_FILES['banner']['name'], PATHINFO_EXTENSION);
 
 		$result=array(
-			"banner" => $bannerImage,
 			"tour_id"=>$_POST['tour_id']
 		);
-
-		$tourid = $this->Tour_model->updatebanner($result,$bannerID);
-		
+		if($_FILES['banner']['name']!=""){
+		$result['banner']=$bannerImage;
 	    $config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
@@ -173,6 +179,8 @@ class Tour extends CI_Controller {
 	    $config['file_name'] = $fileName;
 	    $this->load->library('upload', $config);
 	    $this->upload->do_upload('banner');
+		}
+		$this->Tour_model->updatebanner($result,$bannerID);
 	}
 	public function deleteBanner($deleteID)
 	{

@@ -15,7 +15,7 @@
           <table class="table responsive-table centered">
             <thead>
               <tr>
-                <th>id</th>       
+                <th>Order</th>       
                 <th>tour_id</th>
                 <th>banner</th>
                 <th>action</th>    

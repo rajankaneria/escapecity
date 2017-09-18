@@ -65,6 +65,64 @@ $(function(){
 			}
 	 	  });
         });
+
+		$("#addBlog").on("click",function(){
+			$("#addBlogModal").modal("open");
+		});
+
+		$("#addBlog").on("click",function(){
+			var formData=new FormData($("#addForm")[0]);
+			$.ajax({
+				url:baseURL+"Blog/addBlog",
+				data:formData,
+				type:"POST",
+				processData:false,
+				contentType:false,
+				success:function(result){
+					alert("Blog Added successfully....");
+					window.location.reload();
+				}
+
+			});
+
+		});
+
+		$("#updateBlog").on("click",function(){
+			var formData=new FormData($("#updateForm")[0]);
+			$.ajax({
+				url:baseURL+"Blog/updateBlog",
+				data:formData,
+				type:"POST",
+				processData:false
+				contentType:false
+				success:function(result){
+					alert("Blog updated successfully....");
+					window.location.reload();
+				}
+
+			});
+
+		});
+
+		$(".blog-delete-btn").on("click",function(){
+		
+			var dltnblog=$(this).data('blog-id');			
+			$.post(baseURL+"Blog/deleteBlog"+dltnblog,function(data){
+				$("#blog"+dltnblog).remove();
+			});
+		});
+
+		//edit modal open	
+
+		$(".blog-edit-btn").on("click",function(){
+		var edtblog=$(this).data('blog-id');
+		$.post(baseURL+"Blog/blogDetails/"+edtblog,function(data){
+			$("#updateBlogModal .modal-content").html(data);
+			$("#updateBlogModal").modal("open");			
+		});
+
+	});
+
 });
 
 

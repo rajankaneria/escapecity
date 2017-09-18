@@ -68,7 +68,7 @@
 			  <option value="June">June</option>
 			  <option value="July">July</option>
 			  <option value="August">August</option>
-			  <option value="September">September</option>
+			   <option value="September">September</option>
 			  <option value="October">October</option>
 			  <option value="November">November</option>
 			  <option value="December">December</option>			  
@@ -81,7 +81,7 @@
 		        <div class="input-field col s12">
 
 		        <label for="name" style="margin-top: -42px !important;">Home Banner</label>
-		          <input  name="home_banner" id="home_banner" type="file" class="validate">	       
+		          <input  name="home_banner" id="home_banner" type="file" class="validate" >	       
 
 		           <img src="<?php echo base_url() ?>html/images/<?php echo $tourDetails['home_banner']; ?>" width="150" height="150"/>           
 		        </div>
