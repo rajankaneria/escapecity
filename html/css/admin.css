@@ -27,8 +27,11 @@
     left: 0.75rem;
 }
 .ADD{
-float: right;
-margin-bottom: 15px;
+  float: right;
+  margin-bottom: 15px;
+  position: absolute;
+  right: 50px;
+  top: 170px;
 }
 section.content {
   padding: 25px;
