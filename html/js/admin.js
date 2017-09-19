@@ -193,6 +193,30 @@ $(function(){
 	}
 
 	});
+
+	$(".btn-login-admin").on("click",function(){
+		var data={
+			"email":$("#email").val(),
+			"password":$("#password").val()
+		};
+		$.post(baseURL+"admin/admin_login/",{data:data},function(data){
+			var data=$.parseJSON(data);
+			if(data.status=="ok"){
+				alert("Login successfully........");
+				window.location.href=baseURL+"admin";
+			}
+			else if(data.status=="fail"){
+				alert("Login successfully........");
+				window.location.href=baseURL+"admin/login/";
+			}
+			else{
+				console.log(data);
+			}
+
+		});
+
+	});
+
 });
 
 

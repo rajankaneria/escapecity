@@ -6,7 +6,7 @@
 
       <div class="body">
         <div class="login-form-area row">
-    		<form>
+    		<form method="post" id="login">
     			<div class="input-field col s12">
 		          <input id="email" type="text" class="validate" required="required">
 		          <label for="email">Email or Username</label>

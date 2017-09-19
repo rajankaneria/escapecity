@@ -118,6 +118,21 @@ class Tour_model extends  CI_Model{
 		$this->db->delete("banner");
 	}
 
+	public function login($data){
+		$email=$data['email'];
+		$password=md5($data['password']);
+
+		$query=$this->db->query("select * from admin-login where email='$email' and password='$password' ");
+		if($query->num_row()==1){
+			$check=array("status"=>"ok","message"=>"Login Successfully..");
+		}
+		else{
+			$check=array("status"=>"fail","message"=>"Login fail..");
+		}
+		return $check;
+		}
+	}
+
 }
 ?>
 

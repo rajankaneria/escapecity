@@ -138,6 +138,7 @@ class Admin extends CI_Controller {
 		
 	}*/
 	public function login(){
+		
 		$headerData = array(
 			"pageTitle" => "Admin Login",
 			"stylesheet" => array("admin.css","header.css")
@@ -152,5 +153,14 @@ class Admin extends CI_Controller {
 			"footerData" => $footerData	
 		);
 		$this->load->view('admin-templete',$viewData);
+
 	}
+	public function admin_login(){
+	$data=$_POST["data"];
+	$this->load->model("Tour_model");
+	$result=$this->Tour_model->login($data);
+	echo json_encode($result);
+		
+}
+
 }
