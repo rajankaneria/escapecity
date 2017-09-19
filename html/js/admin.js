@@ -1,5 +1,6 @@
 var baseURL;
 $(function(){
+	$('.modal').modal();
 	baseURL= $("#base_url").val();
 
 	//add modal open 
@@ -8,8 +9,8 @@ $(function(){
 		$("#addtourModal").modal("open");
 	});
 
-	$('#textarea1').val('');
-  	$('#textarea1').trigger('autoresize')
+	$('#details').val('');
+  	$('#details').trigger('autoresize')
 
 	//edit modal open
 	$(".tour-edit-btn").on("click",function(){
@@ -69,11 +70,15 @@ $(function(){
 	 	  });
         });
 
-		$("#addBlog").on("click",function(){
+		//Blog
+
+		//ADD BLOG 
+
+		$("#addBlogBtn").on("click",function(){
 			$("#addBlogModal").modal("open");
 		});
 
-		$("#addBlog").on("click",function(){
+		$("#sendBlogData").on("click",function(){
 			var formData=new FormData($("#addForm")[0]);
 			$.ajax({
 				url:baseURL+"Blog/addBlog",
@@ -90,42 +95,104 @@ $(function(){
 
 		});
 
-		$("#updateBlog").on("click",function(){
+		$("#updateBlogdata").on("click",function(){
 			var formData=new FormData($("#updateForm")[0]);
 			$.ajax({
 				url:baseURL+"Blog/updateBlog",
 				data:formData,
 				type:"POST",
-				processData:false
-				contentType:false
+				processData:false,
+				contentType:false,
 				success:function(result){
 					alert("Blog updated successfully....");
 					window.location.reload();
 				}
-
 			});
-
 		});
-
-		$(".blog-delete-btn").on("click",function(){
-		
-			var dltnblog=$(this).data('blog-id');			
-			$.post(baseURL+"Blog/deleteBlog"+dltnblog,function(data){
+		$(".blog-delete-btn").on("click",function(){		
+			var dltnblog=$(this).data('blog-id');	
+			if(confirm("Do you want  to delete this Record...")){		
+				$.post(baseURL+"Blog/deleteBlog/"+dltnblog,function(data){
 				$("#blog"+dltnblog).remove();
 			});
+		 }
 		});
 
-		//edit modal open	
 
+		//edit modal open	
 		$(".blog-edit-btn").on("click",function(){
+		$("#editBlogModal .modal-content").html("");
+		$("#editBlogModal").modal("open");			
 		var edtblog=$(this).data('blog-id');
-		$.post(baseURL+"Blog/blogDetails/"+edtblog,function(data){
-			$("#updateBlogModal .modal-content").html(data);
-			$("#updateBlogModal").modal("open");			
+		$.post(baseURL+"Blog/editBlog/"+edtblog,function(data){
+			$("#editBlogModal .modal-content").html(data);
+			 Materialize.updateTextFields();$('select').material_select();					
+		});
+	});
+
+	//ADD TESTIMONIALS
+	
+	$("#addTest").on("click",function(){
+		$("#addTestModal").modal('open');
+	});
+
+	$("#sendTestData").on("click",function(){
+		var formData=new FormData($("#addTestForm")[0]);
+		$.ajax({
+			url:baseURL+"Testimonials/addTest/",
+			data:formData,
+			type:"POST",
+			processData:false,
+			contentType:false,
+			success:function(result){
+				//alert("Added Testimonial successfully.....");
+				//window.location.reload();
+			}
+
+		});
+
+	});
+	$("#updateTest").on("click",function(){
+		var formData=new FormData($("#updateTestForm")[0]);
+		$.ajax({
+			url:baseURL+"Testimonials/updateTest/",
+			data:formData,
+			type:"POST",
+			processData:false,
+			contentType:false,
+			success:function(result){
+				alert("Update Testimonial successfully.....");
+				window.location.reload();
+			}
+
 		});
 
 	});
 
+	$(".test-edit-btn").on("click",function(){
+		$("#editTestModal .modal-content").html("");
+		$("#editTestModal").modal('open');
+		var editTest=$(this).data('test-id');
+		$.post(baseURL+"Testimonials/editTest/"+editTest,function(data){
+			$("#editTestModal .modal-content").html(data);
+			Materialize.updateTextFields();
+		});			
+		
+
+	});
+
+
+
+
+	$(".test-delete-btn").on("click",function(){
+	var dltTest=$(this).data('test-id');
+	if(confirm("Do you want to delete this Record....")){
+		$.post(baseURL+"Testimonials/deleteTest/"+dltTest,function(data){
+			$("#testid"+dltTest).remove();
+		});		
+	}
+
+	});
 });
 
 

@@ -41,7 +41,7 @@ class Tour extends CI_Controller {
 
 		$this->load->model("tour_model");		
 
-		//get text data which has been bosted
+		//get text data which has been posted
 		$result=array(
 			"name"=>$_POST['name'],
 			"type_id"=>$_POST['type_id'],
@@ -116,7 +116,7 @@ class Tour extends CI_Controller {
 			    $this->load->library('upload', $config);	
 			    $this->upload->do_upload('home_banner');		    
 			}
-			
+						
 			$this->Tour_model->updateTour($result,$tourID);
 
 		

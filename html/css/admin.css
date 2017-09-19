@@ -223,3 +223,5 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     width: 75%;
   }
 }
+.blue {background:#000 !important;float: right;}
+.page-title{font-size: 20px !important;}
