@@ -20,11 +20,11 @@
 	       </div>-->
 
 	       <div class="row">
-	        <div class="input-field col s12 m6">
-			  
-				<select name="type_id" id="type_id">
+	        <div class="input-field col s12">			  
+			<select name="type_id" id="type_id">
+			 <option>Select Tour Type</option>
 			  <?php foreach ($touritem as $key => $touritemRow) { ?>
-			  <option value="<?php echo $touritemRow["id"]; ?>"><?php echo $touritemRow["name"]; ?></option>
+			  <option value="<?php echo $touritemRow["t_id"]; ?>"><?php echo $touritemRow["tour_name"]; ?></option>
 			  <?php  } ?>
 			  </select>
 			
@@ -35,7 +35,7 @@
 		   	 <div class="row">
 		     <div class="input-field col s12">
 			    <select name="region_id" id="region_id">
-
+			    <option>Select Region</option>
 			     <?php foreach ($region_type as $key => $type) { ?>
 			      <option value="<?php echo $type["id"]; ?>"><?php echo $type["name"]; ?></option>
 			      <?php  } ?>
@@ -49,7 +49,7 @@
 	        <div class="input-field col s6 m6">			  
 			 <select name="period_to" id="period_to">
 			  <option>Period To</option>			  
-			  <option <?php if($period_to=="January"){ echo "selected='selected'"; } ?> value="January">January</option>
+			  <option value="January">January</option>
 			  <option value="February">February</option>	
 			  <option value="March">March</option>
 			  <option value="April">April</option>
@@ -83,11 +83,32 @@
 			</div>
 		   </div>
 
-			<div class="row" style="display: none;">
+			<div class="row" >
 		        <div class="input-field col s12">
-		          <input placeholder="Enter your Map Title" name="map_title" id="map_title" type="text" class="validate">
-		          <label for="name">Map Title</label>
-		        </div>
+		          <input placeholder="Enter your Location" name="location" id="location" type="text" class="validate">
+		          <label for="location">Location</label>
+		    </div>
+	      	</div> 
+      	  	<div class="row">
+	        <div class="input-field col s12">
+	          <input placeholder="Enter your Height" name="height" id="height" type="text" class="validate">
+	          <label for="Height">Height</label>
+	        </div>
+	      	</div>
+      		<div class="input-field col s12 m12">			  
+			  <select name="dificulty" id="dificulty">
+			  <option>Select Dificulty</option>			  
+			  <option value="Easy">Easy</option>
+			  <option value="Medium">Medium</option>
+			  <option value="Hard">Hard</option>			 	  
+			  </select>			
+			</div> 
+	     
+      		<div class="row">
+	        <div class="input-field col s12">
+	          <input placeholder="Enter your Duration" name="duration" id="duration" type="text" class="validate">
+	          <label for="duration">Duration</label>
+	        </div>
 	      	</div> 
 
 	        <div class="row">

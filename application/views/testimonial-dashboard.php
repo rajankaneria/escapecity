@@ -25,7 +25,7 @@
          <td><?php echo $testRow['id']; ?></td>         
         <td><?php echo $testRow['title']; ?></td>
         <td><?php echo $testRow['details']; ?></td>        
-        <td><img src="<?php echo base_url(); ?>html/images/testimonials/<?php echo $testRow['image']; ?>" /></td>     
+        <td><img src="<?php echo base_url(); ?>html/images/testimonials/<?php echo $testRow['image']; ?>" width="200" height="200"/></td>     
         <td class="right-align blog-btn">
         <a data-test-id="<?php echo $testRow['id']; ?>" class="btn-floating waves-effect waves-light red test-delete-btn"><i class="material-icons">delete</i></a>
         <a data-test-id="<?php echo $testRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey test-edit-btn"><i class="material-icons">mode_edit</i></a>

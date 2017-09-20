@@ -1,10 +1,7 @@
 <div id="detailpage" class="parallax-container">
   <div class="parallax">
-    <div class="parallax-overlay"></div><img src="http://localhost/escape_city/html/images/">
-    </div>
-   <div class="container">
-      <div class="page-main-title">
-      <?php echo $tourDetail['name']; ?></div>   
+    <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/<?php echo $tourDetail['home_banner']; ?>">
+    </div>       
  </div>
 </div> 
  <!--===================== START full or main container container =================--> 
@@ -28,27 +25,28 @@
             <div class="row deails">
                <div class="col s3 detail-box">
                   <div class="detail-header-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-                  <div class="detail-header-value">12 Days</div>
+                  <div class="detail-header-value"><?php echo $tourDetail['duration'];  ?></div>
                </div>
 
               <div class="col s3 detail-box">
                 <div class="detail-header-icon"><i class="fa fa-arrows-h" aria-hidden="true"></i></div>
-                <div class="detail-header-value">6/10 Physicality</div>
+                <div class="detail-header-value"><?php echo $tourDetail['dificulty'];  ?></div>
               </div>
+              
 
               <div class="col s3 detail-box">
                 <div class="detail-header-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                <div class="detail-header-value">Lohagdh-Location</div>
+                <div class="detail-header-value"><?php echo $tourDetail['location'];  ?></div>
               </div>
 
               <div class="col s3 detail-box">
                 <div class="detail-header-icon"><i class="fa fa-area-chart" aria-hidden="true"></i></div>
-                <div class="detail-header-value">5602m Altitude</div>
+                <div class="detail-header-value"><?php echo $tourDetail['height'];  ?></div>
               </div>
 
               <div class="col s3 detail-box">
                 <div class="detail-header-icon"><i class="fa fa-money" aria-hidden="true"></i></div>
-                <div class="detail-header-value">INR2500/preson</div>
+                <div class="detail-header-value"><?php echo $tourDetail['price'];  ?></div>
               </div>
             </div>
             <div class="row detail_contant"> 
@@ -126,9 +124,7 @@
 </div>
   <!--===================6 swipe start=======================================-->
   <div id="map" class="col s12 details-box-content">
-    <div class="row map-title"><?php echo $tourDetail["map_title"]; ?></div>
-    
-     <div class="row">
+      <div class="row">
       <?php echo $tourDetail["map"]; ?>
     </div>
     
