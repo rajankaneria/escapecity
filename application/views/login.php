@@ -6,7 +6,7 @@
 
       <div class="body">
         <div class="login-form-area row">
-    		<form>
+    		<form method="post" id="form-login">
     			<div class="input-field col s12">
 		          <input id="email" type="text" class="validate" required="required">
 		          <label for="email">Email or Username</label>
@@ -16,7 +16,7 @@
 		          <label for="password">Password</label>
 		        </div>
 		        <div class="input-field col s12">
-		          <input type="submit" name="login-admin" value="Authintication" class="btn btn-login-admin">
+		          <input type="button" name="login-admin" value="Authintication" id="login" class="btn btn-login-admin">
 		        </div>
     		</form>
 	    </div>

@@ -49,7 +49,7 @@
 	        <div class="input-field col s6 m6">			  
 			 <select name="period_to" id="period_to">
 			  <option>Period To</option>			  
-			  <option value="January">January</option>
+			  <option <?php if($period_to=="January"){ echo "selected='selected'"; } ?> value="January">January</option>
 			  <option value="February">February</option>	
 			  <option value="March">March</option>
 			  <option value="April">April</option>
