@@ -32,12 +32,11 @@
 	margin-bottom: 20px;
 }
 .sidebar-top h5{
-    color: #141414;
+    color: #fff;
     padding: 10px;
     text-align: center;
-    background: #eee;
     margin-top: 0;
-    background: rgba(0, 0, 0, 0.10);
+    background:rgb(51, 73, 96)
 }
 .inquiry-form h5{
 	color: #141414;
@@ -61,4 +60,13 @@ input[type=search]:not(.browser-default):focus:not([readonly])+label {
 }
 .input-field input[type=search]:focus{
 	background: transparent;
+}
+
+
+
+/*========== Mobile responsive ==================*/
+@media(max-width: 768px){
+	.about-logo img{
+		width: 100%;
+	}
 }

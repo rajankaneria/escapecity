@@ -1,25 +1,71 @@
  <footer class="page-footer">
-  <div class="container">
+  <div class="footer-area">
     <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+      <div class="col m4 s12 trip-area">
+        <h5>MONTH WISE TRIPS </h5>
+        <ul class="col m4 s6" style="margin-top: 7px;">
+          <li><a href="#">January</a></li>
+          <li><a href="#">February</a></li>
+          <li><a href="#">March</a></li>
+          <li><a href="#">April</a></li>
+          <li><a href="#">May</a></li>
+          <li><a href="#">June</a></li>
         </ul>
+        <ul class="col m6 s6" style="margin-top: 7px;">
+          <li><a href="#">July</a></li>
+          <li><a href="#">August</a></li>
+          <li><a href="#">September</a></li>
+          <li><a href="#">October</a></li>
+          <li><a href="#">November</a></li>
+          <li><a href="#">December</a></li>
+        </ul>
+        
+      </div>
+      <div class="col s12 m4 popular-area">
+        <h5>New Popular Destination</h5>
+        <ul>
+          <li><a href="#">Destination 1</a></li>
+          <li><a href="#">Destination 2</a></li>
+          <li><a href="#">Destination 3</a></li>
+          <li><a href="#">Destination 4</a></li>
+          <li><a href="#">Destination 5</a></li>
+          <li><a href="#">Destination 6</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m4 address-area">
+        <h5>Contact Us</h5>
+        <ul class="address"> 
+          <li><strong>Intelliworkz Business</strong></li>
+          <li>Solutions F - 1003 Titanium City Center,</li>
+          <li>Nr. Sachin Tower, Anandnagar Road, Prahaladnagar,</li>
+          <li>Satellite, Ahmedabad - 380015</li>
+        </ul>
+        <ul class="contact-number">
+          <i class="call fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 98796 36303</i>
+          <i class="call fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 94278 01299</i>
+        </ul>
+        <ul class="mail-address-area">
+          <a href="#"><i class="mail-address fa fa-envelope" aria-hidden="true">&nbsp; info@escapcity.com</i>
+          </a>
+          <a href="#"><i class="mail-address fa fa-envelope" aria-hidden="true">&nbsp; escapcity@gmail.com</i>
+          </a>
+        </ul>  
       </div>
     </div>
   </div>
   <div class="footer-copyright">
-    <div class="container">
-    © 2017 all Rights reserved | <a href="#">escapcity.com</a>
-    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    <div class="footer-copyright-area">
+    © 2017 <a href="#">escapcity.com</a> | all Rights reserved. &nbsp;&nbsp;
+    
+      Developed by : &nbsp;<a href="http://intelliworkz.com/" target="_page"><span>Intelliworkz.com</span></a>
+    </div>
+    <div class="right footer-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
   </div>
 </footer>

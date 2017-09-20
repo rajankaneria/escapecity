@@ -1,4 +1,12 @@
 /* Navbar ====================================== */
+nav .nav-wrapper{
+  overflow: hidden;
+}
+.logoutBtn.right {
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
 .admin-header-area{
   position: fixed;
   top: 0px;
