@@ -33,9 +33,138 @@ nav .button-collapse{
 .page-footer {
     padding-top: 20px;
     color: #fff;
-    background-color:#141414;
+    /*background-color:#141414;*/
+    background: rgb(51, 73, 96);
+}
+.footer-area{
+	padding: 0px 25px;
+}
+.trip-area{
+
+}
+.trip-area h5 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.trip-area li {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 2px 0px;
+}
+.trip-area li a{
+    color: rgb(172, 172, 172);
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+}
+.trip-area li a:hover{
+	color: rgb(235, 235, 235) !important;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
 }
 
+
+.popular-area{
+
+}
+.popular-area h5 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.popular-area li{
+	padding: 2px 0px;
+}
+.popular-area li a{
+	font-weight: 300;
+	color: rgb(164, 168, 172);
+	-webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+}
+.popular-area li a:hover
+{
+	color: rgba(235,235,235,1) !important;
+	-webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+}
+.address-area h5{
+	font-size: 18px;
+	color: #fff;
+    text-transform: uppercase;
+}
+.address li{
+	color: rgb(164, 168, 172);
+	font-weight: 300;
+}
+.contact-number .call{
+	color: rgb(164, 168, 172) !important;
+	font-weight: 300;
+	display: block;
+	padding: 5px 0px;
+}
+.mail-address-area .mail-address{
+	color: rgb(164, 168, 172) !important;
+	font-weight: 300;
+	display: block;
+	padding: 5px 0px;
+}
+.mail-address-area .mail-address:hover
+{	
+	color: rgba(235,235,235,1) !important;
+	font-weight: 300;
+	-webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+}
+
+.page-footer .footer-copyright{
+	background:rgba(30, 44, 59, 0.53);
+}
+.footer-copyright-area{
+	padding: 0px 25px;
+	color: #acacac;
+}
+.developedBy{
+	text-align: left;
+}
+.footer-copyright-area a{
+	color:rgb(146, 154, 160);
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.footer-copyright-area a:hover{
+	color: rgb(255, 255, 255);
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.footer-links{
+	margin: 0 auto;
+	margin-right: 25px;
+}
+.footer-links li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+.footer-links li a{
+    color: rgb(146, 154, 160);
+}
+.footer-links li a:hover{
+    color: rgb(255, 255, 255);
+}
 /**============== mobile Responsive area ==============*/
 
 @media(max-width: 798px){
