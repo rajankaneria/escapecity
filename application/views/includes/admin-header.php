@@ -38,7 +38,7 @@
          <a href="<?php echo base_url(); ?>admin/logout/"><i class="fa fa-power-off" aria-hidden="true" style="font-size: 35px;color: #000"></i></a>  
     </nav>
     <a href="<?php echo base_url(); ?>admin/logout/"><i class="fa fa-power-off" aria-hidden="true"></i>Logout</a>  
-    <?php }else{ ?>
+    <?php } else{ ?>
      
       <div class="login-page">
         <center>

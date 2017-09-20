@@ -6,6 +6,11 @@ class Admin extends CI_Controller {
 	
 	public function index()
 	{		
+		if(!$this->session->userdata("email"))
+    	{
+     		 header("Location:".base_url()."admin/login/");
+    	
+   		}
 		$headerData = array(
 			"pageTitle" => "Admin",
 			"stylesheet" => array("admin.css","header.css")
@@ -168,8 +173,7 @@ class Admin extends CI_Controller {
 	echo json_encode($result);		
 	}
 
-	public function logout(){	
-		
+	public function logout(){			
 		$this->session->unset_userdata("email");
 		$this->session->sess_destroy();
 		header('location:'.base_url()."admin/login");	

@@ -206,7 +206,7 @@ $(function(){
 				window.location.href=baseURL+"admin/admin_tour/";
 			}
 			else if(data.status=="fail"){
-				alert("Login successfully........");
+				alert("Login Fail........");
 				window.location.href=baseURL+"admin/login/";
 			}
 			else{
