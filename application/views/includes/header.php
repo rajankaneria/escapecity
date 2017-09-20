@@ -33,7 +33,7 @@
 
 <body class="grey lighten-2" >
 
-   <nav>
+   <nav id="myHeader">
       <div class="nav-wrapper">
         <a href="<?php base_url(); ?>home" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
 

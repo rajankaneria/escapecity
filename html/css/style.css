@@ -1,4 +1,44 @@
 /*mobile navigation*/
+.nav-wrapper{overflow: hidden;}
+.myHeader{
+	position: fixed;
+	z-index: 1;
+	-webkit-transition: -webkit-transform .195s ease-in;
+  transition: -webkit-transform .195s ease-in;
+  transition: transform .195s ease-in;
+  transition: transform .195s ease-in, -webkit-transform .195s ease-in;
+  animation:slide-up 0.3s;
+}
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+    } 
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    } 
+}
+
+.myHeader-fixed{
+	position: fixed;
+	z-index: 1;
+	-webkit-transition: -webkit-transform .195s ease-in;
+  transition: -webkit-transform .195s ease-in;
+  transition: transform .195s ease-in;
+  transition: transform .195s ease-in, -webkit-transform .195s ease-in;
+  animation:slide-down 0.7s;
+}
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    } 
+}
 nav .button-collapse{
 	float: left;
 	position: relative;
@@ -129,6 +169,8 @@ nav .button-collapse{
 
 .page-footer .footer-copyright{
 	background:rgba(30, 44, 59, 0.53);
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .footer-copyright-area{
 	padding: 0px 25px;

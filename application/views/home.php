@@ -397,10 +397,243 @@
 <!--============================END MAIN tours card ===================================-->
 
 
+<!-- ================ Find Tour By Months Start Here =================== -->
+<div class="row">
+  <div class="tbm-title">
+    <h5>Find a Tour by <span>Month</span></h5>
+  </div>
+  <div class="tourByMonth-area">
+    <div class="carousel carousel-slider tmb-slider center" data-indicators="true">
+      <div class="carousel-item" href="#one!">
+        <div class="row">
+          <div class="col m3">
+            <div class="box">
+              <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="January" />
+                <figcaption>
+                  <div>
+                    <h4>January</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="box">
+              <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>February</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="box">
+              <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>March</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="box">
+              <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>April</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" href="#two!">
+         <div class="row">
+          <div class="col m3">
+            <div class="box">
+               <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>May</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="box">
+               <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>June</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="box">
+               <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>July</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="box">
+               <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>August</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item " href="#three!">
+         <div class="row">
+          <div class="col m3">
+            <div class="box">
+               <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>September</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="box">
+               <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>October</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="box">
+               <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>November</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="box">
+               <figure class="snip1445">
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <figcaption>
+                  <div>
+                    <h4>December</h4>
+                  </div>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+        
+      
+  </div>  
+</div>
+<!-- ================ Find Tour By Months Over Here =================== -->
 
-
-    
-
-
-    
-            
+<!-- ==================== Latest Post ================= -->
+<div class="row">
+  <div class="col s12 m6">
+    <h5 class="latest-blog-title">Latest <span>Blog</span></h5>
+      <div class="blog-area">
+        <div class="blog-bg-img">
+          <h5 class="blog-title">Blog Title</h5>
+          <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="responsive-img">
+        </div>
+        <div class="blog-description">
+            <p class="blog-desc">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <center><button class="btn btn-black">Read More</button></center>
+          </div>
+      </div>
+  </div>
+  <div class="col s12 m6">
+    <h5 class="latest-blog-title">Latest <span>Testimonials</span></h5>
+    <div class="Testimonials-area">
+      <div class="carousel carousel-slider testimoni-slider center" data-indicators="true">
+        <div class="carousel-item red white" href="#one!">
+          <h2 class="testimonials-name">Firts Name</h2>
+            <div class="testimonials-img">
+              <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
+            </div>
+            <div class="user-testimonials">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              </p>
+            </div>
+        </div>
+        <div class="carousel-item red white" href="#one!">
+          <h2 class="testimonials-name">Firts Name</h2>
+            <div class="testimonials-img">
+              <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
+            </div>
+            <div class="user-testimonials">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              </p>
+            </div>
+        </div>
+        <div class="carousel-item red white" href="#one!">
+          <h2 class="testimonials-name">Firts Name</h2>
+            <div class="testimonials-img">
+              <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
+            </div>
+            <div class="user-testimonials">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
