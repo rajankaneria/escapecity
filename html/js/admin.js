@@ -194,7 +194,7 @@ $(function(){
 
 	});
 
-	$(".btn-login-admin").on("click",function(){
+	$("#login").on("click",function(){
 		var data={
 			"email":$("#email").val(),
 			"password":$("#password").val()
@@ -203,7 +203,7 @@ $(function(){
 			var data=$.parseJSON(data);
 			if(data.status=="ok"){
 				alert("Login successfully........");
-				window.location.href=baseURL+"admin";
+				window.location.href=baseURL+"admin/admin_tour/";
 			}
 			else if(data.status=="fail"){
 				alert("Login successfully........");
@@ -212,6 +212,7 @@ $(function(){
 			else{
 				console.log(data);
 			}
+			$("#form-login input").val(""); $("#login").val("Login");
 
 		});
 

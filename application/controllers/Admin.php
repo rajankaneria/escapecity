@@ -23,8 +23,8 @@ class Admin extends CI_Controller {
 	}
 	public function Admin_Tour()
 	{		
-		$this->load->model("tour_model");
-		
+
+		$this->load->model("tour_model");		
 		$tour_list=$this->tour_model->tourList();
 	    $touritem = $this->tour_model->touritem();
 	    $region_type=$this->tour_model->region_type();
@@ -99,6 +99,12 @@ class Admin extends CI_Controller {
 	
 	public function AddTour()
 	{		
+		if(!$this->session->userdata("email"))
+    	{
+     		 header("Location:".base_url()."admin/login/");
+    	
+   		}
+    	
 		$this->load->model("tour_model");
 		$tour_list=$this->tour_model->tourList();
 		$region_type=$this->tour_model->region_type();
@@ -159,8 +165,15 @@ class Admin extends CI_Controller {
 	$data=$_POST["data"];
 	$this->load->model("Tour_model");
 	$result=$this->Tour_model->login($data);
-	echo json_encode($result);
+	echo json_encode($result);		
+	}
+
+	public function logout(){	
 		
-}
+		$this->session->unset_userdata("email");
+		$this->session->sess_destroy();
+		header('location:'.base_url()."admin/login");	
+
+	}
 
 }

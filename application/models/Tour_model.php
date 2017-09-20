@@ -122,17 +122,19 @@ class Tour_model extends  CI_Model{
 		$email=$data['email'];
 		$password=md5($data['password']);
 
-		$query=$this->db->query("select * from admin-login where email='$email' and password='$password' ");
-		if($query->num_row()==1){
+		$query=$this->db->query("select * from admin_login where email='$email' and password='$password' ");
+		if($query->num_rows()==1){
 			$check=array("status"=>"ok","message"=>"Login Successfully..");
+			$this->session->set_userdata("email",$data["email"]);
 		}
 		else{
 			$check=array("status"=>"fail","message"=>"Login fail..");
 		}
 		return $check;
 		}
+		
 	}
 
-}
+
 ?>
 
