@@ -32,17 +32,18 @@
 <body class="grey lighten-2" >
     <?php if($this->session->userdata("email")){ ?>
    <nav class="admin-header-area">
-      <div class="nav-wrapper">
-        <a href="<?php echo base_url(); ?>admin" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>          
-      </div>
-         <a href="<?php echo base_url(); ?>admin/logout/"><i class="fa fa-power-off" aria-hidden="true" style="font-size: 35px;color: #000"></i></a>  
+        <div class="nav-wrapper">
+          <a href="<?php echo base_url(); ?>admin/admin_tour" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>          
+        </div>
+        <div class="logoutBtn right"> 
+         <a href="<?php echo base_url(); ?>admin/logout/"><i class="fa fa-power-off" aria-hidden="true" style="font-size: 35px;color: #000;"></i></a>  
+        </div> 
     </nav>
-    <a href="<?php echo base_url(); ?>admin/logout/"><i class="fa fa-power-off" aria-hidden="true"></i>Logout</a>  
     <?php } else{ ?>
      
       <div class="login-page">
         <center>
-        <a href="<?php echo base_url(); ?>admin" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
+        <a href="<?php echo base_url(); ?>home" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
         </center>
       </div>
     
