@@ -39,8 +39,8 @@ class Tour_model extends  CI_Model{
 	public function tourList()
 	{
 		$query = $this->db->query("
-			select tr.*,ty.name as tour_type, rg.name as region_name from tours tr 
-			join tour_type ty on tr.type_id = ty.id 
+			select tr.*,ty.tour_name as tour_type, rg.name as region_name from tours tr 
+			join tour_type ty on tr.type_id = ty.t_id 
 			join region rg on tr.region_id = rg.id 
 			order by tr.id asc
 		");
@@ -89,7 +89,7 @@ class Tour_model extends  CI_Model{
 	}
 	public function tourname()
 	{
-		$query = $this->db->query("select * from tours JOIN tour_type");
+		$query = $this->db->query("select * from tours JOIN tour_type ON tour_type.t_id =tours.type_id");
 		$result = $query->result_array();
 		return $result;
 	}
@@ -130,9 +130,6 @@ class Tour_model extends  CI_Model{
 		}
 		return $check;
 		}
-
-
-
 		public function forceDeleteTour($tourID){
 			$this->db->query("delete from attractions where tour_id='$tourID'");
 			$this->db->query("delete from photos where tour_id='$tourID'");

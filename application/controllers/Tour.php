@@ -42,16 +42,22 @@ class Tour extends CI_Controller {
 		$this->load->model("tour_model");		
 
 		//get text data which has been posted
+		$map =str_replace('"','\"',$_POST['map']);
 		$result=array(
+
 			"name"=>$_POST['name'],
 			"type_id"=>$_POST['type_id'],
 			"region_id"=>$_POST['region_id'],
-			"detail"=>$_POST['detail'],
-			"map_title"=>$_POST['map_title'],
-			"map"=>$_POST['map'],
+			"detail"=>$_POST['detail'],			
+			"map" =>$map,
 			"period_to"=>$_POST['period_to'],
 			"period_from"=>$_POST['period_from'],
-			"price"=>$_POST['price']
+			"price"=>$_POST['price'],
+			"location"=>$_POST['location'],
+			"height"=>$_POST['height'],
+			"dificulty"=>$_POST['dificulty'],
+			"duration"=>$_POST['duration']
+
 
 		);
 
@@ -86,17 +92,20 @@ class Tour extends CI_Controller {
 		$this->load->model('Tour_model');
 
 		$home_banner = $tourID."_tourbanner.".pathinfo($_FILES['home_banner']['name'], PATHINFO_EXTENSION);
-
+		$map =str_replace('"','/"',$_POST['map']);
 		$result=array(
 					"name"=>$_POST['name'],
 					"type_id"=>$_POST['type_id'],
 					"region_id"=>$_POST['region_id'],
-					"detail"=>$_POST['detail'],
-					"map_title"=>$_POST['map_title'],
-					"map"=>$_POST['map'],
+					"detail"=>$_POST['detail'],					
+					"map"=>$map,
 					"period_to"=>$_POST['period_to'],
 					"period_from"=>$_POST['period_from'],					
-					"price"=>$_POST['price']
+					"price"=>$_POST['price'],
+					"location"=>$_POST['location'],
+					"height"=>$_POST['height'],
+					"dificulty"=>$_POST['dificulty'],
+					"duration"=>$_POST['duration']
 									
 			);
 			if($_FILES['home_banner']['name']!=""){

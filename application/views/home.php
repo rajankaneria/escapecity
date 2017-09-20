@@ -94,11 +94,11 @@
                   <img src="<?php echo base_url(); ?>html/images/<?php echo $tourRow['home_banner']; ?>" class="card-image">
                 </div>
                 <div class="card-content">
-                 <h6 class="card-title" style="font-size: 15px"><?php echo $tourRow['name']; ?></h6>
-                <h5 class="card-sub-title"><?php echo $tourRow['region_id']; ?></h5>
+                 <h6 class="card-title"><?php echo $tourRow['name']; ?></h6>
+                <h5 class="card-sub-title"><?php echo $tourRow['tour_name']; ?></h5>
                
                   <p><?php echo substr($tourRow['detail'],0,135)."..........."; ?></p>
-                   <a class="waves-effect waves-light btn grey darken-4 lighten-2" href="<?php echo base_url();?>">Details</a>
+                   <a class="waves-effect waves-light btn grey darken-4 lighten-2" href="<?php echo base_url();?>tour/id/<?php echo $tourRow['id']; ?>">Details</a>
                 </div>                
               </div> 
           </div>
