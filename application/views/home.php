@@ -84,233 +84,30 @@
       <div id="toursSlider" class="carousel carousel-slider center hide-on-med-and-down" data-indicators="true">
         
 <!--======================1.North India ==================================-->          
-        <div class="carousel-item carousel_card hide-on-med-and-down" href="#one!" >
+        <div class="carousel-item carousel_card hide-on-med-and-down" href="#one!">
           <div class="row">
 <!--========================first card========================================-->
-            <div class="col s4 card_panel">
+      <?php foreach ($tourDetails as $key => $tourRow) { ?>       
+          <div class="col s4 card_panel">
               <div class="card">
                 <div class="card-image">
-                  <img src="<?php echo base_url(); ?>html/images/Roopkundcard.jpg" class="card-image">
+                  <img src="<?php echo base_url(); ?>html/images/<?php echo $tourRow['home_banner']; ?>" class="card-image">
                 </div>
                 <div class="card-content">
-                 <h6 class="card-title">Roopkund Trek</h6>
-                <h5 class="card-sub-title">North India</h5>
+                 <h6 class="card-title" style="font-size: 15px"><?php echo $tourRow['name']; ?></h6>
+                <h5 class="card-sub-title"><?php echo $tourRow['region_id']; ?></h5>
                
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <p><?php echo substr($tourRow['detail'],0,135)."..........."; ?></p>
                    <a class="waves-effect waves-light btn grey darken-4 lighten-2" href="<?php echo base_url();?>">Details</a>
                 </div>                
               </div> 
-            </div>
-<!--========================second card=======================================-->
-        <div class="col s4 card_panel">
-          <div class="card">
-            <div class="card-image">
-              <img src="<?php echo base_url(); ?>html/images/leh.jpg">          
-            </div>
-            <div class="card-content">
-            <h6 class="card-title">Leh Ladakh</h6>
-              <h5 class="card-sub-title">North India</h5>
-              
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-             <a class="waves-effect waves-light btn grey darken-4 lighten-2"  href="<?php echo base_url(); ?>dang_details">Details</a>
-            </div>          
           </div>
-             <a class="Viewbtn waves-effect waves-light btn">View More</a>
-        </div>
-<!--===========================third card=====================================-->
-        <div class="col s4 card_panel">
-          <div class="card">
-            <div class="card-image">
-              <img src="<?php echo base_url(); ?>html/images/rishikes.jpg">              
-            </div>
-            <div class="card-content">
-            <h6 class="card-title">Rishikesh, Shivpuri</h6>
-            <h5 class="card-sub-title">North India</h5>
-            
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-             <a class="waves-effect waves-light btn grey darken-4 lighten-2"  href="<?php echo base_url(); ?>details">Details</a>
-            </div>            
-          </div>
-        </div>
-<!--============================end 3. card======================================-->
+          <?php } ?>
+
       </div>
     </div>
 <!--===============================END North India=================================--> 
 
-
-<!--=======================start East India carousel===============================-->
-    <div class="carousel-item carousel_card hide-on-med-and-down" href="#one!" >
-      <div class="row">
-<!--==========================forth card========================================-->     
-        <div class="col s4 card_panel">
-          <div class="card">
-            <div class="card-image">
-              <img src="<?php echo base_url(); ?>html/images/laptii.jpg" class="card-image">
-            </div>
-            <div class="card-content">
-            <h6 class="card-title">Lapti Valley Trek</h6>
-              <h5 class="card-sub-title">East India</h5>
-              
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-              <a class="waves-effect waves-light btn  grey darken-4 lighten-2"  href="<?php echo base_url(); ?>details">Details</a>
-            </div>        
-          </div>
-        </div>
-<!--====================================fifth card===============================-->
-    <div class="col s4 card_panel">
-           <div class="card">
-              <div class="card-image">
-                <img src="<?php echo base_url(); ?>html/images/beyull.jpg">    
-              </div>
-              <div class="card-content">
-              <h6 class="card-title">Beyul Pamako Trek</h6>
-                <h5 class="card-sub-title">East India</h5>
-                
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-                <a class="waves-effect waves-light btn grey darken-4 lighten-2"  href="<?php echo base_url(); ?>Bhimashankar">Details</a>
-              </div>
-           </div>
-          <a class="Viewbtn waves-effect waves-light btn">View More</a>
-        </div>
-<!--===============================six card=======================================-->
-        <div class="col s4 card_panel">
-          <div class="card">
-              <div class="card-image">
-                <img src="<?php echo base_url(); ?>html/images/baileyy.jpg">  
-              </div>
-              <div class="card-content">
-              <h6 class="card-title">The Bailey Trail Tre</h6>
-                <h5 class="card-sub-title">East India</h5>
-                
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-                <a class="waves-effect waves-light btn  grey darken-4 lighten-2"  href="<?php echo base_url(); ?>details">Details</a>
-              </div>  
-          </div>
-        </div>
-<!--===============================end six card==================================-->
-       </div>
-     </div>
-<!--=============================END East India carousel==============================-->
-
-<!--=======================start West India carousel===============================-->
-    <div class="carousel-item carousel_card hide-on-med-and-down" href="#one!" >
-      <div class="row">
-<!--==========================Bhimashankar card========================================-->     
-        <div class="col s4 card_panel">
-          <div class="card">
-            <div class="card-image">
-              <img src="<?php echo base_url(); ?>html/images/bhimcard.jpg" class="card-image">
-            </div>
-            <div class="card-content">
-            <h6 class="card-title">Bhimashankar</h6>
-              <h5 class="card-sub-title">West  India</h5>
-              
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-              <a class="waves-effect waves-light btn  grey darken-4 lighten-2"  href="<?php echo base_url(); ?>details">Details</a>
-            </div>        
-          </div>
-        </div>
-<!--====================================Lohagad card===============================-->
-    <div class="col s4 card_panel">
-           <div class="card">
-              <div class="card-image">
-                <img src="<?php echo base_url(); ?>html/images/lohacard.jpg">    
-              </div>
-              <div class="card-content">
-              <h6 class="card-title">Lohagad</h6>
-                <h5 class="card-sub-title">West  India</h5>
-                
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-                <a class="waves-effect waves-light btn grey darken-4 lighten-2"  href="<?php echo base_url(); ?>Bhimashankar">Details</a>
-              </div>
-           </div>
-          <a class="Viewbtn waves-effect waves-light btn">View More</a>
-        </div>
-<!--===============================Roopgadh card=======================================-->
-        <div class="col s4 card_panel">
-          <div class="card">
-              <div class="card-image">
-                <img src="<?php echo base_url(); ?>html/images/mulhercardd.jpg">  
-              </div>
-              <div class="card-content">
-              <h6 class="card-title">Mulher Fort</h6>
-                <h5 class="card-sub-title">West  India</h5>
-                
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-                <a class="waves-effect waves-light btn  grey darken-4 lighten-2"  href="<?php echo base_url(); ?>details">Details</a>
-              </div>  
-          </div>
-        </div>
-<!--===============================end Roopgadh card==================================-->
-       </div>
-     </div>
-<!--=============================END West India carousel==============================-->
-
-<!--=======================start South India carousel===============================-->
-    <div class="carousel-item carousel_card hide-on-med-and-down" href="#one!" >
-      <div class="row">
-<!--==========================Coorg, Karnataka, card========================================-->     
-        <div class="col s4 card_panel">
-          <div class="card">
-            <div class="card-image">
-              <img src="<?php echo base_url(); ?>html/images/corg.jpg" class="card-image">
-            </div>
-            <div class="card-content">
-            <h6 class="card-title"> Coorg, Karnataka,</h6>
-              <h5 class="card-sub-title">South  India</h5>
-              
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-              <a class="waves-effect waves-light btn  grey darken-4 lighten-2"  href="<?php echo base_url(); ?>details">Details</a>
-            </div>        
-          </div>
-        </div>
-<!--====================================Munnar card===============================-->
-    <div class="col s4 card_panel">
-           <div class="card">
-              <div class="card-image">
-                <img src="<?php echo base_url(); ?>html/images/munal.jpg">    
-              </div>
-              <div class="card-content">
-               <h6 class="card-title">Munnar</h6>
-                <h5 class="card-sub-title">South  India</h5>
-               
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-                <a class="waves-effect waves-light btn grey darken-4 lighten-2"  href="<?php echo base_url(); ?>Bhimashankar">Details</a>
-              </div>
-           </div>
-          <a class="Viewbtn waves-effect waves-light btn">View More</a>
-        </div>
-<!--===============================Ooty card=======================================-->
-        <div class="col s4 card_panel">
-          <div class="card">
-              <div class="card-image">
-                <img src="<?php echo base_url(); ?>html/images/oyt.jpg">  
-              </div>
-              <div class="card-content">
-              <h6 class="card-title">Ooty</h6>
-                <h5 class="card-sub-title">South  India</h5>
-                
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-                <a class="waves-effect waves-light btn  grey darken-4 lighten-2"  href="<?php echo base_url(); ?>details">Details</a>
-              </div>  
-          </div>
-        </div>
-<!--===============================end Roopgadh card==================================-->
-       </div>
-     </div>
-<!--=============================END South India carousel==============================-->
   </div> 
 <!-- Ende Deskotop tour slider -->  
 

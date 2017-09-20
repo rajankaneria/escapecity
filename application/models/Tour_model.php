@@ -1,7 +1,6 @@
 <?php 
 class Tour_model extends  CI_Model{
 
-	
 
 	public function tourDetails($tourID)
 	{
@@ -90,7 +89,7 @@ class Tour_model extends  CI_Model{
 	}
 	public function tourname()
 	{
-		$query = $this->db->query("select * from tours ");
+		$query = $this->db->query("select * from tours JOIN tour_type");
 		$result = $query->result_array();
 		return $result;
 	}
@@ -117,7 +116,6 @@ class Tour_model extends  CI_Model{
 		$this->db->where("id",$deleteID);
 		$this->db->delete("banner");
 	}
-
 	public function login($data){
 		$email=$data['email'];
 		$password=md5($data['password']);
@@ -132,8 +130,25 @@ class Tour_model extends  CI_Model{
 		}
 		return $check;
 		}
+
+
+
+		public function forceDeleteTour($tourID){
+			$this->db->query("delete from attractions where tour_id='$tourID'");
+			$this->db->query("delete from photos where tour_id='$tourID'");
+			$this->db->query("delete from price where tour_id='$tourID'");
+			$this->db->query("delete from itinrary where tour_id='$tourID'");
+			$this->db->query("delete from banner where tour_id='$tourID'");
+			$this->db->query("delete from rate where tour_id='$tourID'");
+			$this->db->query("delete from itinrary where tour_id='$tourID'");
+			$this->db->query("delete from date where tour_id='$tourID'");
+			$this->db->query("delete from tours where id='$tourID'");
+		}
+
 		
 	}
+
+	
 
 
 ?>

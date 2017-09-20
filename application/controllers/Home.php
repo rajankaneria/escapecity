@@ -5,7 +5,13 @@ class Home extends CI_Controller {
 
 	
 	public function index()
-	{		
+	{
+
+		$this->load->model("tour_model");
+
+		//$tourDataByID = $this->tour_model->tourDetails($tourid);
+		$tourDetails = $this->tour_model->tourname();
+		
 		$headerData = array(
 			"pageTitle" => "Home",
 			"stylesheet" => array("home.css","header.css")
@@ -15,7 +21,7 @@ class Home extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "home",
-            "viewData" => array(),
+            "viewData" => array("tourDetails"=>$tourDetails),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);

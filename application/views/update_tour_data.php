@@ -43,35 +43,35 @@
 	        <div class="input-field col s6">			  
 			 <select name="period_to" id="period_to">
 			  <option>Period To</option>			  
-			  <option value="January">January</option>
-			  <option value="February">February</option>	
-			  <option value="March">March</option>
-			  <option value="April">April</option>
-			  <option value="May">May</option>
-			  <option value="June">June</option>
-			  <option value="July">July</option>
-			  <option value="August">August</option>			  
-			  <option value="September">September</option>
-			  <option value="October">October</option>
-			  <option value="November">November</option>
-			  <option value="December">December</option>			  
+			    <option <?php if($period_to=="January"){ echo "selected='selected'"; } ?> value="January">January</option>
+			    <option <?php if($period_to=="February"){ echo "selected='selected'"; } ?> value="February">February</option>
+			    <option <?php if($period_to=="March"){ echo "selected='selected'"; } ?> value="March">March</option>
+			   <option <?php if($period_to=="April"){ echo "selected='selected'"; } ?> value="April">April</option>
+			    <option <?php if($period_to=="May"){ echo "selected='selected'"; } ?> value="May">May</option>
+			   <option <?php if($period_to=="June"){ echo "selected='selected'"; } ?> value="June">June</option>
+			    <option <?php if($period_to=="July"){ echo "selected='selected'"; } ?> value="July">July</option>
+			    <option <?php if($period_to=="August"){ echo "selected='selected'"; } ?> value="August">August</option>		  
+			   <option <?php if($period_to=="September"){ echo "selected='selected'"; } ?> value="September">September</option>
+			   <option <?php if($period_to=="October"){ echo "selected='selected'"; } ?> value="October">October</option>
+			   <option <?php if($period_to=="November"){ echo "selected='selected'"; } ?> value="November">November</option>
+			   <option <?php if($period_to=="December"){ echo "selected='selected'"; } ?> value="December">December</option>	  
 			  </select>			
 			</div>
 			 <div class="input-field col s6">			  
 			 <select name="period_from" id="period_from">
-			  <option>Period From</option>			  
-			  <option value="January">January</option>
-			  <option value="February">February</option>	
-			  <option value="March">March</option>
-			  <option value="April">April</option>
-			  <option value="May">May</option>
-			  <option value="June">June</option>
-			  <option value="July">July</option>
-			  <option value="August">August</option>
-			   <option value="September">September</option>
-			  <option value="October">October</option>
-			  <option value="November">November</option>
-			  <option value="December">December</option>			  
+			  <option>Period To</option>			  
+			    <option <?php if($period_from=="January"){ echo "selected='selected'"; } ?> value="January">January</option>
+			    <option <?php if($period_from=="February"){ echo "selected='selected'"; } ?> value="February">February</option>
+			    <option <?php if($period_from=="March"){ echo "selected='selected'"; } ?> value="March">March</option>
+			   <option <?php if($period_from=="April"){ echo "selected='selected'"; } ?> value="April">April</option>
+			    <option <?php if($period_from=="May"){ echo "selected='selected'"; } ?> value="May">May</option>
+			   <option <?php if($period_from=="June"){ echo "selected='selected'"; } ?> value="June">June</option>
+			    <option <?php if($period_from=="July"){ echo "selected='selected'"; } ?> value="July">July</option>
+			    <option <?php if($period_from=="August"){ echo "selected='selected'"; } ?> value="August">August</option>		  
+			   <option <?php if($period_from=="September"){ echo "selected='selected'"; } ?> value="September">September</option>
+			   <option <?php if($period_from=="October"){ echo "selected='selected'"; } ?> value="October">October</option>
+			   <option <?php if($period_from=="November"){ echo "selected='selected'"; } ?> value="November">November</option>
+			   <option <?php if($period_from=="December"){ echo "selected='selected'"; } ?> value="December">December</option>	    
 			  </select>			
 			</div>
 			</div>

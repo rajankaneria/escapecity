@@ -20,9 +20,9 @@
 	       </div>-->
 
 	       <div class="row">
-	        <div class="input-field col s12 m6">
-			  
-				<select name="type_id" id="type_id">
+	        <div class="input-field col s12">			  
+			<select name="type_id" id="type_id">
+			 <option>Select Tour Type</option>
 			  <?php foreach ($touritem as $key => $touritemRow) { ?>
 			  <option value="<?php echo $touritemRow["id"]; ?>"><?php echo $touritemRow["name"]; ?></option>
 			  <?php  } ?>
@@ -35,7 +35,7 @@
 		   	 <div class="row">
 		     <div class="input-field col s12">
 			    <select name="region_id" id="region_id">
-
+			    <option>Select Region</option>
 			     <?php foreach ($region_type as $key => $type) { ?>
 			      <option value="<?php echo $type["id"]; ?>"><?php echo $type["name"]; ?></option>
 			      <?php  } ?>
@@ -49,7 +49,7 @@
 	        <div class="input-field col s6 m6">			  
 			 <select name="period_to" id="period_to">
 			  <option>Period To</option>			  
-			  <option <?php if($period_to=="January"){ echo "selected='selected'"; } ?> value="January">January</option>
+			  <option value="January">January</option>
 			  <option value="February">February</option>	
 			  <option value="March">March</option>
 			  <option value="April">April</option>

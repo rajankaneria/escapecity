@@ -180,4 +180,13 @@ class Admin extends CI_Controller {
 
 	}
 
+	public function deleteTour($tourID){
+		if(!$this->session->userdata("email"))
+    	{
+     		 header("Location:".base_url()."admin/login/");
+   		}
+   		$this->load->model("tour_model");
+   		$this->tour_model->forceDeleteTour($tourID);
+	}
+
 }
