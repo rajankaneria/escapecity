@@ -32,7 +32,7 @@
                 <div class="detail-header-icon"><i class="fa fa-arrows-h" aria-hidden="true"></i></div>
                 <div class="detail-header-value"><?php echo $tourDetail['dificulty'];  ?></div>
               </div>
-              
+
 
               <div class="col s3 detail-box">
                 <div class="detail-header-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
@@ -167,7 +167,6 @@
           </div>
         </div>
  <!--===================second box==============================-->
-
         <div class="col s3 m12">
           <div class="card-panel side-box-content">
            <span class="box-2-heading">
