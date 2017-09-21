@@ -524,11 +524,14 @@ ul, menu, dir {
     text-align: center;
 }
 .tbm-title h5{
-    padding: 25px;
+    font-size: 38px;
+    font-weight: 300;
+    padding-bottom: 0;
+    padding-top: 25px;
+    text-align: center;
 }
 .tbm-title h5 span{
     font-weight: 700;
-    border-bottom: 2px solid #595959;
 }
 .tourByMonth-area{
     padding: 25px;
@@ -538,18 +541,17 @@ ul, menu, dir {
 }
 
 .snip1445 {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  /*margin: 10px 1%;*/
-  min-width: 100px;
-  max-width: 315px;
-  /*width: 100%;*/
-  color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-  background-color: #000;
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    min-width: 100px;
+    max-width: 250px;
+    /* width: 100%; */
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #000;
 }
 .snip1445 *,
 .snip1445 *:before,
@@ -561,14 +563,14 @@ ul, menu, dir {
 }
 .snip1445 img {
   max-width: 100%;
-  backface-visibility: hidden;
+  /*backface-visibility: hidden;*/
   vertical-align: top;
 }
 .snip1445 figcaption {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  padding: 5px 10px 10px;
+  padding:10px;
 }
 .snip1445 figcaption:before,
 .snip1445 figcaption:after {
@@ -673,13 +675,16 @@ ul, menu, dir {
      margin-top: 0;
     font-size: 28px;
     font-weight: 500;
-    position: absolute;
+/*    position: absolute;*/
     text-align: center;
     padding: 15px;
 }
+.blog-area {
+    overflow: hidden;
+}
  .latest-blog-title{
     font-size: 38px;
-    font-weight: 400;
+    font-weight: 300;
     padding-bottom: 25px;
     margin-top: 0;
     text-align: center;
@@ -691,30 +696,75 @@ ul, menu, dir {
     width: 100%;
  }
 .blog-description{
-    top: -300px !important;
+    top: 0px !important;
     position: relative;
+    max-height: 390px;
+    overflow: hidden;
     padding: 25px;
+    padding-top: 10px; 
     text-align: justify;
     background: linear-gradient(rgba(255, 255, 255, 0.7)0%,rgba(255,255,255,1)100%);
 }
+p.blog-desc {
+    /*min-height: 275px;
+    max-height: 275px;*/
+    overflow: hidden;
+}
+.blog-bg-img {
+    position: relative;
+}
 
+.blog-bg-img img {
+    position: absolute;
+    display: block;
+}
+.readMore-btn{
+
+}
+.btn-black{
+    border: 2px solid #000;
+    font-weight: 700;
+    color: #fff;
+}
+.btn-black:hover {
+    border: 2px solid #000;
+    color: #000;
+    font-weight: 700;
+}
  /*Testimonials*/
+}
 .testimonials-name{
     background: rgb(204, 204, 204);
     margin-top: 0;
     padding: 25px;
 }
+.testimonials-img {
+    padding-top: 70px;
+}
 .testi-img{
-    max-height: 200px;
-    width: auto;
+    max-height: 130px;
+    width: 130px;
+    margin: 0 auto;
+    background: #DDD;
+    border: 2px solid #ddd;
+    border-radius: 500px;
+}
+.testi-name p {
+    font-size: 23px;
+    color: #666;
+    font-weight: 500;
+    text-align: center;
 }
 .user-testimonials{
     text-align: justify;
     padding: 10px 30px;
+    text-align: justify;
+    padding: 10px 30px;
+    max-height: 255px;
 }
 .testimoni-slider.carousel .indicators{
     bottom: 0px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.05);
 }
 .testimoni-slider.carousel .indicators li.active{
     background-color: black !important;
