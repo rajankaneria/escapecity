@@ -673,9 +673,12 @@ ul, menu, dir {
      margin-top: 0;
     font-size: 28px;
     font-weight: 500;
-    position: absolute;
+/*    position: absolute;*/
     text-align: center;
     padding: 15px;
+}
+.blog-area {
+    overflow: hidden;
 }
  .latest-blog-title{
     font-size: 38px;
@@ -701,9 +704,17 @@ ul, menu, dir {
     background: linear-gradient(rgba(255, 255, 255, 0.7)0%,rgba(255,255,255,1)100%);
 }
 p.blog-desc {
-    min-height: 275px;
-    max-height: 275px;
+    /*min-height: 275px;
+    max-height: 275px;*/
     overflow: hidden;
+}
+.blog-bg-img {
+    position: relative;
+}
+
+.blog-bg-img img {
+    position: absolute;
+    display: block;
 }
 .readMore-btn{
 

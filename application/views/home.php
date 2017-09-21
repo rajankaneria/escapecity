@@ -381,10 +381,10 @@
     <h5 class="latest-blog-title">Latest <span>Blog</span></h5>
       <div class="blog-area">
         <div class="blog-bg-img">
-          <h5 class="blog-title">Blog Title</h5>
           <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="responsive-img">
         </div>
         <div class="blog-description">
+            <h5 class="blog-title">Blog Title</h5>
             <p class="blog-desc">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
