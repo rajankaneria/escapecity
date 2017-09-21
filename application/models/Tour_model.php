@@ -150,7 +150,7 @@ class Tour_model extends  CI_Model{
 		foreach ($tourList as $key => $tourRow) {
 			$toTimestamp = strtotime("1-".$tourRow["period_to"]."-".date("Y"));
 			$fromTimestamp = strtotime("1-".$tourRow["period_from"]."-".date("Y"));
-			if($fromTimestamp >= $timestampToCompare && $toTimestamp <= $timestampToCompare){
+			if($fromTimestamp <= $timestampToCompare && $toTimestamp >= $timestampToCompare){
 				$output[] = $tourRow;
 				$tourCount++;
 			}
