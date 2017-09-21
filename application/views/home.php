@@ -1,5 +1,5 @@
 <!--=========================== main slider ========================-->
-<div id="mainSlider" class="carousel carousel-slider center" data-indicators="true">
+<div id="mainSlider" class="carousel carousel-slider center z-depth-1" data-indicators="true">
    
 <!--=======================slider for North India tours=======================-->
 
@@ -69,7 +69,7 @@
 
 <!--=======================START MAIN tours CARD  ===========================--> 
 
-<div class="parallax-container home_parallax">
+<div class="parallax-container home_parallax z-depth-1">
     <div class="parallax">
       <div class="parallax-overlay"></div>
         <img src="<?php echo base_url(); ?>html/images/back_img.jpg">
@@ -194,7 +194,7 @@
 
 
 <!-- ================ Find Tour By Months Start Here =================== -->
-<div class="row">
+<div class="row white z-depth-1" style="margin-top:0px; overflow: hidden;">
   <div class="tbm-title">
     <h5>Find a Tour by <span>Month</span></h5>
   </div>
@@ -425,13 +425,12 @@
             </div>
         </div> -->
         <?php foreach($testDetails as $key => $testRow){?>
-        <div class="carousel-item red white" href="#one!">
-
-          <h2 class="testimonials-name"> <?php echo $testRow['title'];?></h2> 
+        <div class="carousel-item" href="#one!">
 
             <div class="testimonials-img">
               <img src="<?php echo base_url(); ?>html/images/testimonials/<?php echo $testRow['image'];?>" class="testi-img">
             </div>
+            <div class="testimonial-title"><?php echo $testRow['title'];?></div>
             <div class="user-testimonials">
               <p>
                 <?php echo $testRow['details'];?>
