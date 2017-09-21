@@ -691,30 +691,67 @@ ul, menu, dir {
     width: 100%;
  }
 .blog-description{
-    top: -300px !important;
+    top: 0px !important;
     position: relative;
+    max-height: 390px;
+    overflow: hidden;
     padding: 25px;
+    padding-top: 10px; 
     text-align: justify;
     background: linear-gradient(rgba(255, 255, 255, 0.7)0%,rgba(255,255,255,1)100%);
 }
+p.blog-desc {
+    min-height: 275px;
+    max-height: 275px;
+    overflow: hidden;
+}
+.readMore-btn{
 
+}
+.btn-black{
+    border: 2px solid #000;
+    font-weight: 700;
+    color: #fff;
+}
+.btn-black:hover {
+    border: 2px solid #000;
+    color: #000;
+    font-weight: 700;
+}
  /*Testimonials*/
+}
 .testimonials-name{
     background: rgb(204, 204, 204);
     margin-top: 0;
     padding: 25px;
 }
+.testimonials-img {
+    padding-top: 70px;
+}
 .testi-img{
-    max-height: 200px;
-    width: auto;
+    max-height: 130px;
+    width: 130px;
+    margin: 0 auto;
+    background: #DDD;
+    border: 2px solid #ddd;
+    border-radius: 500px;
+}
+.testi-name p {
+    font-size: 23px;
+    color: #666;
+    font-weight: 500;
+    text-align: center;
 }
 .user-testimonials{
     text-align: justify;
     padding: 10px 30px;
+    text-align: justify;
+    padding: 10px 30px;
+    max-height: 255px;
 }
 .testimoni-slider.carousel .indicators{
     bottom: 0px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.05);
 }
 .testimoni-slider.carousel .indicators li.active{
     background-color: black !important;

@@ -389,8 +389,8 @@
             <p class="blog-desc">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-            <center><button class="btn btn-black">Read More</button></center>
-          </div>
+            <div class="readMore-btn"><center><button class="btn btn-black">Read More</button></center></div>
+        </div>
       </div>
   </div>
   <div class="col s12 m6">
@@ -398,7 +398,19 @@
     <div class="Testimonials-area">
       <div class="carousel carousel-slider testimoni-slider center" data-indicators="true">
         <div class="carousel-item red white" href="#one!">
-          <h2 class="testimonials-name">Firts Name</h2>
+            <div class="testimonials-img">
+              <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
+              <div class="testi-name">
+                <p>Testimonial one</p>
+              </div>
+            </div>
+            <div class="user-testimonials">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              </p>
+            </div>
+        </div>
+        <div class="carousel-item red white" href="#one!">
             <div class="testimonials-img">
               <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
             </div>
@@ -409,18 +421,6 @@
             </div>
         </div>
         <div class="carousel-item red white" href="#one!">
-          <h2 class="testimonials-name">Firts Name</h2>
-            <div class="testimonials-img">
-              <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
-            </div>
-            <div class="user-testimonials">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-              </p>
-            </div>
-        </div>
-        <div class="carousel-item red white" href="#one!">
-          <h2 class="testimonials-name">Firts Name</h2>
             <div class="testimonials-img">
               <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
             </div>
