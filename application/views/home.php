@@ -95,9 +95,8 @@
                 </div>
                 <div class="card-content">
                  <h6 class="card-title"><?php echo $tourRow['name']; ?></h6>
-                <h5 class="card-sub-title"><?php echo $tourRow['tour_name']; ?></h5>
-               
-                  <p><?php echo substr($tourRow['detail'],0,135)."..........."; ?></p>
+                <h5 class="card-sub-title"><?php echo $tourRow['tour_name']; ?></h5>               
+                  <p><?php echo substr($tourRow['detail'],0,135)."...."; ?></p>
                    <a class="waves-effect waves-light btn grey darken-4 lighten-2" href="<?php echo base_url();?>tour/id/<?php echo $tourRow['id']; ?>">Details</a>
                 </div>                
               </div> 
