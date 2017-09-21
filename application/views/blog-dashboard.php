@@ -25,7 +25,7 @@
          <td><?php echo $blogRow['id']; ?></td>         
         <td><?php echo $blogRow['title']; ?></td>
         <td><?php echo $blogRow['details']; ?></td>        
-        <td><img src="<?php echo base_url(); ?>html/images/blog/<?php echo $blogRow['image']; ?>" /></td>     
+        <td><img src="<?php echo base_url(); ?>html/images/blog/<?php echo $blogRow['image']; ?>" width="400" height="300"/></td>     
         <td class="right-align blog-btn">
         <a data-blog-id="<?php echo $blogRow['id']; ?>" class="btn-floating waves-effect waves-light red blog-delete-btn"><i class="material-icons">delete</i></a>
         <a data-blog-id="<?php echo $blogRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey blog-edit-btn"><i class="material-icons">mode_edit</i></a>

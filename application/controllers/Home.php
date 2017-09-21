@@ -9,9 +9,13 @@ class Home extends CI_Controller {
 
 		$this->load->model("tour_model");
 		$this->load->model("testimonial_model");
+		$this->load->model("blog_model");
+		
 		//$tourDataByID = $this->tour_model->tourDetails($tourid);
 		$tourDetails = $this->tour_model->tourname();
 		$testDetails=$this->testimonial_model->testDetails();
+		$blogDetails=$this->blog_model->blogDetails();
+		
 		
 		$headerData = array(
 			"pageTitle" => "Home",
@@ -22,7 +26,7 @@ class Home extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "home",
-            "viewData" => array("tourDetails"=>$tourDetails,"testDetails"=>$testDetails),
+            "viewData" => array("tourDetails"=>$tourDetails,"testDetails"=>$testDetails,"blogDetails"=>$blogDetails),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);

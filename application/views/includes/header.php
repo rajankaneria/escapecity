@@ -51,7 +51,7 @@
 
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a class="tab-title" href="<?php base_url(); ?>home">Home</a></li>
-           <li><a class="tab-title" href="<?php base_url(); ?>details">Tours</a></li>
+           <li><a class="tab-title" href="<?php base_url(); ?>tours">Tours</a></li>
           <!-- <li><a class="tab-title" href="sass.html">Booking Trips</a></li>
           <li><a class="tab-title" href="sass.html">trekking Trips</a></li>
           <li><a  class="tab-title" href="sass.html">Booking</a></li> -->
