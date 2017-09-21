@@ -1,7 +1,7 @@
 /*mobile navigation*/
 .nav-wrapper{overflow: hidden;}
 .myHeader{
-	position: fixed;
+	position: relative;
 	z-index: 1;
 	-webkit-transition: -webkit-transform .195s ease-in;
   transition: -webkit-transform .195s ease-in;
