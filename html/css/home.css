@@ -524,11 +524,14 @@ ul, menu, dir {
     text-align: center;
 }
 .tbm-title h5{
-    padding: 25px;
+    font-size: 38px;
+    font-weight: 300;
+    padding-bottom: 0;
+    padding-top: 25px;
+    text-align: center;
 }
 .tbm-title h5 span{
     font-weight: 700;
-    border-bottom: 2px solid #595959;
 }
 .tourByMonth-area{
     padding: 25px;
@@ -538,18 +541,17 @@ ul, menu, dir {
 }
 
 .snip1445 {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  /*margin: 10px 1%;*/
-  min-width: 100px;
-  max-width: 315px;
-  /*width: 100%;*/
-  color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-  background-color: #000;
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    min-width: 100px;
+    max-width: 250px;
+    /* width: 100%; */
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #000;
 }
 .snip1445 *,
 .snip1445 *:before,
@@ -561,14 +563,14 @@ ul, menu, dir {
 }
 .snip1445 img {
   max-width: 100%;
-  backface-visibility: hidden;
+  /*backface-visibility: hidden;*/
   vertical-align: top;
 }
 .snip1445 figcaption {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  padding: 5px 10px 10px;
+  padding:10px;
 }
 .snip1445 figcaption:before,
 .snip1445 figcaption:after {
@@ -679,7 +681,7 @@ ul, menu, dir {
 }
  .latest-blog-title{
     font-size: 38px;
-    font-weight: 400;
+    font-weight: 300;
     padding-bottom: 25px;
     margin-top: 0;
     text-align: center;

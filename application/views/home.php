@@ -205,7 +205,7 @@
           <div class="col m3">
             <div class="box">
               <figure class="snip1445">
-                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="January" />
+                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
                   <div>
                     <h4>January</h4>
