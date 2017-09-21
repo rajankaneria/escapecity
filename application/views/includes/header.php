@@ -51,10 +51,10 @@
 
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a class="tab-title" href="<?php base_url(); ?>home">Home</a></li>
-           <li><a class="tab-title" href="<?php base_url(); ?>details">Details</a></li>
-           <li><a class="tab-title" href="sass.html">Booking Trips</a></li>
+           <li><a class="tab-title" href="<?php base_url(); ?>details">Tours</a></li>
+          <!-- <li><a class="tab-title" href="sass.html">Booking Trips</a></li>
           <li><a class="tab-title" href="sass.html">trekking Trips</a></li>
-          <li><a  class="tab-title" href="sass.html">Booking</a></li>
+          <li><a  class="tab-title" href="sass.html">Booking</a></li> -->
           <li><a class="tab-title" href="badges.html">Blog</a></li>
           <li><a class="tab-title" href="<?php echo base_url(); ?>about">About Us</a></li>
           <li><a class="tab-title" href="<?php echo base_url(); ?>contact">contact Us</a></li>

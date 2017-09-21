@@ -1,23 +1,25 @@
 <div id="detailpage" class="parallax-container">
   <div class="parallax">
     <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/<?php echo $tourDetail['home_banner']; ?>">
-    </div>       
+   </div>
+   <div class="container">
+     <div class="page-title" style="color:#fff"><?php echo $tourDetail['name']; ?></div>
+   </div>
+   
  </div>
-</div> 
+
  <!--===================== START full or main container container =================--> 
 <div class="fullwidth-container tab_container">
    <div class="row">
      <div class="container lohagadh_container">
         <div class="col s9 tabs-title">
-
          <ul id="tabs-swipe-demo" class="tabs">
             <li class="tab col s3 tab-title"><a  href="#test-swipe-1" class="active">DETAILS</a></li>
-            <li class="tab col s3 "><a  href="#test-swipe-2" >ITINRARY</a></li>
-            <li class="tab col s3 "><a href="#test-swipe-3" >Attractions</a></li>
+            <li class="tab col s3 "><a  href="#test-swipe-2">ITINRARY</a></li>
+            <li class="tab col s3 "><a href="#test-swipe-3">Attractions</a></li>
             <!-- <li class="tab col s3 "><a href="#test-swipe-4" >DATES</a></li> -->
             <li class="tab  col s3"><a href="#test-swipe-5" >RATES</a></li>
-            <li class="tab col s3"><a href="#map" >MAPS</a></li>
-          
+            <li class="tab col s3"><a href="#map">MAPS</a></li>          
             <li class="tab col s3 "><a href="#test-swipe-8" >PHOTOS</a></li>
           </ul>
 <!--===============================1 swipe start=====================================-->

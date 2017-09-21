@@ -396,7 +396,7 @@
     <h5 class="latest-blog-title">Latest <span>Testimonials</span></h5>
     <div class="Testimonials-area">
       <div class="carousel carousel-slider testimoni-slider center" data-indicators="true">
-        <div class="carousel-item red white" href="#one!">
+        <!-- <div class="carousel-item red white" href="#one!">
           <h2 class="testimonials-name">Firts Name</h2>
             <div class="testimonials-img">
               <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
@@ -406,29 +406,21 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
               </p>
             </div>
-        </div>
+        </div> -->
+        <?php foreach($testDetails as $key => $testRow){?>
         <div class="carousel-item red white" href="#one!">
-          <h2 class="testimonials-name">Firts Name</h2>
+          <h2 class="testimonials-name"> <?php echo $testRow['title'];?></h2> 
             <div class="testimonials-img">
-              <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
+              <img src="<?php echo base_url(); ?>html/images/testimonials/<?php echo $testRow['image'];?>" class="testi-img">
             </div>
             <div class="user-testimonials">
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                <?php echo $testRow['details'];?>
               </p>
             </div>
         </div>
-        <div class="carousel-item red white" href="#one!">
-          <h2 class="testimonials-name">Firts Name</h2>
-            <div class="testimonials-img">
-              <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="testi-img">
-            </div>
-            <div class="user-testimonials">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-              </p>
-            </div>
-        </div>
+        <?php } ?>
+       
       </div>
     </div>
   </div>

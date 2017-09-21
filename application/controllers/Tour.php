@@ -37,6 +37,9 @@ class Tour extends CI_Controller {
 		);
 		$this->load->view('template',$viewData);
 	}
+	public function all(){
+		
+	}
 	public function add(){
 
 		$this->load->model("tour_model");		
