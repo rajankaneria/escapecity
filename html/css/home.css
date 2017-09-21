@@ -739,8 +739,12 @@ p.blog-desc {
     padding: 25px;
 }
 .testimonials-img {
-    padding-top: 70px;
+    /*padding-top: 70px;*/
 }
+.carousel.carousel-slider.testimoni-slider .carousel-item{
+    height: 300px;
+}
+
 .testi-img{
     max-height: 130px;
     width: 130px;
@@ -764,7 +768,7 @@ p.blog-desc {
 }
 .testimoni-slider.carousel .indicators{
     bottom: 0px;
-    background-color: rgba(0,0,0,0.05);
+    /*background-color: rgba(0,0,0,0.05);*/
 }
 .testimoni-slider.carousel .indicators li.active{
     background-color: black !important;
