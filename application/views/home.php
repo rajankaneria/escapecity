@@ -203,7 +203,8 @@
       <div class="carousel-item" href="#one!">
         <div class="row">
           <div class="col m3">
-            <div class="box">
+
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
               <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -214,6 +215,7 @@
                 <a href="#"></a>
               </figure>
             </div>
+
           </div>
           <div class="col m3">
             <div class="box">

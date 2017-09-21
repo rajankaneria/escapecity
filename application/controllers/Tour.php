@@ -200,8 +200,29 @@ class Tour extends CI_Controller {
 		$this->Tour_model->deletebanner($deleteID);
 	}
 	public function tourByMonth($month){
+		$this->load->model("tour_model");
+		$tourDetails = $this->tour_model->toursByMonth($month,20);	
+		
+		$headerData = array(
+			"pageTitle" => "Tours",
+			"stylesheet" => array("home.css","header.css")
+		);
+		$footerData = array(
+			"jsFiles" => array("home.js","header.js")
+		);
+		$viewData = array(
+			"viewName" => "tour_details",
+            "viewData" => array("tourDetails"=>$tourDetails),
+			"headerData" => $headerData,
+			"footerData" => $footerData	
+		);
+		$this->load->view('template',$viewData);
+
+
+	}
+	public function singleTourByMonth($month){
 		$this->load->model("Tour_model");
-		$tourList=$this->Tour_model->toursByMonth($month,10);
+		$tourList=$this->Tour_model->toursByMonth($month,1);
 		var_dump($tourList);
 	}
 }
