@@ -218,7 +218,7 @@
 
           </div>
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
               <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -231,7 +231,7 @@
             </div>
           </div>
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
               <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -244,7 +244,7 @@
             </div>
           </div>
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
               <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -261,7 +261,7 @@
       <div class="carousel-item" href="#two!">
          <div class="row">
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
                <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -274,7 +274,7 @@
             </div>
           </div>
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
                <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -287,7 +287,7 @@
             </div>
           </div>
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
                <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -300,7 +300,7 @@
             </div>
           </div>
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
                <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -317,7 +317,7 @@
       <div class="carousel-item " href="#three!">
          <div class="row">
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
                <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -330,7 +330,7 @@
             </div>
           </div>
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
                <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -343,7 +343,7 @@
             </div>
           </div>
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
                <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
@@ -356,7 +356,7 @@
             </div>
           </div>
           <div class="col m3">
-            <div class="box">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
                <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
                 <figcaption>
