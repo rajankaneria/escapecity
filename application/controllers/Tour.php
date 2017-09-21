@@ -199,4 +199,9 @@ class Tour extends CI_Controller {
 		$this->load->model("Tour_model");
 		$this->Tour_model->deletebanner($deleteID);
 	}
+	public function tourByMonth($month){
+		$this->load->model("Tour_model");
+		$tourList=$this->Tour_model->toursByMonth($month,10);
+		var_dump($tourList);
+	}
 }
