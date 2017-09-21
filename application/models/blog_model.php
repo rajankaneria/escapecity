@@ -32,6 +32,12 @@ class Blog_model extends CI_Model
 		$result=$query->row_array();
 		return $result;
 	}
+
+	public function latestBlog(){
+		$query = $this->db->query("select * from blog order by id desc limit 1");
+		$result = $query->row_array();
+		return $result;
+	}
 }
 
 ?>
