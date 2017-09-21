@@ -379,18 +379,32 @@
 <div class="row">
   <div class="col s12 m6">
     <h5 class="latest-blog-title">Latest <span>Blog</span></h5>
-      <div class="blog-area">
+
+
+    <div class="blog-item">
+        <div class="blog-image-container"><img src="<?php echo base_url(); ?>html/images/blog/<?php echo $latestBlog["image"]; ?>" class="responsive-img"></div>
+        <div class="blog-details">
+          <div class="blog-main-title"><?php echo $latestBlog["title"]; ?></div>
+          <div style="overflow: hidden;">
+            <div class="blog-date">21st September, 2017</div>
+            <div class="blog-author">- by <span><?php echo "John Doe"; ?></span></div>
+          </div>
+          <p class="blog-content"><?php echo substr($latestBlog["details"],0,500); ?>...</p>
+        </div>
+    </div>
+
+      <!--
+      <div class="blog-area z-depth-1">
         <div class="blog-bg-img">
-          <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" class="responsive-img">
+          <img src="<?php echo base_url(); ?>html/images/blog/<?php echo $latestBlog["image"]; ?>" class="responsive-img">
         </div>
         <div class="blog-description">
-            <h5 class="blog-title">Blog Title</h5>
-            <p class="blog-desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+            <h5 class="blog-title"><?php echo $latestBlog["title"]; ?></h5>
+            <p class="blog-desc"><?php echo substr($latestBlog["details"],0,700); ?>...</p>
             <div class="readMore-btn"><center><button class="btn btn-black">Read More</button></center></div>
         </div>
       </div>
+    -->
   </div>
   <div class="col s12 m6">
     <h5 class="latest-blog-title">Latest <span>Testimonials</span></h5>

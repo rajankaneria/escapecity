@@ -42,7 +42,7 @@ class Blog extends CI_Controller
 		$this->blog_model->updateBlog($updateData,$blogId);	
 
 	    //set configuration for the upload library	    
-	    $config['upload_path']='C:\xampp\htdocs\Escapcity-new\html\images\blog';
+	    $config['upload_path']='C:\wamp\www\escapecity\html\images\blog';
 	    $config['allowed_types']='gif|jpg|png';
 	    $config['overwrite']=TRUE;
 	    $config['remove_spaces']=TRUE;
@@ -67,7 +67,7 @@ class Blog extends CI_Controller
 		if($_FILES['image']['name']!=""){
 
 			$result['image']=$blogImage;
-			$config['upload_path']='C:\xampp\htdocs\Escapcity-new\html\images\blog';
+			$config['upload_path']='C:\wamp\www\escapecity\html\images\blog';
 			$config['allowed_types']='gif|png|jpg';
 			$config['overwrite']=TRUE;
 			$config['remove_spaces']=TRUE;
