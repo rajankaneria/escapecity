@@ -2,7 +2,7 @@
 /**
 * 
 */
-class tours extends CI_Controller
+class Tours extends CI_Controller
 {
 	
 	public function index()

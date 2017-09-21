@@ -151,6 +151,7 @@ class Tour_model extends  CI_Model{
 			$toTimestamp = strtotime("1-".$tourRow["period_to"]."-".date("Y"));
 			$fromTimestamp = strtotime("1-".$tourRow["period_from"]."-".date("Y"));
 			if($fromTimestamp <= $timestampToCompare && $toTimestamp >= $timestampToCompare){
+				$tourRow["tour_name"] = $tourRow["tour_type"];
 				$output[] = $tourRow;
 				$tourCount++;
 			}
