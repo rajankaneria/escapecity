@@ -1,9 +1,9 @@
 <div id="detailpage" class="parallax-container">
   <div class="parallax">
-    <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/<?php echo $tourDetail['home_banner']; ?>">
+    <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/<?php echo $tourDetails[0]['home_banner']; ?>">
    </div>
    <div class="container">
-     <div class="page-title" style="color:#fff"><?php echo $tourDetail['name']; ?></div>
+     <div class="page-title" style="color:#fff">Tours</div>
    </div>   
  </div> 
 <div class="container">
