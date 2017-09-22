@@ -35,7 +35,7 @@
 
    <nav id="myHeader">
       <div class="nav-wrapper">
-        <a href="<?php base_url(); ?>home" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
+        <a href="<?php echo base_url(); ?>home" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
 
         <!-- Mobile Navigation area -->
          <ul id="slide-out" class="side-nav">
