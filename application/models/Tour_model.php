@@ -129,21 +129,41 @@ class Tour_model extends  CI_Model{
 			$check=array("status"=>"fail","message"=>"Login fail..");
 		}
 		return $check;
+	}
+	public function forceDeleteTour($tourID){
+		$this->db->query("delete from attractions where tour_id='$tourID'");
+		$this->db->query("delete from photos where tour_id='$tourID'");
+		$this->db->query("delete from price where tour_id='$tourID'");
+		$this->db->query("delete from itinrary where tour_id='$tourID'");
+		$this->db->query("delete from banner where tour_id='$tourID'");
+		$this->db->query("delete from rate where tour_id='$tourID'");
+		$this->db->query("delete from itinrary where tour_id='$tourID'");
+		$this->db->query("delete from date where tour_id='$tourID'");
+		$this->db->query("delete from tours where id='$tourID'");
+	}
+
+	public function toursByMonth($month,$count){
+		$tourList = $this->tourList();
+		$timestampToCompare = strtotime("1-".$month."-".date("Y"));
+		$output = array();
+		$tourCount = 0;
+		foreach ($tourList as $key => $tourRow) {
+			$toTimestamp = strtotime("1-".$tourRow["period_to"]."-".date("Y"));
+			$fromTimestamp = strtotime("1-".$tourRow["period_from"]."-".date("Y"));
+			if($fromTimestamp <= $timestampToCompare && $toTimestamp >= $timestampToCompare){
+				$tourRow["tour_name"] = $tourRow["tour_type"];
+				$output[] = $tourRow;
+				$tourCount++;
+			}
+			if($tourCount>=$count){
+				break;
+			}
 		}
-		public function forceDeleteTour($tourID){
-			$this->db->query("delete from attractions where tour_id='$tourID'");
-			$this->db->query("delete from photos where tour_id='$tourID'");
-			$this->db->query("delete from price where tour_id='$tourID'");
-			$this->db->query("delete from itinrary where tour_id='$tourID'");
-			$this->db->query("delete from banner where tour_id='$tourID'");
-			$this->db->query("delete from rate where tour_id='$tourID'");
-			$this->db->query("delete from itinrary where tour_id='$tourID'");
-			$this->db->query("delete from date where tour_id='$tourID'");
-			$this->db->query("delete from tours where id='$tourID'");
-		}
+		return $output;
+	}
 
 		
-	}
+}
 
 	
 

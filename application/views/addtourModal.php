@@ -48,7 +48,7 @@
 			<div class="row">
 	        <div class="input-field col s6 m6">			  
 			 <select name="period_to" id="period_to">
-			  <option>Period To</option>			  
+			  <option>Period From</option>			  
 			  <option value="January">January</option>
 			  <option value="February">February</option>	
 			  <option value="March">March</option>
@@ -66,7 +66,7 @@
 		  
 	        <div class="input-field col s6 m6">			  
 			  <select name="period_from" id="period_from">
-			  <option>Period From</option>			  
+			  <option>Period To</option>			  
 			  <option value="January">January</option>
 			  <option value="February">February</option>
 			  <option value="March">March</option>
