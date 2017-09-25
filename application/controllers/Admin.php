@@ -189,4 +189,90 @@ class Admin extends CI_Controller {
    		$this->tour_model->forceDeleteTour($tourID);
 	}
 
+	public function Month(){
+	$this->load->model("tour_model");
+	$monthDetails = $this->tour_model->allMonthDetails();	
+	
+	$headerData = array(
+		"pageTitle" => "Month",
+		"stylesheet" => array("admin.css","header.css")
+	);
+	$footerData = array(
+		"jsFiles" => array("header.js","admin.js","tinymce/jquery.tinymce.min.js")
+	);
+	$viewData = array(
+		"viewName" => "month-dashboard",
+        "viewData" => array("monthDetails"=>$monthDetails),
+		"headerData" => $headerData,
+		"footerData" => $footerData	
+	);
+	$this->load->view('admin-templete',$viewData);
+
+
+	}
+
+
+	public function addMonth(){
+		$this->load->model("tour_model");
+		//$description =str_replace("'","\'",$_POST['description']);
+		$result=array(
+			"month"=>$_POST['month'],
+			"title"=>$_POST['title'],
+			"description"=>$_POST['description']
+		);
+		$monthId=$this->tour_model->addMonth($result);
+
+		$monthImage=$monthId."_monthImage.".pathinfo($_FILES['image']['name'],PATHINFO_EXTENSION);
+		$updateMonth=array('image'=>$monthImage);
+		$this->tour_model->updateMonth($updateMonth,$monthId);
+
+		$config["upload_path"]='C:\wamp\www\Escapcity-new\html\images\tours';
+		$config["allowed_types"]='gif|png|jpg';
+		$config["file_name"]=$monthId."_monthImage";
+		$config["remove_spaces"]=TRUE;
+		$config["encrypt_name"]=FALSE;
+		$config['overwrite']=TRUE;
+
+		$this->load->library('upload',$config);
+		$this->upload->do_upload('image');
+	}
+
+	public function updateMonth(){
+		$this->load->model("tour_model");
+		$monthId=$_POST['month-id'];
+		$result=array(
+			"month"=>$_POST['month'],
+			"title"=>$_POST['title'],
+			"description"=>$_POST['description']
+		);
+
+		$monthImage="_monthImage.".pathinfo($_FILES['image']['name'],PATHINFO_EXTENSION);
+
+		if($_FILES['image']['name']!=""){
+			$result['image']=$monthImage;
+
+			$config['upload_path']='C:\wamp\www\Escapcity-new\html\images\tours';
+			$config['file_name']=$monthId."_monthImage";
+			$config['allowed_types']="gif|jpg|png";
+			$config['remove_spaces']=TRUE;
+			$config['encrypt_name']=FALSE;
+			$config['overwrite']=TRUE;
+			$this->load->library("upload",$config);
+			$this->upload->do_upload('image');			
+		}
+		$this->tour_model->updateMonth($result,$monthId);
+		}
+
+		public function deleteMonth($monthId){
+			$this->load->model("tour_model");
+			$this->tour_model->deleteMonth($monthId);
+		}
+		public function editMonth($monthId){
+			$this->load->model("tour_model");
+			$result=$this->tour_model->editMonthDetail($monthId);
+			//var_dump($result);
+			$this->load->view("updateMonth",$result);
+		}
+
+
 }

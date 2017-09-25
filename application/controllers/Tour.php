@@ -225,4 +225,6 @@ class Tour extends CI_Controller {
 		$tourList=$this->Tour_model->toursByMonth($month,1);
 		var_dump($tourList);
 	}
+
+	
 }
