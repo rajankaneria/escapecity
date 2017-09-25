@@ -11,7 +11,7 @@ $(function(){
 
 $(window).scroll(function () {
     var sc = $(window).scrollTop()
-    if (sc > 100) {
+    if (sc > 0) {
     	$("#myHeader").addClass("myHeader-fixed");
     	
     } else {

@@ -7,7 +7,7 @@
   transition: -webkit-transform .195s ease-in;
   transition: transform .195s ease-in;
   transition: transform .195s ease-in, -webkit-transform .195s ease-in;
-  animation:slide-up 0.3s;
+  animation:slide-up 0.1s;
 }
 @keyframes slide-up {
     0% {
@@ -242,7 +242,12 @@ nav .button-collapse{
 		line-height: 2rem !important;
 	}
 }
-
+.page-title{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 180px;
+    width: 100%;
+}
 /*============== Responsive for teblate ==========*/
 @media(max-width: 1024px) {
 	#mobileSlider.carousel .carousel-item{
