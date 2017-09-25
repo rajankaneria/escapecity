@@ -2,7 +2,7 @@
     <form id="updateMonthForm" method="post" enctype="multipart/form-data">
       <div class="row">
       <div class="input-field col s12 m12">       
-       <select name="month" id="month" style="display: block;">
+       <select name="month" id="month">
         <option>Select Month</option>        
         <option  <?php if($month=='1'){echo "selected='selected'";} ?> value="1">January</option>
         <option  <?php if($month=='2'){echo "selected='selected'";} ?> value="2">February</option>  

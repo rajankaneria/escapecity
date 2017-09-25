@@ -202,6 +202,7 @@ class Tour extends CI_Controller {
 	public function tourByMonth($month){
 		$this->load->model("tour_model");
 		$tourDetails = $this->tour_model->toursByMonth($month,20);	
+		$allMonthDetails = $this->tour_model->allMonthDetails();
 		
 		$headerData = array(
 			"pageTitle" => "Tours",
@@ -212,7 +213,7 @@ class Tour extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "tour_details",
-            "viewData" => array("tourDetails"=>$tourDetails),
+            "viewData" => array("tourDetails"=>$tourDetails,"allMonthDetails"=>$allMonthDetails),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);

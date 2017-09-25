@@ -28,7 +28,7 @@
     <script src="https://use.fontawesome.com/4c9f41dc36.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-      <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+ <!--      <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script> -->
    
 
 </head>

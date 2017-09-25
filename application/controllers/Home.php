@@ -12,9 +12,11 @@ class Home extends CI_Controller {
 		$this->load->model("blog_model");
 		//$tourDataByID = $this->tour_model->tourDetails($tourid);
 		$tourDetails = $this->tour_model->tourname();
+		$allMonthDetails = $this->tour_model->allMonthDetails();
 		$testDetails=$this->testimonial_model->testDetails();
 		$blogDetails=$this->blog_model->blogDetails();
 		$latestBlog = $this->blog_model->latestBlog();
+		
 
 		
 		$headerData = array(
@@ -26,7 +28,7 @@ class Home extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "home",
-            "viewData" => array("tourDetails"=>$tourDetails,"testDetails"=>$testDetails,"blogDetails"=>$blogDetails,"latestBlog"=>$latestBlog),
+            "viewData" => array("tourDetails"=>$tourDetails,"testDetails"=>$testDetails,"blogDetails"=>$blogDetails,"latestBlog"=>$latestBlog,"allMonthDetails"=>$allMonthDetails),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);

@@ -11,13 +11,13 @@ $(function(){
 
 
 
-	/*$('#details').val('');
+	$('#details').val('');
   	$('#details').trigger('autoresize');
 
   	$('#msg').val('');
-  	$('#msg').trigger('autoresize');*/
+  	$('#msg').trigger('autoresize');
 
-  	tinymce.init({ selector:'textarea' });
+/*  	tinymce.init({ selector:'textarea' });*/
 
 
 	//edit modal open

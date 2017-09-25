@@ -200,65 +200,42 @@
   </div>
   <div class="tourByMonth-area">
     <div class="carousel carousel-slider tmb-slider center" data-indicators="true">
-      <div class="carousel-item" href="#one!">
-        <div class="row">
-          <div class="col m3">
+      <?php 
+        
+        $output = [
+          array_slice($allMonthDetails,0,4),
+          array_slice($allMonthDetails,3,4),
+          array_slice($allMonthDetails,7,4)
+        ];
+       
+      ?>      
+        <?php foreach($output as $key=>$monthArray){ ?>
+        <div class="carousel-item" href="#one!">
+        <div class="row">  
+        <?php foreach($monthArray as $monthKey=>$monthRow){ 
 
+           $monthNum = $monthRow['month'];
+         $monthName = date("F", mktime(0, 0, 0, $monthNum, 10));?>
+        <div class="col m3">
             <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
               <figure class="snip1445">
-                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
+                <img src="<?php echo base_url(); ?>html/images/tours/<?php echo $monthRow['image']; ?>" alt="<?php echo base_url(); ?>html/images/<?php echo $monthRow['image']; ?> not found" />
                 <figcaption>
                   <div>
-                    <h4>January</h4>
-                  </div>
-                </figcaption>
-                <a href="#"></a>
-              </figure>
-            </div>
-
-          </div>
-          <div class="col m3">
-            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
-              <figure class="snip1445">
-                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
-                <figcaption>
-                  <div>
-                    <h4>February</h4>
+                    <h4><?php echo $monthName; ?></h4>
                   </div>
                 </figcaption>
                 <a href="#"></a>
               </figure>
             </div>
           </div>
-          <div class="col m3">
-            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
-              <figure class="snip1445">
-                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
-                <figcaption>
-                  <div>
-                    <h4>March</h4>
-                  </div>
-                </figcaption>
-                <a href="#"></a>
-              </figure>
-            </div>
-          </div>
-          <div class="col m3">
-            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
-              <figure class="snip1445">
-                <img src="<?php echo base_url(); ?>html/images/image-holder.jpg" alt="sample84" />
-                <figcaption>
-                  <div>
-                    <h4>April</h4>
-                  </div>
-                </figcaption>
-                <a href="#"></a>
-              </figure>
-            </div>
-          </div>
+        <?php } ?>
         </div>
       </div>
-      <div class="carousel-item" href="#two!">
+        <?php } ?>
+
+
+      <!-- <div class="carousel-item" href="#two!">
          <div class="row">
           <div class="col m3">
             <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
@@ -369,7 +346,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
   </div>
         
       

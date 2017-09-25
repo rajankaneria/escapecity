@@ -3,9 +3,18 @@
     <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/<?php echo $tourDetails[0]['home_banner']; ?>">
    </div>
    <div class="container">
-     <div class="page-title" style="color:#fff;">Tours</div>
+    <?php foreach($allMonthDetails as $key => $allMonthRow) { 
+
+         $monthNum = $allMonthRow['month'];
+         $monthName = date("F", mktime(0, 0, 0, $monthNum, 10));
+         //echo $monthName; // Output: May
+
+      ?>
+     <div class="page-title" style="color:#fff;">Tours in <?php echo $monthName; ?></div>
+     <?php } ?>
    </div>   
  </div> 
+
 
 <!-- Tour Details Start Here -->
 
@@ -13,15 +22,16 @@
   <div class="TBM-area">
     <!-- Tour Details Area -->
     <div class="col s12 m9 TBM-details-area">
-      
+      <?php foreach($allMonthDetails as $key => $allMonthRow){ ?>
       <div class="TBM-title">
-        <h5>BEST ADVENTURE TRIPS IN <span>JANUARY</span> IN INDIA</h5>
+        <h5><?php echo $allMonthRow['title']; ?></h5>
       </div>
       <div class="TBM-description">
         <p>
-          If you are thinking about trekking in India in January, then we will assist you to select the proper treks which best suits you in terms of safety and as well as weather point of view. Here you can find the list of trekking tours suitable in January 2017.
+          <?php echo $allMonthRow['description']; ?>
         </p>
       </div>
+      <?php } ?>
 
       <!-- List of tour -->
       <div class="row tourList-area-block">
