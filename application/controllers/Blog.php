@@ -88,8 +88,6 @@ class Blog extends CI_Controller
 		$this->load->model("blog_model");
 		$data=$this->blog_model->editBlog($blogID);
 		$this->load->view("updateBlog",$data);
-
-
 	}
 }
 			

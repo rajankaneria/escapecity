@@ -1,0 +1,29 @@
+.blogs-area{
+	padding: 25px;
+}
+.blogs-content-block{
+	padding: 25px;
+	background: #fff;
+	border: 1px solid rgba(175, 175, 175, 0.83);
+}
+.img-area img{
+	width: 100%;
+	height: auto;
+}
+.content-area h5{
+	margin-top: 0px;
+}
+.blog-desc p{
+	text-align: justify;
+}
+.blog-desc {
+    max-height: 100px;
+    overflow: hidden;
+}
+.btn-read-more {
+    background: #141414;
+    color: #9bb2ca;
+    padding: 0px 20px;
+    border: 1px solid rgba(140, 140, 140, 0.47);
+    margin-top: 20px;
+}

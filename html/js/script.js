@@ -1,7 +1,7 @@
 $(function(){
 	$(".modal").modal();
 	$('select').material_select();
-
+     $('.parallax').parallax();
     // CKEDITOR.replace('editor');
 
 	/**Navigationd **/
