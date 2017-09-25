@@ -9,8 +9,16 @@ $(function(){
 		$("#addtourModal").modal("open");
 	});
 
-	$('#details').val('');
-  	$('#details').trigger('autoresize')
+
+
+	/*$('#details').val('');
+  	$('#details').trigger('autoresize');
+
+  	$('#msg').val('');
+  	$('#msg').trigger('autoresize');*/
+
+  	tinymce.init({ selector:'textarea' });
+
 
 	//edit modal open
 	$(".tour-edit-btn").on("click",function(){
@@ -21,9 +29,7 @@ $(function(){
 			$('select').material_select();
 			Materialize.updateTextFields();
 		});
-
 	});
-
 
 	$(".tour-delete-btn").on("click",function(){
 		var tourID = $(this).data("tour-id");
@@ -217,6 +223,104 @@ $(function(){
 		});
 
 	});
+
+	/*FOR CONTACT PAGE*/
+	$("#send").on("click",function(){
+	var data={
+		"fullname":$("#fullname").val(),
+		"email":$("#email").val(),
+		"mobile":$("#mobile").val(),
+		"msg":$("#msg").val()
+		};
+		$.post(baseURL+"contact/insertData/",{data:data},function(data){
+			var data=$.parseJSON(data);
+			if(data.status=="ok"){
+				alert("Your Inquiry has been sent....Thank you");
+				window.location.href="#!";
+			}else if(data.status=="fail"){
+				alert("Your Inquiry has been sent fail...");
+				window.location.href="#!";
+			}
+			else{
+				console.log(data);
+			}
+
+		});
+		$("#contact input").val("");
+		$("#contact textarea").val("");
+		$("#send").val("Send");
+
+	});
+
+	//ADD Month
+
+	$("#addMonth").on("click",function(){
+		$("#addMonthModal").modal('open');
+
+	});
+
+	$("#sendMonthData").on("click",function(){
+		var  formData=new FormData($("#addMonthForm")[0]);
+
+		$.ajax({
+			url:baseURL+"admin/addMonth/",
+			data:formData,
+			type:"POST",
+			contentType:false,
+			processData:false,
+			success:function(result){
+				//alert("Month added successfully......");
+				//window.location.reload();
+			}
+
+		});
+
+	});
+
+
+
+	$("#updateMonth").on("click",function(){
+		var formdata = new FormData($("#updateMonthForm")[0]);
+		$.ajax({
+			url:baseURL+"admin/updateMonth/",
+			data:formdata,
+			type:"POST",
+			processData:false,
+			contentType:false,
+			success:function(result){
+				//alert("Month Updated successfully....");
+				//window.location.reload();
+			}
+
+		});
+
+	});
+
+	$(".delete-month-btn").on("click",function(){
+		var monthID=$(this).data('month-id');
+		if(confirm("Do you want to delete this data.. ?")){
+		$.post(baseURL+"admin/deleteMonth/"+monthID,function(data){
+			$("#month-id"+monthID).remove();
+		});
+		}
+
+	});
+
+
+
+	$(".edit-month-btn").on("click",function(){		
+		$("#editMonthModal").modal('open');
+		$("#editMonthModal .modal-content").html("");
+
+		var monthID=$(this).data('month-id');
+		$.post(baseURL+"admin/editMonth/"+monthID,function(data){
+			$("#editMonthModal .modal-content").html(data);
+			Materialize.updateTextFields();
+		});
+
+	});
+
+
 
 });
 

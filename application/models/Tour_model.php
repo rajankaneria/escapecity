@@ -161,7 +161,42 @@ class Tour_model extends  CI_Model{
 		}
 		return $output;
 	}
+	public function insertData($data){
+		$query=$this->db->insert("contact",$data);
+		if($query){
+			$check=array("status"=>"ok","message"=>"Inquiry has been sent....");
+		}
+		else{
+			$check=array("status"=>"fail","message"=>"Inquiry has been sent fail....");
+		}
+		return $check;
+	}	
 
+	public  function addMonth($monthData){
+		$this->db->insert("month",$monthData);
+		$id=$this->db->insert_id();
+		return $id;
+	}
+	public function updateMonth($monthData,$monthID){
+		$this->db->where("id",$monthID);
+		$this->db->update("month",$monthData);
+	}
+	public function deleteMonth($monthID){
+		$this->db->where("id",$monthID);
+		$this->db->delete("month");
+	}
+	public function editMonthDetail($monthID){
+		$query=$this->db->query("select * from month where id='$monthID' ");
+		$result=$query->row_array();
+		return $result;
+
+	}
+	public function allMonthDetails(){
+		$query=$this->db->query("select * from month");
+		$result=$query->result_array();
+		return $result;
+	}
+		
 		
 }
 

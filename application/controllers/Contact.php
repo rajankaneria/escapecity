@@ -7,11 +7,11 @@ class Contact extends CI_Controller {
 	public function index()
 	{		
 		$headerData = array(
-			"pageTitle" => "Contatc",
+			"pageTitle" => "Contact",
 			"stylesheet" => array("contact.css","header.css")
 		);
 		$footerData = array(
-			"jsFiles" => array("contact.js","header.js")
+			"jsFiles" => array("admin.js","header.js")
 		);
 		$viewData = array(
 			"viewName" => "contact",
@@ -20,5 +20,12 @@ class Contact extends CI_Controller {
 			"footerData" => $footerData	
 		);
 		$this->load->view('template',$viewData);
+	}
+	public function insertData(){
+		$data=$_POST["data"];
+		$this->load->model("tour_model");
+		$output=$this->tour_model->insertData($data);
+		echo json_encode($output);
+
 	}
 }
