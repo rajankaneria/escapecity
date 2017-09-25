@@ -2,20 +2,20 @@
     <form id="updateMonthForm" method="post" enctype="multipart/form-data">
       <div class="row">
       <div class="input-field col s12 m12">       
-       <select name="month" id="month">
+       <select name="month" id="month" style="display: block;">
         <option>Select Month</option>        
-        <option  <?php if($month=='1'){echo "selected='selected'";}?> value="1">January</option>
-        <option  <?php if($month=='2'){echo "selected='selected'";}?> value="2">February</option>  
-        <option  <?php if($month=='3'){echo "selected='selected'";}?> value="3">March</option>
-        <option  <?php if($month=='4'){echo "selected='selected'";}?> value="4">April</option>
-        <option  <?php if($month=='5'){echo "selected='selected'";}?> value="5">May</option>
-        <option  <?php if($month=='6'){echo "selected='selected'";}?> value="6">June</option>
-        <option  <?php if($month=='7'){echo "selected='selected'";}?> value="7">July</option>
-        <option  <?php if($month=='8'){echo "selected='selected'";}?> value="8">August</option>
-        <option  <?php if($month=='9'){echo "selected='selected'";}?> value="9">September</option>      
-        <option  <?php if($month=='10'){echo "selected='selected'";}?> value="10">October</option>
-        <option  <?php if($month=='11'){echo "selected='selected'";}?> value="11">November</option>
-        <option  <?php if($month=='12'){echo "selected='selected'";}?> value="12">December</option>     
+        <option  <?php if($month=='1'){echo "selected='selected'";} ?> value="1">January</option>
+        <option  <?php if($month=='2'){echo "selected='selected'";} ?> value="2">February</option>  
+        <option  <?php if($month=='3'){echo "selected='selected'";} ?> value="3">March</option>
+        <option  <?php if($month=='4'){echo "selected='selected'";} ?> value="4">April</option>
+        <option  <?php if($month=='5'){echo "selected='selected'";} ?> value="5">May</option>
+        <option  <?php if($month=='6'){echo "selected='selected'";} ?> value="6">June</option>
+        <option  <?php if($month=='7'){echo "selected='selected'";} ?> value="7">July</option>
+        <option  <?php if($month=='8'){echo "selected='selected'";} ?> value="8">August</option>
+        <option  <?php if($month=='9'){echo "selected='selected'";} ?> value="9">September</option>      
+        <option  <?php if($month=='10'){echo "selected='selected'";} ?> value="10">October</option>
+        <option  <?php if($month=='11'){echo "selected='selected'";} ?> value="11">November</option>
+        <option  <?php if($month=='12'){echo "selected='selected'";} ?> value="12">December</option>     
         </select>     
       </div>
     </div>

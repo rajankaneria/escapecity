@@ -198,7 +198,7 @@ class Admin extends CI_Controller {
 		"stylesheet" => array("admin.css","header.css")
 	);
 	$footerData = array(
-		"jsFiles" => array("header.js","admin.js")
+		"jsFiles" => array("header.js","admin.js","tinymce/jquery.tinymce.min.js")
 	);
 	$viewData = array(
 		"viewName" => "month-dashboard",
@@ -214,6 +214,7 @@ class Admin extends CI_Controller {
 
 	public function addMonth(){
 		$this->load->model("tour_model");
+		//$description =str_replace("'","\'",$_POST['description']);
 		$result=array(
 			"month"=>$_POST['month'],
 			"title"=>$_POST['title'],
@@ -225,7 +226,7 @@ class Admin extends CI_Controller {
 		$updateMonth=array('image'=>$monthImage);
 		$this->tour_model->updateMonth($updateMonth,$monthId);
 
-		$config["upload_path"]='C:\xampp\htdocs\Escapcity-new\html\images\tours';
+		$config["upload_path"]='C:\wamp\www\Escapcity-new\html\images\tours';
 		$config["allowed_types"]='gif|png|jpg';
 		$config["file_name"]=$monthId."_monthImage";
 		$config["remove_spaces"]=TRUE;
@@ -250,7 +251,7 @@ class Admin extends CI_Controller {
 		if($_FILES['image']['name']!=""){
 			$result['image']=$monthImage;
 
-			$config['upload_path']='C:\xampp\htdocs\Escapcity-new\html\images\tours';
+			$config['upload_path']='C:\wamp\www\Escapcity-new\html\images\tours';
 			$config['file_name']=$monthId."_monthImage";
 			$config['allowed_types']="gif|jpg|png";
 			$config['remove_spaces']=TRUE;
