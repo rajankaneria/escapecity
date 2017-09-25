@@ -14,7 +14,7 @@ class Tours extends CI_Controller
 		
 		$headerData = array(
 			"pageTitle" => "Tours",
-			"stylesheet" => array("home.css","header.css")
+			"stylesheet" => array("home.css","header.css","tourByMonth.css")
 		);
 		$footerData = array(
 			"jsFiles" => array("home.js","header.js")

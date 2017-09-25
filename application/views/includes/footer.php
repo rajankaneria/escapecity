@@ -1,4 +1,9 @@
  <footer class="page-footer">
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="<?php echo base_url(); ?>html/images/lapti.jpg">
+  </div> 
   <div class="footer-area">
     <div class="row">
       <div class="col m4 s12 trip-area">
@@ -53,6 +58,7 @@
       </div>
     </div>
   </div>
+</div>
   <div class="footer-copyright">
     <div class="footer-copyright-area">
     © 2017 <a href="#">escapcity.com</a> | all Rights reserved. &nbsp;&nbsp;

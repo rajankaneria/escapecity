@@ -540,7 +540,9 @@ ul, menu, dir {
 .carousel.tmb-slider{
     height: 300px !important;
 }
-
+/*.box {
+ 
+}*/
 .snip1445 {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
@@ -551,6 +553,7 @@ ul, menu, dir {
     /* width: 100%; */
     color: #ffffff;
     text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.21);
     font-size: 16px;
     background-color: #000;
 }
