@@ -30,8 +30,8 @@
                     <td>  <img src="<?php echo base_url() ?>html/images/<?php echo $banner['banner']; ?>" width="150" height="150"/></td>
                      
                     <td class="right-align tour-btn">
-                      <a data-banner-id="<?php echo $banner['id']; ?>" class="btn-floating waves-effect waves-light blue-grey banner-edit-btn"><i class="material-icons">mode_edit</i></a>
-                      <a data-banner-id="<?php echo $banner['id']; ?>" class="btn-floating waves-effect waves-light red banner-delete-btn"><i class="material-icons">delete</i></a>
+                      <a data-banner-id="<?php echo $banner['id']; ?>" class="btn-floating waves-effect waves-light  banner-edit-btn"><i class="material-icons edit-icon">mode_edit</i></a>
+                      <a data-banner-id="<?php echo $banner['id']; ?>" class="btn-floating waves-effect waves-light   banner-delete-btn"><i class="material-icons delete-icon">delete</i></a>
                     </td>
                   </tr>
             <?php } ?>
