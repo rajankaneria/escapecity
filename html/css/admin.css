@@ -41,6 +41,25 @@ nav .nav-wrapper{
   right: 50px;
   top: 170px;
 }
+.long-btn{
+  width: 100%;
+}
+.btn-add {
+    background: #000 !important;
+    color: #fff;
+    border: 1px solid #000 !important;
+    width: 100%;
+}
+.btn-upload {
+    background: #eee;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: rgb(78, 78, 78);
+    width: 100%;
+}
+.btn-upload:hover{
+  background: #eee !important;
+}
 section.content {
   padding: 25px;
   -moz-transition: 0.5s;

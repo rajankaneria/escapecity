@@ -24,12 +24,12 @@ $(function(){
 
 $(window).scroll(function () {
     var sc = $(window).scrollTop()
-    if (sc > 0) {
-    	$("#myHeader").addClass("myHeader-fixed");
+    if (sc > 200) {
+    	$("#myHeader").addClass("myHeader-fixed",2000);
     	
     } else {
         $("#myHeader").removeClass("myHeader-fixed");
-        $("#myHeader").addClass("myHeader");
+        /*$("#myHeader").addClass("myHeader");*/
         
     }
 });

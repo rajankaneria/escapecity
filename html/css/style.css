@@ -23,11 +23,11 @@
 .myHeader-fixed{
 	position: fixed;
 	z-index: 2;
-    -webkit-transition: -webkit-transform .195s ease-in;
-  transition: -webkit-transform .195s ease-in;
-  transition: transform .195s ease-in;
-  transition: transform .195s ease-in, -webkit-transform .195s ease-in;
-  animation:slide-down 0.7s;
+    -webkit-transition: -webkit-transform .195s ease-in !important;
+  transition: -webkit-transform .195s ease-in !important;
+  transition: transform .195s ease-in !important;
+  transition: transform .195s ease-in, -webkit-transform .195s ease-in !important;
+  animation:slide-down 0.7s !important;
 }
 @keyframes slide-down {
     0% {
