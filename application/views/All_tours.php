@@ -2,34 +2,14 @@
   <div class="parallax">
     <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/<?php echo $tourDetails[0]['home_banner']; ?>">
    </div>
-   <div class="container">
-   <?php foreach ($singleMonth as $key => $singleMonthRow) {  
-
-         $monthNum = $singleMonthRow['month'];
-         $monthName = date("F", mktime(0, 0, 0, $monthNum, 10));
-      ?>
-     <div class="page-title" style="color:#fff;">Tours in  <?php echo $monthName; ?></div>
-     <?php } ?>
-   </div>   
+     
  </div>
 
 <!-- Tour Details Start Here -->
 
 <div class="row">
-  <div class="TBM-area">
-    <!-- Tour Details Area -->
+  <div class="TBM-area">   <!-- Tour Details Area -->
     <div class="col s12 m9 TBM-details-area">
-      <?php foreach ($singleMonth as $key => $singleMonthRow) { ?>  
-      <div class="TBM-title">
-        <h5><?php echo $singleMonthRow['title']; ?></h5>
-      </div>
-      <div class="TBM-description">
-        <p>
-         
-          <?php echo $singleMonthRow['description']; ?>
-        </p>
-      </div>
-      <?php } ?>
 
       <!-- List of tour -->
       <div class="row tourList-area-block">

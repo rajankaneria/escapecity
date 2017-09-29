@@ -196,7 +196,11 @@ class Tour_model extends  CI_Model{
 		$result=$query->result_array();
 		return $result;
 	}
-		
+	public function singleMonth($month){
+		$query=$this->db->query("select * from month where month='$month' ");
+		$result=$query->result_array();
+		return $result;
+	}
 		
 }
 

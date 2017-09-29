@@ -214,10 +214,10 @@
         <div class="row">  
         <?php foreach($monthArray as $monthKey=>$monthRow){ 
 
-           $monthNum = $monthRow['month'];
+         $monthNum = $monthRow['month'];
          $monthName = date("F", mktime(0, 0, 0, $monthNum, 10));?>
         <div class="col m3">
-            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/January/'">
+            <div class="box" onclick="window.location.href='<?php echo base_url(); ?>tour/tourByMonth/<?php echo  $monthNum; ?>/'">
               <figure class="snip1445">
                 <img src="<?php echo base_url(); ?>html/images/tours/<?php echo $monthRow['image']; ?>" alt="<?php echo base_url(); ?>html/images/<?php echo $monthRow['image']; ?> not found" />
                 <figcaption>

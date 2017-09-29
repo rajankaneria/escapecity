@@ -38,7 +38,7 @@
 	<div class="col s12 m6">
 		<div class="quick-link-area">
 			<div class="row">
-				<div class="col s12 m6 operator-office">
+				<div class="col s12 m12 operator-office">
 					<h5>Office Addres</h5>
 					<address>
 						Intelliworkz Business Solutions 
@@ -50,19 +50,22 @@
 			</div>
 			<div class="row">
 				<div class="phone col s12 m6">
-					<label>Call Us</label><hr>
+					<label>Call Us</label><hr style="border-color: #ded8d8 !important;
+    border-top: none;">
 					<i class="fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 98796 36303</i>
 					<i class="fa fa-phone-square" aria-hidden="true">&nbsp;  (+91) 94278 01299</i>
 				</div>
 				<div class="e-mail col s12 m6">
-					<label>Mail us</label><hr>
+					<label>Mail us</label><hr style="border-color: #ded8d8 !important;
+    border-top: none;">
 					<a href="mailto:info@escapcity.com"><i class="fa fa-envelope" aria-hidden="true">&nbsp; info@escapcity.com</i></a>
 					<a href="mailto:escapcity@gmail.com"><i class="fa fa-envelope" aria-hidden="true">&nbsp; escapcity@gmail.com</i></a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="social-links col s12">
-					<label>Stay Connected with </label><hr>
+					<label>Stay Connected with </label><hr style="border-color: #ded8d8 !important;
+    border-top: none;">
 					<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>

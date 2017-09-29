@@ -12,6 +12,7 @@ class Tours extends CI_Controller
 		
 		$tourDetails = $this->tour_model->tourname();	
 		$allMonthDetails = $this->tour_model->allMonthDetails();
+		
 
 		
 		$headerData = array(
@@ -22,7 +23,7 @@ class Tours extends CI_Controller
 			"jsFiles" => array("home.js","header.js")
 		);
 		$viewData = array(
-			"viewName" => "tour_details",
+			"viewName" => "All_tours",
             "viewData" => array("tourDetails"=>$tourDetails,"allMonthDetails"=>$allMonthDetails),
 			"headerData" => $headerData,
 			"footerData" => $footerData	

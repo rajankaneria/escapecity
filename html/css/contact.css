@@ -139,3 +139,13 @@ textarea.materialize-textarea:focus:not([readonly])+label{
     border-right: 0px solid rgba(173, 173, 173, 0.49);
 	}
 }
+
+.contact-area {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 30px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    padding: 25px;
+}

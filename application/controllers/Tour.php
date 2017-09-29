@@ -60,8 +60,6 @@ class Tour extends CI_Controller {
 			"height"=>$_POST['height'],
 			"dificulty"=>$_POST['dificulty'],
 			"duration"=>$_POST['duration']
-
-
 		);
 
 		//add blog with the text data and get the blog id
@@ -127,12 +125,8 @@ class Tour extends CI_Controller {
 			    $config['file_name'] = $tourID."_tourbanner";
 			    $this->load->library('upload', $config);	
 			    $this->upload->do_upload('home_banner');		    
-			}
-						
-			$this->Tour_model->updateTour($result,$tourID);
-
-		
-
+			}						
+			$this->Tour_model->updateTour($result,$tourID);	
 	}
 	
 	public function deleteTour($deleteID)
@@ -202,23 +196,25 @@ class Tour extends CI_Controller {
 	public function tourByMonth($month){
 		$this->load->model("tour_model");
 		$tourDetails = $this->tour_model->toursByMonth($month,20);	
-		$allMonthDetails = $this->tour_model->allMonthDetails();
-		
+		$allMonthDetails = $this->tour_model->allMonthDetails();		
+		$singleMonth = $this->tour_model->singleMonth($month);
+		//var_dump($singleMonth);
+
 		$headerData = array(
 			"pageTitle" => "Tours",
 			"stylesheet" => array("home.css","header.css","tourByMonth.css")
 		);
+
 		$footerData = array(
 			"jsFiles" => array("home.js","header.js")
 		);
 		$viewData = array(
 			"viewName" => "tour_details",
-            "viewData" => array("tourDetails"=>$tourDetails,"allMonthDetails"=>$allMonthDetails),
+            "viewData" => array("tourDetails"=>$tourDetails,"allMonthDetails"=>$allMonthDetails,"singleMonth"=>$singleMonth),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
 		$this->load->view('template',$viewData);
-
 
 	}
 	public function singleTourByMonth($month){

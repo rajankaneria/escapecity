@@ -60,7 +60,7 @@ class Blog extends CI_Controller
 
 		$result=array(
 			"title"=>$_POST['title'],
-			"details"=>$_POST['details']			
+			"details"=>$_POST['details']				
 		);
 		$blogImage=$blogID."_blogImage.".pathinfo($_FILES['image']['name'],PATHINFO_EXTENSION);
 
