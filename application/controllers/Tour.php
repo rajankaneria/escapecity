@@ -154,7 +154,7 @@ class Tour extends CI_Controller {
 
 		$tourid = $this->Tour_model->addbanner($result);
 		
-	    $config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
+	    $config['upload_path'] = 'C:\wamp\www\Escapcity-new\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
@@ -177,7 +177,7 @@ class Tour extends CI_Controller {
 		);
 		if($_FILES['banner']['name']!=""){
 		$result['banner']=$bannerImage;
-	    $config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
+	    $config['upload_path'] = 'C:\wamp\www\Escapcity-new\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
