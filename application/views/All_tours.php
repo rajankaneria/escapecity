@@ -64,7 +64,7 @@
       </div>
     </div>
     <!-- Sidebar Area -->
-    <div class="col s12 m3 sidebar-area">
+    <div class="col s12 m3 sidebar-area search-sidebar">
       <div class="row">
         <div class="searh-area">
           <center>

@@ -183,16 +183,12 @@ $(function(){
 			$("#editTestModal .modal-content").html(data);
 			Materialize.updateTextFields();
 		});			
-		
 
 	});
 
-
-
-
 	$(".test-delete-btn").on("click",function(){
 	var dltTest=$(this).data('test-id');
-	if(confirm("Do you want to delete this Record....")){
+	if(confirm("Do you want to delete this Record..???")){
 		$.post(baseURL+"Testimonials/deleteTest/"+dltTest,function(data){
 			$("#testid"+dltTest).remove();
 		});		
@@ -272,9 +268,7 @@ $(function(){
 				//alert("Month added successfully......");
 				//window.location.reload();
 			}
-
 		});
-
 	});
 
 
@@ -305,8 +299,6 @@ $(function(){
 		}
 
 	});
-
-
 
 	$(".edit-month-btn").on("click",function(){		
 		$("#editMonthModal").modal('open');

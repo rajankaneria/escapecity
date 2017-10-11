@@ -24,8 +24,7 @@
         <h5><?php echo $singleMonthRow['title']; ?></h5>
       </div>
       <div class="TBM-description">
-        <p>
-         
+        <p>         
           <?php echo $singleMonthRow['description']; ?>
         </p>
       </div>

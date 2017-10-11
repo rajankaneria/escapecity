@@ -106,8 +106,7 @@ class Tour extends CI_Controller {
 					"location"=>$_POST['location'],
 					"height"=>$_POST['height'],
 					"dificulty"=>$_POST['dificulty'],
-					"duration"=>$_POST['duration']
-									
+					"duration"=>$_POST['duration']									
 			);
 			if($_FILES['home_banner']['name']!=""){
 			//if (isset($result["home_banner"]) && !empty($result["home_banner"])) {

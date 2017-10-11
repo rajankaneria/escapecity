@@ -2,7 +2,11 @@
     <form id="addForm" method="post" enctype="multipart/form-data">
       <div class="row">        
         <div class="input-field col s12">
-        <input id="title" name="title" type="text" class="validate" placeholder="Enter your Blog title">
+        <select name="tour_id" id="tour_id">
+              <?php foreach ($allTour as $key => $allTourRow) { ?>
+              <option <?php if($tour_id == $allTourRow["id"]){ echo "selected='selected'"; } ?> value="<?php echo $allTourRow["id"]; ?>"><?php echo $allTourRow["name"]; ?></option>
+              <?php  } ?>
+            </select> 
           <label for="title">Blog Title</label>
         </div>
       </div>

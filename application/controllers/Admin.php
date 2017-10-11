@@ -97,7 +97,6 @@ class Admin extends CI_Controller {
 			"typename"=>$typename
 		);
 		$this->load->view("update_banner",$viewData);
-
 	}
 
 	/* this function is use to add tour*/
@@ -127,8 +126,7 @@ class Admin extends CI_Controller {
 			"footerData" => $footerData	
 		);
 		$this->load->view('admin-templete',$viewData);
-	}
-	
+	}	
 	public function tourDetails($tourID){
 		$this->load->model("tour_model");
 		$tourType = $this->tour_model->touritem();
@@ -148,8 +146,7 @@ class Admin extends CI_Controller {
 		$bannerdata = $this->tour_model->banner_row($bannerID);
 		
 	}*/
-	public function login(){
-		
+	public function login(){		
 		$headerData = array(
 			"pageTitle" => "Admin Login",
 			"stylesheet" => array("admin.css","header.css")
@@ -172,14 +169,11 @@ class Admin extends CI_Controller {
 	$result=$this->Tour_model->login($data);
 	echo json_encode($result);		
 	}
-
 	public function logout(){			
 		$this->session->unset_userdata("email");
 		$this->session->sess_destroy();
-		header('location:'.base_url()."admin/login");	
-
+		header('location:'.base_url()."admin/login");
 	}
-
 	public function deleteTour($tourID){
 		if(!$this->session->userdata("email"))
     	{
@@ -188,7 +182,6 @@ class Admin extends CI_Controller {
    		$this->load->model("tour_model");
    		$this->tour_model->forceDeleteTour($tourID);
 	}
-
 	public function Month(){
 	$this->load->model("tour_model");
 	$monthDetails = $this->tour_model->allMonthDetails();	
@@ -210,8 +203,6 @@ class Admin extends CI_Controller {
 
 
 	}
-
-
 	public function addMonth(){
 		$this->load->model("tour_model");
 		//$description =str_replace("'","\'",$_POST['description']);
@@ -236,7 +227,6 @@ class Admin extends CI_Controller {
 		$this->load->library('upload',$config);
 		$this->upload->do_upload('image');
 	}
-
 	public function updateMonth(){
 		$this->load->model("tour_model");
 		$monthId=$_POST['month-id'];
@@ -262,7 +252,6 @@ class Admin extends CI_Controller {
 		}
 		$this->tour_model->updateMonth($result,$monthId);
 		}
-
 		public function deleteMonth($monthId){
 			$this->load->model("tour_model");
 			$this->tour_model->deleteMonth($monthId);
@@ -273,6 +262,11 @@ class Admin extends CI_Controller {
 			//var_dump($result);
 			$this->load->view("updateMonth",$result);
 		}
+		public function addItinrary(){
+			
+
+		}
+
 
 
 }

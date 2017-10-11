@@ -18,14 +18,12 @@
 	       </div>-->
 
 	       <div class="row">
-	        <div class="input-field col s12">
-			  
+	        <div class="input-field col s12">			  
 				<select name="type_id" id="type_id">
 			  <?php foreach ($tourType as $key => $touritemRow) { ?>
 			  <option <?php if($tourDetails['type_id'] == $touritemRow["t_id"]){ echo "selected='selected'"; } ?> value="<?php echo $touritemRow["t_id"]; ?>"><?php echo $touritemRow["tour_name"]; ?></option>
 			  <?php  } ?>
-			  </select>
-			
+			  </select> 			
 			</div>
 		   </div>
 
@@ -41,8 +39,7 @@
 			  </div>
 		   	<div class="row">
 	        <div class="input-field col s6">			  
-			 <select name="period_to" id="period_to">
-					  
+			 <select name="period_to" id="period_to">					  
 			    <option <?php if($tourDetails['period_to']=="January"){ echo "selected='selected'"; } ?> value="January">January</option>
 			    <option <?php if($tourDetails['period_to']=="February"){ echo "selected='selected'"; } ?> value="February">February</option>
 			    <option <?php if($tourDetails['period_to']=="March"){ echo "selected='selected'"; } ?> value="March">March</option>
@@ -121,7 +118,6 @@
 			<div class="row">
 	        <div class="input-field col s12">
 	          <input placeholder="Enter your Price" name="price" id="price" value="<?php echo $tourDetails['price']; ?>" type="text" class="validate">
-
 	          <label for="name">Price</label>
 	        </div>
 	      </div> 
