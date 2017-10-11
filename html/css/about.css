@@ -53,6 +53,16 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 }
 
 
+
+/*modal layout design */
+
+.addTour-area{
+    width: 90%;
+}
+
+
+
+
 /*========== Mobile responsive ==================*/
 @media(max-width: 768px){
 	.about-logo img{

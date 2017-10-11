@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-tap-highlight" content="no">
-    <title>aahvanadventures - <?php echo $pageTitle; ?></title>
+    <title>Escape City - <?php echo $pageTitle; ?></title>
     <!-- CSS-->
 
     <!-- Compiled and minified CSS -->

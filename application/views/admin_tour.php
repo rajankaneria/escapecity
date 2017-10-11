@@ -35,8 +35,8 @@
                     <td><?php echo $tourdata["period_from"]; ?></td>
                     <td><img src="<?php echo base_url() ?>html/images/<?php echo $tourdata['home_banner']; ?>" width="150" height="150"/>    </td>
                     <td class="right-align tour-btn">
-                      <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light blue-grey tour-edit-btn"><i class="material-icons">mode_edit</i></a>
-                      <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light red tour-delete-btn"><i class="material-icons">delete</i></a>
+                      <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-edit-btn"><i class="material-icons edit-icon">mode_edit</i></a>
+                      <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-delete-btn"><i class="material-icons delete-icon">delete</i></a>
                     </td>
                   </tr>
                 <?php } ?>
@@ -49,4 +49,3 @@
    </div>
 </section>
 <!-- #END# Basic Examples -->
-

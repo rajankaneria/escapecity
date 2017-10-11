@@ -1,16 +1,19 @@
- <div id="addBannerModel" class="modal">
+<div id="addBannerModel" class="modal">
     <div class="modal-content">
-      <div class="container">
+      <div class="addTour-area">
       <div class="row">
-         <form class="col s12" enctype="multipart/form-data" id="addbanner" method="post">
+        <center><h5>Add New Banner</h5></center>
+      </div>
+        <form class="col s12" enctype="multipart/form-data" id="addbanner" method="post">
   	      <div class="row">
-  	        <div class="input-field col s12">
-  	          <input placeholder="enter your name" name="banner" id="name" type="file" class="validate">
-  	          <label for="file">file</label>
+  	        <div class="input-field col s12 m6">
+  	          <!-- <label for="file">file</label> -->
+              <input placeholder="enter your name" name="banner" id="name" type="file" class="validate" style="display: none;">
+              <a href="#" onclick="$('input#name').click()" class="btn btn-upload">Upload File</a>
+  	          
   	        </div>
-  	      </div>
-
-	        <div class="input-field col s12">
+  	   
+	        <div class="input-field col s12 m6">
            <select name="tour_name">
            <?php foreach ($typename as $key => $alltype) { ?>
            <option value="<?php echo $alltype['id']; ?>"><?php echo $alltype['name']; ?></option>
@@ -18,11 +21,11 @@
 		       </select>
             <label>Select Tour</label>
           </div>
+          <div class="input-field col s12 m12 center">
+            <a href="#!" id="addBannerBtn" class=" waves-effect waves-green btn-flat btn-add">Agree</a>
+          </div>
+        </div>
          </form>
        </div>
     </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" id="addBannerBtn" class=" waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
+</div>

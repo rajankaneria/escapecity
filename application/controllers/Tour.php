@@ -75,7 +75,7 @@ class Tour extends CI_Controller {
 		$this->tour_model->updateTour($updateData,$tourID);
 
 		//set configuration for the upload library
-		$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
+		$config['upload_path'] = 'C:\wamp\www\escapecity\html\images';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
@@ -114,7 +114,7 @@ class Tour extends CI_Controller {
 				$result["home_banner"] = $home_banner;
 
 				//set configuration for the upload library
-				$config['upload_path'] = 'C:\xampp\htdocs\Escapcity-new\html\images';
+				$config['upload_path'] = 'C:\wamp\www\escapecity\html\images';
 
 			    $config['allowed_types'] = 'gif|jpg|png';
 			    $config['overwrite'] = TRUE;
@@ -151,9 +151,10 @@ class Tour extends CI_Controller {
 			"tour_id"=>$_POST['tour_name']
 		);
 
-		$tourid = $this->Tour_model->addbanner($result);
-		
+		$tourid = $this->Tour_model->addbanner($result);	
+
 	    $config['upload_path'] = 'C:\wamp\www\Escapcity-new\html\images';
+
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
@@ -176,7 +177,9 @@ class Tour extends CI_Controller {
 		);
 		if($_FILES['banner']['name']!=""){
 		$result['banner']=$bannerImage;
+
 	    $config['upload_path'] = 'C:\wamp\www\Escapcity-new\html\images';
+
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['overwrite'] = TRUE;
 	    $config['encrypt_name'] = FALSE;
