@@ -17,12 +17,12 @@ class Attractions_model extends CI_Model
 		$this->db->delete("attractions");
 	}
 	public function editAttractions($attractionsID){
-		$query=$this->db->$query("select * from attractions where id='$attractionsID'");
-		$result=$query->raw_array();
+		$query=$this->db->query("select * from attractions where id='$attractionsID'");
+		$result = $query->row_array();
 		return $result;
 	}
 	public function allAttractions(){
-		$query=$this->db->$query("select * from attractions");
+		$query=$this->db->query("select * from attractions");
 		$result=$query->result_array();
 		return $result;
 	}

@@ -21,7 +21,7 @@
       <tr id="photos-id<?php echo $photosRow['id']; ?>">  
          <td><?php echo $photosRow['id']; ?></td>         
         <td><?php echo $photosRow['tour_id']; ?></td>            
-        <td><img src="<?php echo base_url(); ?>html/images/Detail/<?php echo $photosRow['photos']; ?>" width="200" height="200"/></td>     
+       <td><img src="<?php echo base_url(); ?>html/images/Detail/<?php echo $photosRow['photos']; ?>" width="200" height="200"/></td> 
         <td class="right-align blog-btn">
         <a data-photos-id="<?php echo $photosRow['id']; ?>" class="btn-floating waves-effect waves-light red delete-photos"><i class="material-icons">delete</i></a>
         <a data-photos-id="<?php echo $photosRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey edit-photos"><i class="material-icons">mode_edit</i></a>

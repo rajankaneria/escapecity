@@ -19,8 +19,9 @@
     </thead>
     <tbody>
       <?php foreach ($allItinraryData as $key => $allItinraryRow) { ?>
-      <tr id="itinrary-id<?php echo $allItinraryRow['id']; ?>">  
-         <td><?php echo $allItinraryRow['tour_id']; ?></td>         
+      <tr id="itinrary-id<?php echo $allItinraryRow['id']; ?>">
+        <td><?php echo $allItinraryRow['id']; ?></td>  
+         <td><?php echo $allItinraryRow['tour_id']; ?></td>
         <td><?php echo $allItinraryRow['date']; ?></td>
         <td><?php echo $allItinraryRow['details']; ?></td>           
         <td class="right-align blog-btn">

@@ -24,8 +24,9 @@
       <tr id="attractions-id<?php echo $attractionsRow['id']; ?>">  
          <td><?php echo $attractionsRow['id']; ?></td>         
         <td><?php echo $attractionsRow['tour_id']; ?></td> 
-         <td><?php echo $attractionsRow['title']; ?></td>              
-        <td><img src="<?php echo base_url(); ?>html/images/Detail/<?php echo $attractionsRow['photos']; ?>" width="200" height="200"/></td>     
+         <td><?php echo $attractionsRow['title']; ?></td> 
+         <td><?php echo $attractionsRow['details']; ?></td>              
+        
         <td class="right-align blog-btn">
         <a data-attractions-id="<?php echo $attractionsRow['id']; ?>" class="btn-floating waves-effect waves-light red delete-attractions"><i class="material-icons">delete</i></a>
         <a data-attractions-id="<?php echo $attractionsRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey edit-attractions"><i class="material-icons">mode_edit</i></a>
@@ -42,7 +43,7 @@
 <!-- Modal Structure -->
   <div id="attractionsModal" class="modal">
     <div class="modal-content">
-      <?php $this->load->view("addTest"); ?>
+      <?php $this->load->view("addAttractions"); ?>
     </div>
     <div class="modal-footer">
       <a id="sendAttractions" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>

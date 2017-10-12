@@ -17,12 +17,12 @@ class Itinrary_model extends CI_Model
 		$this->db->delete("itinrary");
 	}
 	public function editItinrary($itinraryID){
-		$query=$this->db->$query("select * from itinrary where id='$itinraryID'");
-		$result=$query->raw_array();
+		$query=$this->db->query("select * from itinrary where id='$itinraryID'");
+		$result = $query->row_array();
 		return $result;
 	}
 	public function allItinrary(){
-		$query=$this->db->$query("select * from itinrary");
+		$query=$this->db->query("select * from itinrary");
 		$result=$query->result_array();
 		return $result;
 	}

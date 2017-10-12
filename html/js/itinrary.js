@@ -5,40 +5,44 @@ $(function(){
 	$("#addItinrary").on("click",function(){
 		$("#itinraryModal").modal('open');
 	});
+
+
 	$("#sendItinrary").on("click",function(){
-		var formData=new FormData($("#addItinraryForm")[0]);
+		var formData = new FormData($('#addItinraryForm')[0]);
 		$.ajax({
-			data:formData,
-			url:baseURL+"tour_details/addItinrary/",
-			type:"POST",
-			proccessData:false,
-			contentType:false,
-			success:function(result){
-				alert("Itinrary add successfully...");
-				window.location.reload();
-			}
+		    url:baseURL+"tour_details/addItinrary/",
+		    type: 'POST',
+		    processData: false,
+		    contentType: false,
+		    data: formData,
+		    success: function (result){
+		    	alert("Itinrary Inserted Successfully");
+		    	window.location.reload();
+		    }
 		});
 	});
 
+
+
 	$("#updateItinrary").on("click",function(){
-		var formData=new FormData($("#updateItinraryForm")[0]);
+		var formData = new FormData($('#updateItinraryForm')[0]);
 		$.ajax({
-			data:formData,
-			url:baseURL+"tour_details/updateItinrary/",
-			type:"POST",
-			proccessData:false,
-			contentType:false,
-			success:function(result){
-				alert("Itinrary Update successfully...");
-				window.location.reload();
-			}
+		    url:baseURL+"tour_details/updateItinrary/",
+		    type: 'POST',
+		    processData: false,
+		    contentType: false,
+		    data: formData,
+		    success: function (result){
+		    	alert("Update Updated Successfully");
+		    	window.location.reload();
+		    }
 		});
 	});
 
 	$(".delete-itinrary").on("click",function(){
 		var itinraryId=$(this).data('itinrary-id');
 		if(confirm("Do You want to delete this record..?")){
-		$.post(baseURL+"tour_details/deleteItinrary"+itinraryId,function(data){
+		$.post(baseURL+"tour_details/deleteItinrary/"+itinraryId,function(data){
 			$("#itinrary-id"+itinraryId).remove();
 			});
 		}
@@ -48,11 +52,13 @@ $(function(){
 		$("#editItinraryModal").modal('open');
 		$("#editItinraryModal .modal-content").html("");
 		var itinraryId=$(this).data('itinrary-id');
-		$.post(baseURL+"tour_details/editItinrary"+itinraryId,function(data){
+		$.post(baseURL+"tour_details/editItinrary/"+itinraryId,function(data){
 			$("#editItinraryModal .modal-content").html(data);
+			Materialize.updateTextFields();
+			  $('select').material_select();
 		});
 
-	}
+	});
 
 /*===Main function over==========*/
 });

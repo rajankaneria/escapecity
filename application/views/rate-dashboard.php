@@ -20,9 +20,10 @@
     <tbody>
       <?php foreach ($allRateData as $key => $allRateRow) { ?>
       <tr id="rate-id<?php echo $allRateRow['id']; ?>">  
+        <td><?php echo $allRateRow['id']; ?></td>  
          <td><?php echo $allRateRow['tour_id']; ?></td>         
         <td><?php echo $allRateRow['title']; ?></td>
-        <td><?php echo $allRateRow['details']; ?></td>        
+        <td><?php echo $allRateRow['detail']; ?></td>        
         <td class="right-align blog-btn">
         <a data-rate-id="<?php echo $allRateRow['id']; ?>" class="btn-floating waves-effect waves-light red delete-rate"><i class="material-icons">delete</i></a>
         <a data-rate-id="<?php echo $allRateRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey edit-rate"><i class="material-icons">mode_edit</i></a>
@@ -39,7 +40,7 @@
 <!-- Modal Structure -->
   <div id="rateModal" class="modal">
     <div class="modal-content">
-      <?php $this->load->view("addTest"); ?>
+      <?php $this->load->view("addRate"); ?>
     </div>
     <div class="modal-footer">
       <a id="sendRate" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>

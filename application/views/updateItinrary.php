@@ -1,5 +1,5 @@
 <div class="row">
-    <form id="updateTestForm" method="post" enctype="multipart/form-data">
+    <form id="updateItinraryForm" method="post" enctype="multipart/form-data">
       <div class="row">        
         <div class="input-field col s12">
             <select name="tour_id" id="tour_id">
@@ -12,8 +12,8 @@
       </div>
        <div class="row">        
         <div class="input-field col s12">
-          <input id="title" name="title" type="text" class="validate" placeholder="Enter your Date" value="<?php echo $title; ?>">
-          <label for="date">title</label>
+          <input id="date" name="date" type="text" class="validate" placeholder="Enter your Date" value="<?php echo $date; ?>">
+          <label for="date">Date</label>
         </div>
       </div>
      <div class="row">

@@ -19,12 +19,12 @@ class Photos_model extends CI_Model
 		$this->db->delete("photos");
 	}
 	public function editPhotos($photoID){
-		$query=$this->db->$query("select * from photos where id='$photoID'");
-		$result=$query->raw_array();
+		$query=$this->db->query("select * from photos where id='$photoID'");
+		$result = $query->row_array();
 		return $result;
 	}
 	public function allPhotos(){
-		$query=$this->db->$query("select * from photos");
+		$query=$this->db->query("select * from photos");
 		$result=$query->result_array();
 		return $result;
 	}

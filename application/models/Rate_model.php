@@ -17,12 +17,12 @@ class Rate_model extends CI_Model
 		$this->db->delete("rate");
 	}
 	public function editRate($rateID){
-		$query=$this->db->$query("select * from rate where id='$rateID'");
-		$result=$query->raw_array();
+		$query=$this->db->query("select * from rate where id='$rateID'");
+		$result = $query->row_array();
 		return $result;
 	}
 	public function allRate(){
-		$query=$this->db->$query("select * from rate");
+		$query=$this->db->query("select * from rate");
 		$result=$query->result_array();
 		return $result;
 	}

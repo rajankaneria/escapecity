@@ -1,5 +1,5 @@
 <div class="row">
-    <form id="updateTestForm" method="post" enctype="multipart/form-data">
+    <form id="photosForm" method="post" enctype="multipart/form-data">
       <div class="row">        
         <div class="input-field col s12">
             <select name="tour_id" id="tour_id">
