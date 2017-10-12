@@ -1,4 +1,4 @@
-
+<?php $this->load->view("admin-nav"); ?>
 <div class="container">
  <div class="row">
 

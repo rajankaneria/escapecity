@@ -15,7 +15,7 @@ class Admin extends CI_Controller {
 			"stylesheet" => array("admin.css","header.css")
 		);
 		$footerData = array(
-			"jsFiles" => array("admin.js","header.js")
+			"jsFiles" => array("admin.js","header.js")	
 		);
 		$viewData = array(
 			"viewName" => "admin",

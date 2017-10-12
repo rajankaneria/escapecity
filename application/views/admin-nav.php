@@ -1,7 +1,5 @@
 <!-- #Top Bar -->
     <section>
-   
-
         <!-- mobile navigation menu start here -->
 
           <ul id="slide-out" class="side-nav admin-navigation">
@@ -18,6 +16,43 @@
                     <span>banner</span>
                 </a>
             </li>
+            <li ng-class="url == 'download' ? 'active' : ''">
+                <a href="<?php echo base_url() ?>admin/Month/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                    <span>Month</span>
+                </a>
+            </li>
+
+             <li ng-class="url == 'download' ? 'active' : ''">
+                <a href="<?php echo base_url() ?>Tour_details/itinraryDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                    <span>Itinrary</span>
+                </a>
+            </li>
+
+              <li ng-class="url == 'download' ? 'active' : ''">
+                <a href="<?php echo base_url() ?>Tour_details/attractionsDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                    <span>Attractions</span>
+                </a>
+            </li>
+
+            <li ng-class="url == 'download' ? 'active' : ''">
+                <a href="<?php echo base_url() ?>Tour_details/rateDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                    <span>Rate</span>
+                </a>
+            </li>
+
+              <li ng-class="url == 'download' ? 'active' : ''">
+                <a href="<?php echo base_url() ?>Tour_details/photoDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                    <span>Photo</span>
+                </a>
+            </li>
+
+             <li ng-class="url == 'download' ? 'active' : ''">
+                <a href="<?php echo base_url() ?>Testimonials/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                    <span>Testimonials</span>
+                </a>
+            </li>
+
+
             <!-- <li ng-class="url == 'file-structure' ? 'active' : ''">
                 <a href="<?php base_url(); ?>file-structure" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'file-structure') !== false) { ?> active-menu <?php } ?>">
                     <span>File Structure</span>

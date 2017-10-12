@@ -1,23 +1,18 @@
 <?php $this->load->view("admin-nav"); ?>
-
-<section class="content">
-  <a class="waves-effect black btn ADD" id="addbanner">ADD</a>
-    <div class="row clearfix">
-     <div class="card">
-      <div class="header">
-        <h2>
-          Add Banner
-        </h2>
-      </div>
-
-      <div class="body">
-        <div class="table-responsive">
-          <table class="table responsive-table centered">
+<div class="container">
+ <div class="row">
+ <div class="card-panel">
+  <div class="page-header">
+      <div class="page-title">Banner Management</div>      
+      <div class="page-button"><a class="waves-effect waves-light btn blue" id="addMonth">Add</a></div>
+  </div>
+   <div class="page-content">
+    <table border="1" class="responsive-table centered">    
             <thead>
               <tr>
                 <th>Order</th>       
-                <th>tour_id</th>
-                <th>banner</th>
+                <th>Tour Name</th>
+                <th>Banner</th>
                 <th>action</th>    
               </tr>
             </thead>
@@ -37,9 +32,7 @@
             <?php } ?>
               </tbody>
           </table>
-        </div>
+       </div>
       </div>
-
-    </div> 
-   </div>
-</section>
+     </div>  
+    </div>  

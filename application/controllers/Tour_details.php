@@ -7,6 +7,12 @@ class Tour_details extends CI_Controller
 	public function photoDashboard()
 	{	
 
+		/*ini_set("post_max_size","800M");
+		ini_set("upload_max_filesize","800M");
+		ini_set("max_execution_time","800M");
+		ini_set("post_max_size","5000");
+		ini_set("memory_limit","1000M");*/
+
 		$this->load->model("photos_model");
 		
 		$this->load->model("Tour_model");
@@ -44,7 +50,7 @@ class Tour_details extends CI_Controller
 			$config["upload_path"]='C:\wamp\www\Escapcity-new\html\images\Detail';
 			$config["allowed_types"]='gif|png|jpg';
 			$config["file_name"]=$photoId."_detailImage";
-			$config['max_size'] = '30000';
+			$config["max_size"] = "500000"; 
 			$config["remove_spaces"]=TRUE;
 			$config["encrypt_name"]=FALSE;
 			$config['overwrite']=TRUE;

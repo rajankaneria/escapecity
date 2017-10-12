@@ -26,9 +26,11 @@
         </div>
       </div>
      <div class="row">
+        <div class="input-field col s12"></div>
           <div class="input-field col s12">
-            <input  name="image" id="image" type="file" class="validate">
-            <img src="<?php  echo base_url();?>html/images/tours/<?php echo $image; ?>"> 
+            <img  width="200" height="auto" src="<?php  echo base_url();?>html/images/tours/<?php echo $image; ?>"> 
+            <br/>
+            <input  name="image" id="image" type="file" class="validate">            
             <label for="image" style="margin-top: -42px !important;">Image</label>
           </div>
       </div> 

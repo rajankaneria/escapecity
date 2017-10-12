@@ -139,7 +139,7 @@
    
      <?php foreach($tourphoto as $key=>$photoRow) { ?>
      <div class="col m3 itinrary-img ">
-       <img class="materialboxed responsive-img" src="<?php echo base_url(); ?>html/images/<?php echo $photoRow['photos'];  ?>">
+       <img class="materialboxed responsive-img" src="<?php echo base_url(); ?>html/images/Detail/<?php echo $photoRow['photos'];  ?>">
      </div>
      <?php } ?>
 

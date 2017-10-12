@@ -1,27 +1,22 @@
 <?php $this->load->view("admin-nav"); ?>
+<div class="container">
+ <div class="row">
 
-<section class="content">
-  <a class="waves-effect black btn ADD" id="addtour">ADD</a>
-    <div class="row clearfix">
-     <div class="card">
-      <div class="header">
-        <h2>
-          Add Tour
-        </h2>
-      </div>
+ <div class="card-panel">
 
-      <div class="body">
-        <div class="table-responsive">
-          <table class="table responsive-table centered">
+  <div class="page-header">
+      <div class="page-title">Tour Management</div>      
+      <div class="page-button"><a class="waves-effect waves-light btn blue" id="addMonth">Add</a></div>
+  </div>
+   <div class="page-content">
+    <table border="1" class="responsive-table centered">
             <thead>
               <tr>
                 <th>Order</th>
-                <th>name</th>
-                <th>tour-type</th>
-                <th>region_id</th>              
-                <th>Period To</th>
-                <th>Period From</th>
-                <th>Home Banner</th>
+                <th>Name</th>
+                <th>Tour Type</th>
+                <th>Region</th>   
+                <th>Period</th>                
               </tr>
             </thead>
               <tbody>
@@ -31,9 +26,9 @@
                     <td><?php echo $tourdata["name"]; ?></td>
                     <td><?php echo $tourdata["tour_type"]; ?></td>
                     <td><?php echo $tourdata["region_name"]; ?></td>
-                    <td><?php echo $tourdata["period_to"]; ?></td>
-                    <td><?php echo $tourdata["period_from"]; ?></td>
-                    <td><img src="<?php echo base_url() ?>html/images/<?php echo $tourdata['home_banner']; ?>" width="150" height="150"/>    </td>
+                    <td><?php echo $tourdata["period_to"]." - ". $tourdata["period_from"];; ?></td>
+                 
+                    <!-- <td><img src="<?php echo base_url() ?>html/images/<?php echo $tourdata['home_banner']; ?>" width="150" height="150"/>    </td> -->
                     <td class="right-align tour-btn">
                       <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-edit-btn"><i class="material-icons edit-icon">mode_edit</i></a>
                       <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-delete-btn"><i class="material-icons delete-icon">delete</i></a>
@@ -42,10 +37,8 @@
                 <?php } ?>
               </tbody>
           </table>
-        </div>
-      </div>
-
-    </div> 
    </div>
-</section>
+  </div>
+ </div>  
+</div>  
 <!-- #END# Basic Examples -->

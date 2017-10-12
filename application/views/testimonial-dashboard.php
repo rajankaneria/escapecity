@@ -1,4 +1,4 @@
-
+<?php $this->load->view("admin-nav"); ?>
 <div class="container">
  <div class="row">
 
@@ -24,7 +24,7 @@
       <tr id="testid<?php echo $testRow['id']; ?>">  
          <td><?php echo $testRow['id']; ?></td>         
         <td><?php echo $testRow['title']; ?></td>
-        <td><?php echo $testRow['details']; ?></td>        
+        <td><?php echo substr($testRow['details'],0,200)."...."; ?></td>        
         <td><img src="<?php echo base_url(); ?>html/images/testimonials/<?php echo $testRow['image']; ?>" width="200" height="200"/></td>     
         <td class="right-align blog-btn">
         <a data-test-id="<?php echo $testRow['id']; ?>" class="btn-floating waves-effect waves-light red test-delete-btn"><i class="material-icons">delete</i></a>

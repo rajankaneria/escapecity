@@ -83,7 +83,7 @@ class Tour_model extends  CI_Model{
 	}
 	public function banner()
 	{
-		$query = $this->db->query("select * from banner ");
+		$query = $this->db->query("select * from banner");
 		$result = $query->result_array();
 		return $result;
 	}
@@ -201,6 +201,7 @@ class Tour_model extends  CI_Model{
 		$result=$query->result_array();
 		return $result;
 	}
+
 		
 }
 

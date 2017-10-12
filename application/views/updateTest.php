@@ -15,7 +15,7 @@
        <div class="row">        
         <div class="input-field col s12">
           <input id="image" name="image" type="file" class="validate">
-          <img src="<?php echo base_url();?>html/images/testimonials/<?php echo $image; ?>" />
+          <img width="300" src="<?php echo base_url();?>html/images/testimonials/<?php echo $image; ?>" />
           <label for="Blog-Image">Image</label>
           <input type="hidden" name="testID" id="testID" value="<?php echo $id ?>">
         </div>

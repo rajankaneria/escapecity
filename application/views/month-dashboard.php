@@ -1,4 +1,4 @@
-
+<?php $this->load->view("admin-nav"); ?>
 <div class="container">
  <div class="row">
 
@@ -26,8 +26,8 @@
          <td><?php echo $monthRow['id']; ?></td>         
          <td><?php echo $monthRow['month']; ?></td>         
         <td><?php echo $monthRow['title']; ?></td>
-        <td><?php echo $monthRow['description']; ?></td>        
-        <td><img src="<?php echo base_url(); ?>html/images/tours/<?php echo $monthRow['image']; ?>" width="200" height="200"/></td>     
+        <td><?php echo substr($monthRow['description'], 0,180)."...."; ?></td>        
+        <td><img src="<?php echo base_url(); ?>html/images/tours/<?php echo $monthRow['image']; ?>" width="170" height="170"/></td>     
         <td class="right-align blog-btn">
         <a data-month-id="<?php echo $monthRow['id']; ?>" class="btn-floating waves-effect waves-light red delete-month-btn"><i class="material-icons">delete</i></a>
         <a data-month-id="<?php echo $monthRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey edit-month-btn"><i class="material-icons">mode_edit</i></a>
