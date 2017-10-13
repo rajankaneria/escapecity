@@ -6,7 +6,7 @@
 
   <div class="page-header">
       <div class="page-title">Tour Management</div>      
-      <div class="page-button"><a class="waves-effect waves-light btn blue" id="addtour">Add</a></div>
+      <div class="page-button"><a class="waves-effect waves-light btn blue" id="addAttractions">Attractions List</a></div>
   </div>
    <div class="page-content">
     <table border="1" class="responsive-table centered">
@@ -28,10 +28,10 @@
                     <td><?php echo $tourdata["region_name"]; ?></td>
                     <td><?php echo $tourdata["period_to"]." - ". $tourdata["period_from"];; ?></td>                 
                     <!-- <td><img src="<?php echo base_url() ?>html/images/<?php echo $tourdata['home_banner']; ?>" width="150" height="150"/>    </td> -->
-                    <td class="right-align tour-btn">
+                  <!--   <td class="right-align tour-btn">
                       <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-edit-btn"><i class="material-icons edit-icon">mode_edit</i></a>
                       <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-delete-btn"><i class="material-icons delete-icon">delete</i></a>
-                    </td>
+                    </td> -->
                   </tr>
                 <?php } ?>
               </tbody>
@@ -40,4 +40,22 @@
   </div>
  </div>  
 </div>  
-<!-- #END# Basic Examples -->
+<!-- Modal Structure -->
+  <div id="attractionsModal" class="modal">
+    <div class="modal-content">
+      <?php $this->load->view("attractions-dashboard",array("allAttractions"=>$allAttractions,"allTour"=>$allTour)); ?>
+    </div>
+    <div class="modal-footer">
+      <a id="sendAttractions" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+   <div id="editAttractionsModal" class="modal">
+    <div class="modal-content">
+     </div>
+
+    <div class="modal-footer">
+      <a  id="updateAttractions" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+    </div>
+  </div>

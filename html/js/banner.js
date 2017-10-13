@@ -14,7 +14,6 @@ $(function(){
         $("#upbannermodal").modal("open");
         $('select').material_select();
       Materialize.updateTextFields();
-
       });
 
   });
@@ -68,8 +67,7 @@ $(function(){
           contentType:false,
           processData:false,
           data:formData,
-          success:function(result){
-             
+          success:function(result){             
             $("#upbannermodal").modal("close");
           }
         });

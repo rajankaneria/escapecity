@@ -1,6 +1,6 @@
 <!-- #Top Bar -->
     <section>
-        <!-- mobile navigation menu start here -->
+            <!-- mobile navigation menu start here -->
 
           <ul id="slide-out" class="side-nav admin-navigation">
             <li>
@@ -8,12 +8,12 @@
             </li>
             <li ng-class="url == '' ? 'active' : ''" >
                 <a href="<?php echo base_url() ?>admin/admin_tour" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'admin_tour') !== false) { ?> active-menu <?php } ?>">
-                    <span>add tour</span>
+                    <span>Add Tour</span>
                 </a>
             </li>
             <li ng-class="url == 'download' ? 'active' : ''">
                 <a href="<?php echo base_url() ?>admin/banner" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
-                    <span>banner</span>
+                    <span>Banner</span>
                 </a>
             </li>
             <li ng-class="url == 'download' ? 'active' : ''">
@@ -74,8 +74,7 @@
                 </a>
             </li> -->
           </ul>
-          <a href="#" data-activates="slide-out" class="button-collapse mobile-menu-btn"><i class="material-icons">menu</i></a>
-                
+          <a href="#" data-activates="slide-out" class="button-collapse mobile-menu-btn"><i class="material-icons">menu</i></a>                
 
         <!-- mobile navigation menu over here -->
 

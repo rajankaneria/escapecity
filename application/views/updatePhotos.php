@@ -9,7 +9,7 @@
             </select>            
           <label for="title">Tour</label>
         </div>
-      </div>
+      </div> 
 
       <div class="row">
         <div class="input-field col s12">

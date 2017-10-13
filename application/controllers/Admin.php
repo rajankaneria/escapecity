@@ -49,11 +49,21 @@ class Admin extends CI_Controller {
 	}
 	public function banner()
 	{
+
 		$this->load->model("tour_model");
 		$bannerimg = $this->tour_model->banner();
 
 		$typename = $this->tour_model->tourname();
-
+		$nameOfTour= $this->tour_model->nameOfTour();
+		//var_dump($nameOfTour);
+		foreach ($bannerimg as $key => $bannerimgRow) {
+			$tourID = $bannerimgRow["tour_id"];
+			$tourName = $nameOfTour[$tourID];
+			$bannerimg[$key]["tour_name"]= $tourName;
+			//$data["banner_image"]; 
+			//$data["tour_name"];			
+		}
+		
 		$headerData = array(
 			"pageTitle" => "Admin_Tour",
 			"stylesheet" => array("header.css","admin.css")

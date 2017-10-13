@@ -1,6 +1,6 @@
 <div class="row">
     <form id="updateItinraryForm" method="post" enctype="multipart/form-data">
-      <div class="row">        
+       <div class="row">        
         <div class="input-field col s12">
             <select name="tour_id" id="tour_id">
               <?php foreach ($allTour as $key => $allTourRow) { ?>
@@ -9,7 +9,7 @@
             </select>            
           <label for="title">Tour</label>
         </div>
-      </div>
+      </div> 
        <div class="row">        
         <div class="input-field col s12">
           <input id="date" name="date" type="text" class="validate" placeholder="Enter your Date" value="<?php echo $date; ?>">

@@ -4,42 +4,40 @@
 */
 class Tour_details extends CI_Controller
 {
-	public function photoDashboard()
-	{	
+		public function photoDashboard()
+		{		
 
-		/*ini_set("post_max_size","800M");
-		ini_set("upload_max_filesize","800M");
-		ini_set("max_execution_time","800M");
-		ini_set("post_max_size","5000");
-		ini_set("memory_limit","1000M");*/
+			$this->load->model("tour_model");	
+			$allTour=$this->tour_model->tourname();	
+			$tour_list=$this->tour_model->tourList();
+		    $touritem = $this->tour_model->touritem();
+		    $region_type=$this->tour_model->region_type();
+		    $this->load->model("photos_model");
+		    $allPhotos=$this->photos_model->allPhotos();
 
-		$this->load->model("photos_model");
-		
-		$this->load->model("Tour_model");
-		$allTour=$this->Tour_model->tourname();
+		    $allTour=$this->tour_model->tourname();
 
-		$allPhotos=$this->photos_model->allPhotos();
-		
-		$headerData = array(
-			"pageTitle" => "Photo",
-			"stylesheet" => array("admin.css","header.css")
-		);
-		$footerData = array(
-			"jsFiles" => array("photo.js","header.js")
-		);
-		$viewData = array(
-			"viewName" => "photos-dashboard",
-            "viewData" => array("photosData"=>$allPhotos,"allTour"=>$allTour),
-			"headerData" => $headerData,
-			"footerData" => $footerData	
-		);
-		$this->load->view('admin-templete',$viewData);
+			$headerData = array(
+				"pageTitle" => "photo-tour",
+				"stylesheet" => array("header.css","admin.css")
+			);
+			$footerData = array(
+				"jsFiles" => array("admin.js","photo.js","header.js")
+			);
+			$viewData = array(
+				"viewName" => "photo-tour",
+	            "viewData" => array("tour_list"=>$tour_list,"touritem"=>$touritem,"region_type"=>$region_type,"allPhotos"=>$allPhotos,"allTour"=>$allTour),
+				"headerData" => $headerData,
+				"footerData" => $footerData	
+			);
+			$this->load->view('admin-templete',$viewData);
 	}
+	
 	public function addPhotos(){
 			$this->load->model("photos_model");
 			//$description =str_replace("'","\'",$_POST['description']);
 			$result=array(
-				"tour_id"=>$_POST['tour_id']			
+				"tour_id"=>$_POST['tour_id']				
 			);
 			$photoId=$this->photos_model->addPhotos($result);
 
@@ -104,22 +102,25 @@ class Tour_details extends CI_Controller
 		}
 		public function rateDashboard()
 		{	
-			$this->load->model("rate_model");
-			$allRate=$this->rate_model->allRate();
-			$this->load->model("Tour_model");
-			$allTour=$this->Tour_model->tourname();
 
+			$this->load->model("tour_model");			
+			$allTour=$this->tour_model->tourname();		
+			$tour_list=$this->tour_model->tourList();
+		    $touritem = $this->tour_model->touritem();
+		    $region_type=$this->tour_model->region_type();
+		    $this->load->model("rate_model");
+			$allRate=$this->rate_model->allRate();
 
 			$headerData = array(
-				"pageTitle" => "Rate",
-				"stylesheet" => array("admin.css","header.css")
+				"pageTitle" => "rate-tour",
+				"stylesheet" => array("header.css","admin.css")
 			);
 			$footerData = array(
-				"jsFiles" => array("rate.js","header.js")
+				"jsFiles" => array("admin.js","rate.js","header.js")
 			);
 			$viewData = array(
-				"viewName" => "rate-dashboard",
-	            "viewData" => array("allRateData"=>$allRate,"allTour"=>$allTour),
+				"viewName" => "rate-tour",
+	            "viewData" => array("tour_list"=>$tour_list,"touritem"=>$touritem,"region_type"=>$region_type,"allRate"=>$allRate,"allTour"=>$allTour),
 				"headerData" => $headerData,
 				"footerData" => $footerData	
 			);
@@ -135,7 +136,6 @@ class Tour_details extends CI_Controller
 			);
 			var_dump($result);
 			$this->rate_model->addRate($result);
-
 		}
 
 		public function updateRate(){
@@ -164,24 +164,26 @@ class Tour_details extends CI_Controller
 		}
 
 		public function attractionsDashboard()
-		{	
+		{		
 
-			$this->load->model("attractions_model");
+			$this->load->model("tour_model");		
+			$tour_list=$this->tour_model->tourList();
+		    $touritem = $this->tour_model->touritem();
+		    $region_type=$this->tour_model->region_type();
+		    $this->load->model("attractions_model");
+		    $allTour=$this->tour_model->tourname();	
 			$allAttractions=$this->attractions_model->allAttractions();
-			$this->load->model("Tour_model");
-			$allTour=$this->Tour_model->tourname();
-
 
 			$headerData = array(
-				"pageTitle" => "Rate",
-				"stylesheet" => array("admin.css","header.css")
+				"pageTitle" => "attractions-tour",
+				"stylesheet" => array("header.css","admin.css")
 			);
 			$footerData = array(
-				"jsFiles" => array("attractions.js","header.js")
+				"jsFiles" => array("admin.js","attractions.js","header.js")
 			);
 			$viewData = array(
-				"viewName" => "attractions-dashboard",
-	            "viewData" => array("attractionsData"=>$allAttractions,"allTour"=>$allTour),
+				"viewName" => "attractions-tour",
+	            "viewData" => array("tour_list"=>$tour_list,"touritem"=>$touritem,"region_type"=>$region_type,"allAttractions"=>$allAttractions,"allTour"=>$allTour),
 				"headerData" => $headerData,
 				"footerData" => $footerData	
 			);
@@ -189,8 +191,7 @@ class Tour_details extends CI_Controller
 		}
 
 
-		public function addAttractions(){
-			
+		public function addAttractions(){			
 			$this->load->model("attractions_model");
 			$allAttractions=$this->attractions_model->allAttractions();
 			$this->load->model("Tour_model");
@@ -209,7 +210,7 @@ class Tour_details extends CI_Controller
 			$this->load->model("attractions_model");
 			//$detail =str_replace("'","\'",$_POST['details']);
 			$result=array(
-				"tour_id"=>$_POST['tour_id'],
+			"tour_id"=>$_POST['tour_id'],
 				"title"=>$_POST['title'],
 				"details"=>$_POST['details']	
 			);
@@ -228,23 +229,28 @@ class Tour_details extends CI_Controller
 			//var_dump($result);
 			$this->load->view("updateAttractions",$result);
 		}
+
 		public function itinraryDashboard()
-		{	
-			$this->load->model("itinrary_model");
+		{		
+
+			$this->load->model("tour_model");		
+			$tour_list=$this->tour_model->tourList();
+		    $touritem = $this->tour_model->touritem();
+		    $region_type=$this->tour_model->region_type();
+		    $this->load->model("itinrary_model");
 			$allItinrary=$this->itinrary_model->allItinrary();
-			$this->load->model("Tour_model");
-			$allTour=$this->Tour_model->tourname();
+			$allTour=$this->tour_model->tourname();	
 
 			$headerData = array(
-				"pageTitle" => "Itinrary",
-				"stylesheet" => array("admin.css","header.css")
+				"pageTitle" => "itinrary_tour",
+				"stylesheet" => array("header.css","admin.css")
 			);
 			$footerData = array(
-				"jsFiles" => array("itinrary.js","header.js")
+				"jsFiles" => array("admin.js","itinrary.js","header.js")
 			);
 			$viewData = array(
-				"viewName" => "itinrary-dashboard",
-	            "viewData" => array("allItinraryData"=>$allItinrary,"allTour"=>$allTour),
+				"viewName" => "itinrary_tour",
+	            "viewData" => array("tour_list"=>$tour_list,"touritem"=>$touritem,"region_type"=>$region_type,"allItinrary"=>$allItinrary,"allTour"=>$allTour),
 				"headerData" => $headerData,
 				"footerData" => $footerData	
 			);
@@ -267,7 +273,7 @@ class Tour_details extends CI_Controller
 			$this->load->model("itinrary_model");
 			//$detail =str_replace("'","\'",$_POST['details']);
 			$result=array(
-				"tour_id"=>$_POST['tour_id'],
+				/*"tour_id"=>$_POST['tour_id'],*/
 				"date"=>$_POST['date'],
 				"details"=>$_POST['details']	
 			);

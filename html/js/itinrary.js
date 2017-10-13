@@ -8,6 +8,7 @@ $(function(){
 
 
 	$("#sendItinrary").on("click",function(){
+		console.log("hello");
 		var formData = new FormData($('#addItinraryForm')[0]);
 		$.ajax({
 		    url:baseURL+"tour_details/addItinrary/",
@@ -17,7 +18,7 @@ $(function(){
 		    data: formData,
 		    success: function (result){
 		    	alert("Itinrary Inserted Successfully");
-		    	window.location.reload();
+		    	//window.location.reload();
 		    }
 		});
 	});
@@ -49,7 +50,10 @@ $(function(){
 	});
 
 	$(".edit-itinrary").on("click",function(){
+		$("#itinraryModal").modal('close');
 		$("#editItinraryModal").modal('open');
+
+		
 		$("#editItinraryModal .modal-content").html("");
 		var itinraryId=$(this).data('itinrary-id');
 		$.post(baseURL+"tour_details/editItinrary/"+itinraryId,function(data){

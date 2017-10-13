@@ -1,27 +1,61 @@
-<?php $this->load->view("admin-nav"); ?>
-<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Add Rate</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Rate List</a></li>
+       
+      </ul>
+    </div>
+    <div id="test1" class="col s12"><div class="row">
+    <form id="addRateForm" method="post" enctype="multipart/form-data">
+       <div class="row">        
+        <div class="input-field col s12">
+        <select name="tour_id" id="tour_id">
+              <?php foreach ($allTour as $key => $allTourRow) { ?>
+              <option value="<?php echo $allTourRow["id"]; ?>"><?php echo $allTourRow["name"]; ?></option>
+              <?php  } ?>
+            </select> 
+          <label for="title">Select Tour</label>
+        </div>
+      </div> 
+       <div class="row">
+        <div class="input-field col s12">
+              <input type="text" name="title" id="title" placeholder="Entyer your Title">
+              <label for="details">Title</label>
+            </div>
+        </div> 
+      <div class="row">
+        <div class="input-field col s12">
+              <textarea  class="validate materialize-textarea"  id="detail" name="detail">
+              </textarea>
+              <label for="details">Details</label>
+            </div>
+        </div> 
+    </form>
+  </div></div>
+    <div id="test2" class="col s12"><div class="container">
  <div class="row">
- <div class="card-panel">
+ <div>
   <div class="page-header">
       <div class="page-title">Rate Management</div>      
-      <div class="page-button"><a class="waves-effect waves-light btn blue" id="addRate">Add</a></div>
+     <!--  <div class="page-button"><a class="waves-effect waves-light btn blue" id="addRate">Add</a></div> -->
   </div>
    <div class="page-content">
     <table border="1" class="responsive-table centered">
     <thead>
       <tr>
         <th>Order</th>
-        <th>Tour</th>    
+      <!--   <th>Tour</th>   -->  
         <th>Title</th>
         <th>Details</th>             
         <th>Actions</th>
       </tr>
     </thead>
     <tbody>
-      <?php foreach ($allRateData as $key => $allRateRow) { ?>
+      <?php foreach ($allRate as $key => $allRateRow) { ?>
       <tr id="rate-id<?php echo $allRateRow['id']; ?>">  
         <td><?php echo $allRateRow['id']; ?></td>  
-         <td><?php echo $allRateRow['tour_id']; ?></td>         
+     <!--     <td><?php echo $allRateRow['tour_name']; ?></td>   -->       
         <td><?php echo $allRateRow['title']; ?></td>
         <td><?php echo $allRateRow['detail']; ?></td>        
         <td class="right-align blog-btn">
@@ -37,22 +71,39 @@
  </div>  
 </div>   
 
-<!-- Modal Structure -->
-  <div id="rateModal" class="modal">
-    <div class="modal-content">
-      <?php $this->load->view("addRate"); ?>
-    </div>
-    <div class="modal-footer">
-      <a id="sendRate" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
-    </div>
+</div>
+    
   </div>
 
-  <!-- Modal Structure -->
-   <div id="editRateModal" class="modal">
-    <div class="modal-content">
-     </div>
 
-    <div class="modal-footer">
-      <a  id="updateRate" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
-    </div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

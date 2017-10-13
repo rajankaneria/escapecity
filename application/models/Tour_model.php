@@ -1,7 +1,6 @@
 <?php 
-class Tour_model extends  CI_Model{
-
-
+class Tour_model extends  CI_Model
+{
 	public function tourDetails($tourID)
 	{
 		$query = $this->db->query("select * from tours where id='$tourID'");
@@ -202,11 +201,20 @@ class Tour_model extends  CI_Model{
 		return $result;
 	}
 
+	public function nameOfTour(){
+		$query=$this->db->query("select * from tours");
+		$result=$query->result_array();
+		$output=[];
+		foreach ($result as $key => $resultRow) {
+			//$output[$resultRow['id']]=$resultRow[];
+			//$tourID = $resultRow["id"];
+			//$tourName = $resultRow["name"];
+			$output[$resultRow["id"]] = $resultRow["name"];			
+		}
+		return $output;
+
+	}
 		
 }
-
-	
-
-
 ?>
 

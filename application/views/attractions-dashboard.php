@@ -1,29 +1,65 @@
-<?php $this->load->view("admin-nav"); ?>
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Add Attractions</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Attractions List</a></li> 
+      </ul>
+    </div>
+    <div id="test1" class="col s12">
+      <div class="row">
+    <form id="addAttractionsForm" method="post" enctype="multipart/form-data">
+      <div class="row">        
+        <div class="input-field col s12">
+        <select name="tour_id" id="tour_id">
+              <?php foreach ($allTour as $key => $allTourRow) { ?>
+              <option value="<?php echo $allTourRow["id"]; ?>"><?php echo $allTourRow["name"]; ?></option>
+              <?php  } ?>
+            </select> 
+          <label for="title">Select Tour</label>
+        </div>
+      </div> 
+     <div class="row">
+          <div class="input-field col s12">
+            <input  name="title" id="title" type="text" class="validate"> 
+            <label for="name">title</label>
+          </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+              <textarea  class="validate materialize-textarea"  id="details" name="details">
+              </textarea>
+              <label for="details">Details</label>
+            </div>
+        </div> 
+    </form>
+  </div>
+  </div>
+<div id="test2" class="col s12">      
 <div class="container">
  <div class="row">
 
- <div class="card-panel">
+ <div>
 
   <div class="page-header">
       <div class="page-title">Attractions Management</div>      
-      <div class="page-button"><a class="waves-effect waves-light btn blue" id="addAttractions">Add</a></div>
+   <!--    <div class="page-button"><a class="waves-effect waves-light btn blue" id="addAttractions">Add</a></div> -->
   </div>
    <div class="page-content">
-   	<table border="1" class="responsive-table centered">
+    <table border="1" class="responsive-table centered">
     <thead>
-   		<tr>
+      <tr>
         <th>Order</th>
-        <th>Tour</th>    
+        <!-- <th>Tour</th>    --> 
         <th>Title</th> 
         <th>Details</th>                
         <th>Actions</th>
-   		</tr>
+      </tr>
     </thead>
     <tbody>
-      <?php foreach ($attractionsData as $key => $attractionsRow) { ?>
+      <?php foreach ($allAttractions as $key => $attractionsRow) { ?>
       <tr id="attractions-id<?php echo $attractionsRow['id']; ?>">  
          <td><?php echo $attractionsRow['id']; ?></td>         
-        <td><?php echo $attractionsRow['tour_id']; ?></td> 
+       <!--  <td><?php echo $attractionsRow['tour_name']; ?></td>  -->
          <td><?php echo $attractionsRow['title']; ?></td> 
          <td><?php echo $attractionsRow['details']; ?></td>              
         
@@ -34,28 +70,10 @@
       </tr>
       <?php } ?>
       </tbody>
-   	</table>
+    </table>
    </div>
   </div>
  </div>  
+</div>      
 </div>   
-
-<!-- Modal Structure -->
-  <div id="attractionsModal" class="modal">
-    <div class="modal-content">
-      <?php $this->load->view("addAttractions"); ?>
-    </div>
-    <div class="modal-footer">
-      <a id="sendAttractions" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
-    </div>
-  </div>
-
-  <!-- Modal Structure -->
-   <div id="editAttractionsModal" class="modal">
-    <div class="modal-content">
-     </div>
-
-    <div class="modal-footer">
-      <a  id="updateAttractions" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
-    </div>
-  </div>
+</div>

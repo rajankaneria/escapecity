@@ -23,8 +23,10 @@
     <tbody>
       <?php foreach ($monthDetails as $key => $monthRow) { ?>
       <tr id="month-id<?php echo $monthRow['id']; ?>">  
-         <td><?php echo $monthRow['id']; ?></td>         
-         <td><?php echo $monthRow['month']; ?></td>         
+        <td><?php echo $monthRow['id']; ?></td>  
+         <?php $monthNum  = $monthRow['month'];
+          $monthName = date('F', mktime(0, 0, 0, $monthNum, 10)); ?>       
+        <td><?php echo $monthName; ?></td>         
         <td><?php echo $monthRow['title']; ?></td>
         <td><?php echo substr($monthRow['description'], 0,180)."...."; ?></td>        
         <td><img src="<?php echo base_url(); ?>html/images/tours/<?php echo $monthRow['image']; ?>" width="170" height="170"/></td>     
