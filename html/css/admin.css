@@ -1,4 +1,30 @@
 /* Navbar ====================================== */
+
+.container{
+  width: 100%;
+}
+.sidebar-desktop {
+    background: #fff;
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    border-top: 1px solid #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+.sidebar-desktop li a {
+    padding: 5px 20px;
+    color: #000;
+}
+.sticky {
+  position: relative;
+  top: 0;
+}
+
+
+
+
+
+
 nav .nav-wrapper{
   overflow: hidden;
 }
@@ -8,7 +34,7 @@ nav .nav-wrapper{
     top: 0;
 }
 .admin-header-area{
-  position: fixed;
+  position: relative;
   top: 0px;
   z-index: 100;
 }
@@ -275,6 +301,9 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 .admin-navigation li:hover{
   background: rgba(38,38,38,0.1);
 }
+
+
+
 .mobile-menu-btn {
   background: #ddd;
   color: #000;
@@ -285,12 +314,22 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
   padding: 11px 15px;
   border-radius: 50px;
   padding-top: 15px;
+  display: none;
 }
 .active-menu{
   background: rgba(55,55,55,0.2);
 }
 /**========== Mobile Responsive ============*/
 @media(max-width: 768px){
+
+  /*navigation*/
+  .mobile-menu-btn{
+    display: block;
+  }
+  .sidebar-desktop{
+    display: none;
+  }
+
   section.content{
     padding: 15px;
   }
@@ -308,4 +347,9 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
   }
 }
 .blue {background:#000 !important;float: right;}
-.page-title{font-size: 27px !important;text-align: left;}
+.page-title{
+  font-size: 27px !important;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
