@@ -56,9 +56,7 @@
 <div class="col s12 m10">
   
  <div class="row">
-
  <div class="card-panel">
-
   <div class="page-header">
       <div class="page-title">Tour Management</div>      
      <!--  <div class="page-button"><a class="waves-effect waves-light btn blue" id="addItinrary">Itinrary List</a></div> -->

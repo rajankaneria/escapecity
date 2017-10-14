@@ -231,13 +231,13 @@ class Tour_details extends CI_Controller
 		public function itinraryDashboard()
 		{		
 
-			$this->load->model("tour_model");		
+			$this->load->model("tour_model");	
+			$allTour=$this->tour_model->tourname();	
 			$tour_list=$this->tour_model->tourList();
 		    $touritem = $this->tour_model->touritem();
 		    $region_type=$this->tour_model->region_type();
 		    $this->load->model("itinrary_model");
-			$allItinrary=$this->itinrary_model->allItinrary();
-			$allTour=$this->tour_model->tourname();	
+		    $allItinrary=$this->itinrary_model->allItinrary();		    
 
 			$headerData = array(
 				"pageTitle" => "itinrary_tour",
@@ -253,7 +253,7 @@ class Tour_details extends CI_Controller
 				"footerData" => $footerData	
 			);
 			$this->load->view('admin-templete',$viewData);
-		}
+	}
 
 		public function addItinrary(){
 			$this->load->model("itinrary_model");
@@ -263,6 +263,7 @@ class Tour_details extends CI_Controller
 				"date"=>$_POST['date'],
 				"details"=>$_POST['details']
 			);
+			var_dump($result);
 			$this->itinrary_model->addItinrary($result);
 		}
 
@@ -292,26 +293,28 @@ class Tour_details extends CI_Controller
 		}
 		public function tourByItinrary($tourId){
 			$this->load->model("tour_model");
+			$allTour=$this->tour_model->tourname();	
 			$result=$this->tour_model->tourItinrary($tourId);			
-			$this->load->view("itinrary-dashboard",array("allItinrary"=>$result));
+			$this->load->view("itinrary-dashboard",array("allItinrary"=>$result,"allTour"=>$allTour));
 		}
 		public function tourByAttractions($tourId){
 			$this->load->model("tour_model");
+			$allTour=$this->tour_model->tourname();	
 			$result=$this->tour_model->tourAttractions($tourId);			
-			$this->load->view("attractions-dashboard",array("allAttractions"=>$result));
+			$this->load->view("attractions-dashboard",array("allAttractions"=>$result,"allTour"=>$allTour));
 		}
 		public function tourByRate($tourId){
 			$this->load->model("tour_model");
 			$allTour=$this->tour_model->tourname();	
 			$this->load->model("tour_model");
 			$result=$this->tour_model->tourRate($tourId);			
-			$this->load->view("rate-dashboard",array("allRate"=>$result));
+			$this->load->view("rate-dashboard",array("allRate"=>$result,"allTour"=>$allTour));
 		}
 		public function tourByPhoto($tourId){
 			$this->load->model("tour_model");
-			$allTour=$this->tour_model->tourname();	
+			$allTour=$this->tour_model->tourname();
 			$result=$this->tour_model->tourphot($tourId);			
-			$this->load->view("photo-dashboard",array("allPhoto"=>$result));
+			$this->load->view("photos-dashboard",array("allPhotos"=>$result,"allTour"=>$allTour));
 		}
 
 }

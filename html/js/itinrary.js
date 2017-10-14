@@ -8,7 +8,6 @@ $(function(){
 	});
 
 	$("#sendItinrary").on("click",function(){
-		console.log("hello");
 		var formData = new FormData($('#addItinraryForm')[0]);
 		$.ajax({
 		    url:baseURL+"tour_details/addItinrary/",
@@ -23,6 +22,39 @@ $(function(){
 		});
 	});
 
+
+		/*========Tour======*/		
+
+	$(".tour-itinrary-edit-btn").on("click",function(){
+		$("#itinraryModal").modal('open');			
+		var itinraryID=$(this).data('tour-id');
+		$.post(baseURL+"tour_details/tourByItinrary/"+itinraryID,function(data){
+			$("#itinraryModal .modal-content").html(data);
+			$('ul.tabs').tabs();
+			$('select').material_select();
+			initEditItinrary();
+			initUpdateItinrary();
+			initDeleteItinrary();
+		});
+	});
+/*===Main function over==========*/
+});
+function initEditItinrary(){
+	$(".edit-itinrary").on("click",function(){
+		$("#itinraryModal").modal('close');
+		$("#editItinraryModal").modal('open');		
+		$("#editItinraryModal .modal-content").html("");
+		var itinraryId=$(this).data('itinrary-id');
+		$.post(baseURL+"tour_details/editItinrary/"+itinraryId,function(data){
+			$("#editItinraryModal .modal-content").html(data);
+			Materialize.updateTextFields();
+			$('select').material_select();
+		});
+	});
+}
+
+
+function initUpdateItinrary(){
 	$("#updateItinrary").on("click",function(){
 		var formData = new FormData($('#updateItinraryForm')[0]);
 		$.ajax({
@@ -37,7 +69,10 @@ $(function(){
 		    }
 		});
 	});
+}
 
+
+function initDeleteItinrary(){
 	$(".delete-itinrary").on("click",function(){
 		var itinraryId=$(this).data('itinrary-id');
 		if(confirm("Do You want to delete this record..?")){
@@ -46,31 +81,4 @@ $(function(){
 			});
 		}
 	});
-
-	$(".edit-itinrary").on("click",function(){
-		$("#itinraryModal").modal('close');
-		$("#editItinraryModal").modal('open');		
-		$("#editItinraryModal .modal-content").html("");
-		var itinraryId=$(this).data('itinrary-id');
-		$.post(baseURL+"tour_details/editItinrary/"+itinraryId,function(data){
-			$("#editItinraryModal .modal-content").html(data);
-			Materialize.updateTextFields();
-			  $('select').material_select();
-		});
-	});
-
-
-		/*========Tour======*/		
-
-	$(".tour-itinrary-edit-btn").on("click",function(){
-			$("#itinraryModal").modal('open');			
-			var tourID=$(this).data('tour-id');
-			$.post(baseURL+"tour_details/tourByItinrary/"+tourID,function(data){
-				$("#itinraryModal .modal-content").html(data);
-				$('ul.tabs').tabs();
-				$('select').material_select();
-			});
-});
-
-/*===Main function over==========*/
-});
+}
