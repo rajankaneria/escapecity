@@ -9,7 +9,7 @@
             <span>Add Tour</span>
         </a>
     </li>
-    <li ng-class="url == 'download' ? 'active' : ''">
+    <li ng-class="url == '' ? 'active' : ''">
         <a href="<?php echo base_url() ?>admin/banner" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
             <span>Banner</span>
         </a>
