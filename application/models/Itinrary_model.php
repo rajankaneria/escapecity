@@ -26,6 +26,11 @@ class Itinrary_model extends CI_Model
 		$result=$query->result_array();
 		return $result;
 	}
+	public function tourItinraryData($tourID){
+		$query=$this->db->query("select * from itinrary where tour_id ='$tourID' ");
+		$result=$query->result_array();
+		return $result;
+	}
 }
 
 ?>

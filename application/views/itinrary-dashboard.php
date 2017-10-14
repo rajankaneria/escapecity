@@ -1,3 +1,5 @@
+  
+
   <div class="row">
     <div class="col s12">
       <ul class="tabs">
@@ -12,13 +14,14 @@
     <form id="addItinraryForm" method="post" enctype="multipart/form-data">
       <div class="row">        
         <div class="input-field col s12">
-        <select name="tour_id" id="tour_id">
+         <select name="tour_id" id="tour_id">
               <?php foreach ($allTour as $key => $allTourRow) { ?>
-              <option value="<?php echo $allTourRow["id"]; ?>"><?php echo $allTourRow["name"]; ?></option>
+              <option  value="<?php echo $allTourRow["id"]; ?>"><?php echo $allTourRow["name"]; ?></option>
               <?php  } ?>
             </select> 
           <label for="title">Select Tour</label>
         </div>
+      </div> 
       </div> 
      <div class="row">
           <div class="input-field col s12">
@@ -75,4 +78,6 @@
  </div>  
 </div>
   </div>   
-</div>
+
+
+

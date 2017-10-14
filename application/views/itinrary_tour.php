@@ -6,7 +6,7 @@
 
   <div class="page-header">
       <div class="page-title">Tour Management</div>      
-      <div class="page-button"><a class="waves-effect waves-light btn blue" id="addItinrary">Itinrary List</a></div>
+     <!--  <div class="page-button"><a class="waves-effect waves-light btn blue" id="addItinrary">Itinrary List</a></div> -->
   </div>
    <div class="page-content">
     <table border="1" class="responsive-table centered">
@@ -28,18 +28,18 @@
                     <td><?php echo $tourdata["region_name"]; ?></td>
                     <td><?php echo $tourdata["period_to"]." - ". $tourdata["period_from"];; ?></td>                 
                     <!-- <td><img src="<?php echo base_url() ?>html/images/<?php echo $tourdata['home_banner']; ?>" width="150" height="150"/>    </td> -->
-                  <!--   <td class="right-align tour-btn">
-                      <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-edit-btn"><i class="material-icons edit-icon">mode_edit</i></a>
-                      <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-delete-btn"><i class="material-icons delete-icon">delete</i></a>
-                    </td> -->
+                     <td class="right-align tour-btn">
+                      <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-itinrary-edit-btn"><i class="material-icons edit-icon">mode_edit</i></a>
+                    <!--  <a data-tour-id="<?php echo $tourdata['id']; ?>"  class="btn-floating waves-effect waves-light  tour-delete-btn"><i class="material-icons delete-icon">delete</i></a> -->
+                    </td>
                   </tr>
                 <?php } ?>
               </tbody>
           </table>
-   </div>
-  </div>
- </div>  
-</div>  
+         </div>
+        </div>
+       </div>  
+      </div>  
 <div id="itinraryModal" class="modal">
     <div class="modal-content">
       <?php $this->load->view("itinrary-dashboard",array("allItinrary"=>$allItinrary,"allTour"=>$allTour)); ?>

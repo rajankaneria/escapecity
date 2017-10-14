@@ -13,9 +13,7 @@ class Tour_details extends CI_Controller
 		    $touritem = $this->tour_model->touritem();
 		    $region_type=$this->tour_model->region_type();
 		    $this->load->model("photos_model");
-		    $allPhotos=$this->photos_model->allPhotos();
-
-		    $allTour=$this->tour_model->tourname();
+		    $allPhotos=$this->photos_model->allPhotos();		    
 
 			$headerData = array(
 				"pageTitle" => "photo-tour",
@@ -292,5 +290,29 @@ class Tour_details extends CI_Controller
 			//var_dump($result);
 			$this->load->view("updateItinrary",$result);
 		}
+		public function tourByItinrary($tourId){
+			$this->load->model("tour_model");
+			$result=$this->tour_model->tourItinrary($tourId);			
+			$this->load->view("itinrary-dashboard",array("allItinrary"=>$result));
+		}
+		public function tourByAttractions($tourId){
+			$this->load->model("tour_model");
+			$result=$this->tour_model->tourAttractions($tourId);			
+			$this->load->view("attractions-dashboard",array("allAttractions"=>$result));
+		}
+		public function tourByRate($tourId){
+			$this->load->model("tour_model");
+			$allTour=$this->tour_model->tourname();	
+			$this->load->model("tour_model");
+			$result=$this->tour_model->tourRate($tourId);			
+			$this->load->view("rate-dashboard",array("allRate"=>$result));
+		}
+		public function tourByPhoto($tourId){
+			$this->load->model("tour_model");
+			$allTour=$this->tour_model->tourname();	
+			$result=$this->tour_model->tourphot($tourId);			
+			$this->load->view("photo-dashboard",array("allPhoto"=>$result));
+		}
+
 }
 ?>

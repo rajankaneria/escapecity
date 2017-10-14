@@ -3,8 +3,10 @@ class Tour_model extends  CI_Model
 {
 	public function tourDetails($tourID)
 	{
+		$this->load->model("rate_model");
 		$query = $this->db->query("select * from tours where id='$tourID'");
 		$result = $query->row_array();
+		$result["rateArray"] = $this->rate_model->tourRate($tourID);
 		return $result;
 	}
 	public function tourItinrary($tourID)
@@ -13,12 +15,7 @@ class Tour_model extends  CI_Model
 		$result = $query->result_array();
 		return $result;
 	}
-	/*public function tourprice($tourID)
-	{
-		$query = $this->db->query("select * from price where tour_id='$tourID' ");
-		$result = $query->result_array();
-		return $result;
-	}*/
+	
 	public function tourphot($tourID)
 	{
 		$query = $this->db->query("select * from  photos where tour_id='$tourID' ");
@@ -42,7 +39,7 @@ class Tour_model extends  CI_Model
 			join tour_type ty on tr.type_id = ty.t_id 
 			join region rg on tr.region_id = rg.id 
 			order by tr.id asc
-		");
+			");
 		$result = $query->result_array();
 		return $result;
 	}

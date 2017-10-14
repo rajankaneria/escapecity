@@ -26,6 +26,12 @@ class Rate_model extends CI_Model
 		$result=$query->result_array();
 		return $result;
 	}
+
+	public function tourRate($tourID){
+		$query=$this->db->query("select * from rate where tour_id='$tourID'");
+		$result=$query->result_array();
+		return $result;
+	}
 }
 
 ?>

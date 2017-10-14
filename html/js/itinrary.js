@@ -1,11 +1,11 @@
 var baseURL;
 $(function(){
 	$(".modal").modal();
+	$('select').material_select();
 	baseURL=$("#base_url").val();
 	$("#addItinrary").on("click",function(){
 		$("#itinraryModal").modal('open');
 	});
-
 
 	$("#sendItinrary").on("click",function(){
 		console.log("hello");
@@ -22,8 +22,6 @@ $(function(){
 		    }
 		});
 	});
-
-
 
 	$("#updateItinrary").on("click",function(){
 		var formData = new FormData($('#updateItinraryForm')[0]);
@@ -51,9 +49,7 @@ $(function(){
 
 	$(".edit-itinrary").on("click",function(){
 		$("#itinraryModal").modal('close');
-		$("#editItinraryModal").modal('open');
-
-		
+		$("#editItinraryModal").modal('open');		
 		$("#editItinraryModal .modal-content").html("");
 		var itinraryId=$(this).data('itinrary-id');
 		$.post(baseURL+"tour_details/editItinrary/"+itinraryId,function(data){
@@ -61,8 +57,20 @@ $(function(){
 			Materialize.updateTextFields();
 			  $('select').material_select();
 		});
-
 	});
+
+
+		/*========Tour======*/		
+
+	$(".tour-itinrary-edit-btn").on("click",function(){
+			$("#itinraryModal").modal('open');			
+			var tourID=$(this).data('tour-id');
+			$.post(baseURL+"tour_details/tourByItinrary/"+tourID,function(data){
+				$("#itinraryModal .modal-content").html(data);
+				$('ul.tabs').tabs();
+				$('select').material_select();
+			});
+});
 
 /*===Main function over==========*/
 });

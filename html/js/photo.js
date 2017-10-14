@@ -58,6 +58,15 @@ $(function(){
 			 Materialize.updateTextFields();
 		});
 	});
+	$(".tour-photo-edit-btn").on("click",function(){
+		$("#photosModal").modal('open');
+		var photoId=$(this).data('tour-id');
+		$.post(baseURL+"tour_details/tourByPhoto/"+photoId,function(data){
+			$("#photosModal .modal-content").html(data);
+			$('ul.tabs').tabs();
+		});
+
+	});
 
 /*===Main function over==========*/
 });
