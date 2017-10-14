@@ -7,20 +7,7 @@ $(function(){
 		$("#itinraryModal").modal('open');
 	});
 
-	$("#sendItinrary").on("click",function(){
-		var formData = new FormData($('#addItinraryForm')[0]);
-		$.ajax({
-		    url:baseURL+"tour_details/addItinrary/",
-		    type: 'POST',
-		    processData: false,
-		    contentType: false,
-		    data: formData,
-		    success: function (result){
-		    	alert("Itinrary Inserted Successfully");
-		    	//window.location.reload();
-		    }
-		});
-	});
+	
 
 
 		/*========Tour======*/		
@@ -35,6 +22,7 @@ $(function(){
 			initEditItinrary();
 			initUpdateItinrary();
 			initDeleteItinrary();
+			initAddItinrary();
 		});
 	});
 /*===Main function over==========*/
@@ -80,5 +68,24 @@ function initDeleteItinrary(){
 			$("#itinrary-id"+itinraryId).remove();
 			});
 		}
+	});
+}
+
+
+function initAddItinrary(){
+	$("#sendItinrary").off("click");
+	$("#sendItinrary").on("click",function(){
+		var formData = new FormData($('#addItinraryForm')[0]);
+		$.ajax({
+		    url:baseURL+"tour_details/addItinrary/",
+		    type: 'POST',
+		    processData: false,
+		    contentType: false,
+		    data: formData,
+		    success: function (result){
+		    	alert("Itinrary Inserted Successfully");
+		    	//window.location.reload();
+		    }
+		});
 	});
 }
