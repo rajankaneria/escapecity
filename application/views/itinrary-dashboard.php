@@ -22,7 +22,7 @@
           <label for="title">Select Tour</label>
         </div>
       </div> 
-      </div> 
+      
      <div class="row">
           <div class="input-field col s12">
             <input  name="date" id="date" type="text" class="validate"> 

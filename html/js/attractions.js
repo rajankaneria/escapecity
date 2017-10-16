@@ -30,6 +30,7 @@ $(function(){
 		$.post(baseURL+"tour_details/tourByAttractions/"+attractionId,function(data){
 			$("#attractionsModal .modal-content").html(data);
 			$('ul.tabs').tabs();
+			$('select').material_select();
 			initEditAtt();
 			initUpdateAtt();
 			initDeleteAtt();
@@ -41,7 +42,7 @@ $(function(){
 });
 
 function initEditAtt(){
-		$(".edit-attractions").on("click",function(){
+	$(".edit-attractions").on("click",function(){
 		$("#editAttractionsModal").modal('open');
 		$("#editAttractionsModal .modal-content").html("");
 		var attractionsId=$(this).data('attractions-id');
@@ -54,7 +55,6 @@ function initEditAtt(){
 	});
 }
 function initUpdateAtt(){
-
 	$("#updateAttractions").on("click",function(){
 		var formData = new FormData($("#updateAttractionsForm")[0]);
 		$.ajax({
@@ -71,7 +71,6 @@ function initUpdateAtt(){
 	});
 }
 function initDeleteAtt(){
-
 	$(".delete-attractions").on("click",function(){
 		var attractionsId=$(this).data('attractions-id');
 		if(confirm("Do You want to delete this record..?")){
