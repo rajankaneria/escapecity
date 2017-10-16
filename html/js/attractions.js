@@ -47,8 +47,7 @@ function initEditAtt(){
 		$("#editAttractionsModal .modal-content").html("");
 		var attractionsId=$(this).data('attractions-id');
 		$.post(baseURL+"tour_details/editAttractions/"+attractionsId,function(data){
-			$("#editAttractionsModal .modal-content").html(data);
-			$(".modal").modal();
+			$("#editAttractionsModal .modal-content").html(data);			
 			Materialize.updateTextFields();
 			  $('select').material_select();
 		});

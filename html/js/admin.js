@@ -52,8 +52,9 @@ $(function(){
 			processData:false,
 			data:formData,
 			success:function(result){
-				alert("Added successfully.");
+				alert("Tour Added successfully.");
 				$("#addtourModal").modal("close");
+				window.location.reload();
 			    }
 		     });
 	      });
@@ -70,8 +71,9 @@ $(function(){
 			processData:false,
 			data:formData,
 			success:function(result){
-				alert("update successfully.");
+				alert("Tour update successfully.");
 				$("#updatetourmodel").modal("close");
+				window.location.reload();
 			}
 	 	  });
         });
@@ -151,8 +153,8 @@ $(function(){
 			processData:false,
 			contentType:false,
 			success:function(result){
-				//alert("Added Testimonial successfully.....");
-				//window.location.reload();
+				alert("Added Testimonial successfully.....");
+				window.location.reload();
 			}
 
 		});
@@ -265,8 +267,8 @@ $(function(){
 			contentType:false,
 			processData:false,
 			success:function(result){
-				//alert("Month added successfully......");
-				//window.location.reload();
+				alert("Month added successfully......");
+				window.location.reload();
 			}
 		});
 	});
@@ -282,8 +284,8 @@ $(function(){
 			processData:false,
 			contentType:false,
 			success:function(result){
-				//alert("Month Updated successfully....");
-				//window.location.reload();
+				alert("Month Updated successfully....");
+				window.location.reload();
 			}
 
 		});
@@ -308,8 +310,8 @@ $(function(){
 		$.post(baseURL+"admin/editMonth/"+monthID,function(data){
 			$("#editMonthModal .modal-content").html(data);
 			Materialize.updateTextFields();
+			$('select').material_select();			
 		});
-
 	});
 
 
