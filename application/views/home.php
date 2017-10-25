@@ -69,7 +69,7 @@
 
 <!--=======================START MAIN tours CARD  ===========================--> 
 
-<div class="parallax-container home_parallax z-depth-1">
+<div class="parallax-container home_parallax z-depth-1" style="top: 100px;">
     <div class="parallax">
       <div class="parallax-overlay"></div>
         <img src="<?php echo base_url(); ?>html/images/back_img.jpg">
