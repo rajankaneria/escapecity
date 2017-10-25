@@ -17,7 +17,7 @@ $(function(){
         data: formData,
         success: function (result){
         	alert("Photos Inserted Successfully");
-        	//window.location.reload();
+        	window.location.reload();
         }
     });
 });
@@ -33,10 +33,11 @@ $(function(){
 		$.post(baseURL+"tour_details/tourByPhoto/"+photoId,function(data){
 			$("#photosModal .modal-content").html(data);
 			$('ul.tabs').tabs();
-		initEditPhoto();
-		initUpdatePhoto();
-		initDeleteAttraction();
-
+			$('select').material_select();
+			 Materialize.updateTextFields();
+			initEditPhoto();
+			initUpdatePhoto();
+			initDeleteAttraction();
 		});
 
 	});
@@ -69,7 +70,7 @@ function initUpdatePhoto(){
 	        
 	        success: function (result){
 	        	alert("Photos Updated Successfully");
-	        	//window.location.reload();
+	        	window.location.reload();
         	}
 		});
 

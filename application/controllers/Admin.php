@@ -271,11 +271,7 @@ class Admin extends CI_Controller {
 			//var_dump($result);
 			$this->load->view("updateMonth",$result);
 		}
-		public function addItinrary(){
-			
-
-		}
-
+		
 
 
 }

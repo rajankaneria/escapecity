@@ -50,6 +50,8 @@ $(function(){
           data:formData,
           success:function(result){
             $("#addBannerModel").modal("close");
+            alert("Banner Added successfully..");
+            window.location.reload();
           }
 
         }); 
@@ -69,6 +71,8 @@ $(function(){
           data:formData,
           success:function(result){             
             $("#upbannermodal").modal("close");
+            alert("Banner Added successfully..");
+            window.location.reload();
           }
         });
     });

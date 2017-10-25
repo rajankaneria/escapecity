@@ -1,6 +1,4 @@
-  
-
-  <div class="row">
+<div class="row">
     <div class="col s12">
       <ul class="tabs">
         <li class="tab col s3"><a href="#test1">Add Itinrary</a></li>
@@ -38,8 +36,8 @@
         </div> 
     </form>
   </div>
-    </div>
-    <div id="test2" class="col s12">
+</div>
+<div id="test2" class="col s12">
       
 <div class="container">
  <div class="row">
@@ -77,7 +75,9 @@
   </div>
  </div>  
 </div>
-  </div>   
+  </div> 
+  </div>
+
 
 
 

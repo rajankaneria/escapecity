@@ -31,6 +31,8 @@ $(function(){
 		$.post(baseURL+"tour_details/tourByRate/"+rateId,function(data){
 			$("#rateModal .modal-content").html(data);
 			$('ul.tabs').tabs();
+			$('select').material_select();
+			 Materialize.updateTextFields();
 		initEditRate();
 		initDeleteRate();
 		initUpdateRate();

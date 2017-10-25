@@ -157,6 +157,11 @@
 /* css for main slider*/
 #mainSlider{
     height: 600px;
+
+}
+div#mainSlider {
+    position: relative;
+    top: 100px;
 }
 
 .carousel.carousel-slider .carousel-fixed-item{

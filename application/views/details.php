@@ -11,7 +11,7 @@
  <!--===================== START full or main container container =================--> 
 <div class="fullwidth-container tab_container">
    <div class="row">
-     <div class="container lohagadh_container">
+     <div class="lohagadh_container">
         <div class="col s9 tabs-title">
          <ul id="tabs-swipe-demo" class="tabs">
             <li class="tab col s3 tab-title"><a  href="#test-swipe-1" class="active">DETAILS</a></li>
@@ -157,7 +157,7 @@
          <div class="card-panel side-box-content">
             <div class="icon">
               <i class="fa awesome fa-tag icon-flipped"></i></div>
-              <span class="white-text">
+              <span class="price-Text">
                   <center>                   
                    <?php echo $tourDetail["price"]; ?>                 
                    </center>

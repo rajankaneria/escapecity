@@ -1,5 +1,6 @@
 <div class="row">
     <form id="updateMonthForm" method="post" enctype="multipart/form-data">
+    
       <div class="row">
       <div class="input-field col s12 m12">       
        <select name="month" id="month">
@@ -16,9 +17,10 @@
         <option  <?php if($month=='10'){echo "selected='selected'";} ?> value="10">October</option>
         <option  <?php if($month=='11'){echo "selected='selected'";} ?> value="11">November</option>
         <option  <?php if($month=='12'){echo "selected='selected'";} ?> value="12">December</option>     
-        </select>     
+        </select>    
+        <label for="title">Select Month</label>   
       </div>
-    </div>
+    </div> 
       <div class="row">        
         <div class="input-field col s12">
         <input id="title" name="title" type="text" class="validate" placeholder="Enter your Blog title" value="<?php echo $title; ?>">

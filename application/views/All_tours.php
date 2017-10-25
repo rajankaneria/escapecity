@@ -1,5 +1,6 @@
-<div id="detailpage" class="parallax-container">
+<div id="detailpage" class="parallax-container" style="top: 100px;margin-bottom: 100px;">
   <div class="parallax">
+    <center><h5 class="ttl-tours">Tours</h5></center>
     <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/<?php echo $tourDetails[0]['home_banner']; ?>">
    </div>
      
@@ -7,60 +8,17 @@
 
 <!-- Tour Details Start Here -->
 
-<div class="row">
+<div class="row" style="position: relative;">
   <div class="TBM-area">   <!-- Tour Details Area -->
     <div class="col s12 m9 TBM-details-area">
 
       <!-- List of tour -->
       <div class="row tourList-area-block">
-        <?php foreach ($tourDetails as $key => $tourRow) { ?>
-        <div class="tourList-area">
-          <div class="tour-img-area col s12 m4">
-            <img src="<?php echo base_url(); ?>html/images/<?php echo $tourRow['home_banner']; ?>" class="card-image">
-          </div>
-          <div class="tour-content col s12 m8">
-            <h5 class="tour-title"><?php echo $tourRow['name']; ?></h5>
-            <h6 class="tour-sub-title"><?php echo $tourRow['tour_name']; ?></h6>               
-              <p><?php echo substr($tourRow['detail'],0,135)."...."; ?></p>
-              <div class="row">
-                <div class="col s12 m6">
-                  <i class="price fa fa-inr" aria-hidden="true">19000</i>
-                  <i class="fa fa-inr off-price-inr" aria-hidden="true"></i> <span  class="off-price">19000</span><span class="perHead">/ Person</span>
-                </div>  
-                <a class="col s12 m6  waves-effect waves-light btn black" href="<?php echo base_url();?>tour/id/<?php echo $tourRow['id']; ?>">VIEW MORE</a>
-              </div>
-          </div>
-        </div>
-        <div class="col s12 m12">
-          <div class="row tour-deails-footer-area">
-               <div class="col s2 detail-box">
-                  <div class="detail-header-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-                  <div class="detail-header-value">3 days</div>
-               </div>
+        <?php foreach ($tourDetails as $key => $tourRow) { 
 
-              <div class="col s2 detail-box">
-                <div class="detail-header-icon"><i class="fa fa-arrows-h" aria-hidden="true"></i></div>
-                <div class="detail-header-value">Easy</div>
-              </div>
+          $this->load->view('tourDetail_frame',array("tourRow"=>$tourRow));
 
-
-              <div class="col s2 detail-box">
-                <div class="detail-header-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                <div class="detail-header-value">Ahmednagar</div>
-              </div>
-
-              <div class="col s2 detail-box">
-                <div class="detail-header-icon"><i class="fa fa-area-chart" aria-hidden="true"></i></div>
-                <div class="detail-header-value">4671 feet</div>
-              </div>
-
-              <div class="col s2 detail-box">
-                <div class="detail-header-icon"><i class="fa fa-money" aria-hidden="true"></i></div>
-                <div class="detail-header-value">5000</div>
-              </div>
-            </div>
-        </div>
-        <?php } ?>
+         } ?>
       </div>
     </div>
     <!-- Sidebar Area -->

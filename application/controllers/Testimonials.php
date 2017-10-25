@@ -37,7 +37,7 @@ class Testimonials extends CI_Controller
 
 		$this->testimonial_model->updateTest($updateData,$testID);
 		$config['file_name']=$testID."_testImage";
-		$config['upload_path']='C:\xampp\htdocs\Escapcity-new\html\images\testimonials';
+		$config['upload_path']='C:\wamp\www\Escapcity-new\html\images\testimonials';
 		$config['allowed_types']='gif|png|jpg';
 		$config['overwrite']=TRUE;
 		$config['remove_spaces']=TRUE;
@@ -60,7 +60,7 @@ class Testimonials extends CI_Controller
 
 			$result['image']=$testImage;
 			$config['file_name']=$testID."_testImage";
-			$config['upload_path']='C:\xampp\htdocs\Escapcity-new\html\images\testimonials';
+			$config['upload_path']='C:\wamp\www\Escapcity-new\html\images\testimonials';
 			$config['allowed_types']='gif|png|jpg';
 			$config['overwrite']=TRUE;
 			$config['remove_spaces']=TRUE;

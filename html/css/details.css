@@ -22,6 +22,7 @@
     min-height: 700px;
     width: 100% !important;
     max-width: 100% !important;
+    margin-top: 25px;
 }
 
 /**=================tab css====================**/
@@ -246,7 +247,9 @@
 }
 /* first box button color*/
 .first-box{
-    color: black !important;
+    /*color: black !important;*/
+    color: white !important;
+    background: #000 !important;
 }
 /* second box heading*/
 .box-2-heading
@@ -256,7 +259,8 @@
    
 }
 .main-side-box{
-    margin-top: 30px !important;
+    /*margin-top: 30px !important;*/
+    margin-top: 0px;
 }
 /* css for side box awesome icon*/
 .awesome{
@@ -272,13 +276,28 @@
     padding-top: 5px;
 }
 /* css for side box of detail page*/
-.side-box-content{
+/*.side-box-content{
     background-color:rgb(51, 73, 96) ;
     height: auto;
     padding-top: 20px;
+    margin-top: 0px;
     color: white !important;
     width: 325px;
+}*/
+.price-Text{
+    font-weight: 500;
+    font-size: 24px;
 }
+.side-box-content {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    padding-top: 20px;
+    margin-top: 0px;
+    color: #334960 !important;
+    width: 325px;
+    text-align: center;
+}
+
 .white-text {
     font-size: 25px;
     color: #fff !important;
@@ -298,8 +317,8 @@
 .placeholder{
     background-color: transparent;
     border: none;
-    color: #9bb2ca !important;
-    border-bottom: 1px solid #9bb2ca !important;
+    color: rgba(51, 73, 96, 0.67) !important;
+   /* border-bottom: 1px solid rgb(51, 73, 96) !important;*/
     border-radius: 0;
     outline: none;
     height: 2rem !important;
@@ -323,11 +342,16 @@
     width: 18px;
     height: 18px;
     z-index: 0;
-    border: 2px solid #9bb2ca;
+    border:2px solid rgba(51, 73, 96, 0.79);
     border-radius: 1px;
     margin-top: 2px;
     -webkit-transition: .2s;
     transition: .2s;
+}
+[type="checkbox"]:checked+label:before{
+    border-left: 2px solid transparent;
+    border-right: 2px solid #334960;
+    border-bottom: 2px solid #334960;
 }
 /* css for check box line*/
 [type="checkbox"]+label {

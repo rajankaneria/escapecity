@@ -50,9 +50,9 @@
           <i class="call fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 94278 01299</i>
         </ul>
         <ul class="mail-address-area">
-          <a href="mailto:info@escapcity.com"><i class="mail-address fa fa-envelope" aria-hidden="true">&nbsp; info@escapcity.com</i>
+          <a href="mailto:info@escapcity.com"><i class="mail-address fa fa-envelope" aria-hidden="true">&nbsp;<span style="font-family: "Roboto", sans-serif !important;"> info@escapcity.com</span></i>
           </a>
-          <a href="mailto:escapcity@gmail.com"><i class="mail-address fa fa-envelope" aria-hidden="true">&nbsp; escapcity@gmail.com</i>
+          <a href="mailto:escapcity@gmail.com"><i class="mail-address fa fa-envelope" aria-hidden="true">&nbsp; <span style="font-family: "Roboto", sans-serif;">escapcity@gmail.com</span></i>
           </a>
         </ul>  
       </div>

@@ -121,8 +121,18 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 
 .parallax-container{
     height: 300px;
+    /*top: 100px;*/
 }
-
+.ttl-tours{
+    position: relative;
+    color: #FFF;
+    z-index: 2;
+    top: 120px;
+    font-size: 28px;
+}
+.page-footer.parallax-container{
+    top: 0px !important;
+}
 
 /**============= Footer =====================*/
 
