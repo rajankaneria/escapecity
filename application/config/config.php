@@ -24,7 +24,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://localhost/Escapcity-new/';
+
+$config['base_url'] = 'http://localhost/escapecity/';
+/*$config['base_url'] = 'http://localhost/Escapcity-new/';*/
 
 /*
 |--------------------------------------------------------------------------

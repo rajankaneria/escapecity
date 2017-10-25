@@ -2,7 +2,7 @@
 <div class="container row">
 <div class="col m2 sticky" id="sidebar">
   <div class="sidebar-desktop">
-  <ul>
+   <ul>
     <li><center><label><h5>Menu</h5></label></center></li>
     <li ng-class="url == '' ? 'active' : ''" >
         <a href="<?php echo base_url() ?>admin/admin_tour" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'admin_tour') !== false) { ?> active-menu <?php } ?>">
@@ -15,37 +15,37 @@
         </a>
     </li>
     <li ng-class="url == 'download' ? 'active' : ''">
-        <a href="<?php echo base_url() ?>admin/Month/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+        <a href="<?php echo base_url() ?>admin/Month/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'Month') !== false) { ?> active-menu <?php } ?>">
             <span>Month</span>
         </a>
     </li>
 
      <li ng-class="url == 'download' ? 'active' : ''">
-        <a href="<?php echo base_url() ?>Tour_details/itinraryDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+        <a href="<?php echo base_url() ?>Tour_details/itinraryDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'itinraryDashboard') !== false) { ?> active-menu <?php } ?>">
             <span>Itinrary</span>
         </a>
     </li>
 
       <li ng-class="url == 'download' ? 'active' : ''">
-        <a href="<?php echo base_url() ?>Tour_details/attractionsDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+        <a href="<?php echo base_url() ?>Tour_details/attractionsDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'attractionsDashboard') !== false) { ?> active-menu <?php } ?>">
             <span>Attractions</span>
         </a>
     </li>
 
     <li ng-class="url == 'download' ? 'active' : ''">
-        <a href="<?php echo base_url() ?>Tour_details/rateDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+        <a href="<?php echo base_url() ?>Tour_details/rateDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'rateDashboard') !== false) { ?> active-menu <?php } ?>">
             <span>Rate</span>
         </a>
     </li>
 
       <li ng-class="url == 'download' ? 'active' : ''">
-        <a href="<?php echo base_url() ?>Tour_details/photoDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+        <a href="<?php echo base_url() ?>Tour_details/photoDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'photoDashboard') !== false) { ?> active-menu <?php } ?>">
             <span>Photo</span>
         </a>
     </li>
 
      <li ng-class="url == 'download' ? 'active' : ''">
-        <a href="<?php echo base_url() ?>Testimonials/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+        <a href="<?php echo base_url() ?>Testimonials/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'Testimonials') !== false) { ?> active-menu <?php } ?>">
             <span>Testimonials</span>
         </a>
     </li>
@@ -77,11 +77,11 @@
       <tr id="testid<?php echo $testRow['id']; ?>">  
          <td><?php echo $testRow['id']; ?></td>         
         <td><?php echo $testRow['title']; ?></td>
-        <td><?php echo substr($testRow['details'],0,200)."...."; ?></td>        
+        <td><textarea><?php echo substr($testRow['details'],0,200)."...."; ?></textarea></td>
         <td><img src="<?php echo base_url(); ?>html/images/testimonials/<?php echo $testRow['image']; ?>" width="200" height="200"/></td>     
         <td class="right-align blog-btn">
-        <a data-test-id="<?php echo $testRow['id']; ?>" class="btn-floating waves-effect waves-light red test-delete-btn"><i class="material-icons">delete</i></a>
-        <a data-test-id="<?php echo $testRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey test-edit-btn"><i class="material-icons">mode_edit</i></a>
+        <a data-test-id="<?php echo $testRow['id']; ?>" class="btn-floating waves-effect waves-light test-edit-btn"><i class="material-icons edit-icon">mode_edit</i></a>
+        <a data-test-id="<?php echo $testRow['id']; ?>" class="btn-floating waves-effect waves-light test-delete-btn"><i class="material-icons delete-icon">delete</i></a>
         </td>
       </tr>
       <?php } ?>

@@ -124,6 +124,31 @@ td a {
     color: rgba(166, 38, 38, 1) !important;
 }
 
+/*testimoonial Button*/
+.test-edit-btn{ 
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+.test-edit-btn:hover{
+  background: rgba(0,0,0,0.3);
+}
+.edit-icon{
+    color: #000 !important;
+}
+
+.test-delete-btn{
+    background: transparent;
+    border: 1px solid rgba(166, 38, 38, 1);
+}
+.test-delete-btn:hover{
+    background: rgba(166, 38, 38,0.3) !important;
+}
+.delete-icon{
+    color: rgba(166, 38, 38, 1) !important;
+}
+
+
 
 .banner-edit-btn {
     background: transparent;

@@ -17,37 +17,37 @@
                 </a>
             </li>
             <li ng-class="url == 'download' ? 'active' : ''">
-                <a href="<?php echo base_url() ?>admin/Month/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                <a href="<?php echo base_url() ?>admin/Month/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'Month') !== false) { ?> active-menu <?php } ?>">
                     <span>Month</span>
                 </a>
             </li>
 
              <li ng-class="url == 'download' ? 'active' : ''">
-                <a href="<?php echo base_url() ?>Tour_details/itinraryDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                <a href="<?php echo base_url() ?>Tour_details/itinraryDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'itinraryDashboard') !== false) { ?> active-menu <?php } ?>">
                     <span>Itinrary</span>
                 </a>
             </li>
 
               <li ng-class="url == 'download' ? 'active' : ''">
-                <a href="<?php echo base_url() ?>Tour_details/attractionsDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                <a href="<?php echo base_url() ?>Tour_details/attractionsDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'attractionsDashboard') !== false) { ?> active-menu <?php } ?>">
                     <span>Attractions</span>
                 </a>
             </li>
 
             <li ng-class="url == 'download' ? 'active' : ''">
-                <a href="<?php echo base_url() ?>Tour_details/rateDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                <a href="<?php echo base_url() ?>Tour_details/rateDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'rateDashboard') !== false) { ?> active-menu <?php } ?>">
                     <span>Rate</span>
                 </a>
             </li>
 
               <li ng-class="url == 'download' ? 'active' : ''">
-                <a href="<?php echo base_url() ?>Tour_details/photoDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                <a href="<?php echo base_url() ?>Tour_details/photoDashboard/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'photoDashboard') !== false) { ?> active-menu <?php } ?>">
                     <span>Photo</span>
                 </a>
             </li>
 
              <li ng-class="url == 'download' ? 'active' : ''">
-                <a href="<?php echo base_url() ?>Testimonials/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'banner') !== false) { ?> active-menu <?php } ?>">
+                <a href="<?php echo base_url() ?>Testimonials/" class="waves-effect waves-block <?php if (strpos($_SERVER['PHP_SELF'], 'Testimonials') !== false) { ?> active-menu <?php } ?>">
                     <span>Testimonials</span>
                 </a>
             </li>
