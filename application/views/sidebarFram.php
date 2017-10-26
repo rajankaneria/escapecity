@@ -1,31 +1,6 @@
-<div id="detailpage" class="parallax-container" style="top: 100px;margin-bottom: 100px;">
-  <div class="parallax">
-    <center><h5 class="ttl-tours">Tours</h5></center>
-    <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/<?php echo $tourDetails[0]['home_banner']; ?>">
-   </div>
-     
- </div>
-
-<!-- Tour Details Start Here -->
-
-<div class="row" style="position: relative;">
-  <div class="TBM-area">   <!-- Tour Details Area -->
-    <div class="col s12 m9 TBM-details-area">
-
-      <!-- List of tour -->
-      <div class="row tourList-area-block">
-        <?php foreach ($tourDetails as $key => $tourRow) { 
-
-          $this->load->view('tourDetail_frame',array("tourRow"=>$tourRow));
-
-         } ?>
-      </div>
-    </div>
-    <!-- Sidebar Area -->
-    <div class="col s12 m3 sidebar-area search-sidebar">
-      <div class="row">
-        <div class="searh-area">
-          <center>
+<div class="col s3 m12">
+         <div class="card-panel side-box-content">
+              <center>
             <h5>Search Tours</h5>
             <label>Find our exciting tours today!</label>
           </center>
@@ -36,12 +11,12 @@
             </div>
             <input type="submit" class="waves-effect waves-light btn btn-search" name="" value="Search">
           </form>
+          </div>
         </div>
-
-        <div></div>
-        <!-- Form -->
-        <div class="searh-area">
-          <center><h5>Quick Contact</h5></center>
+ <!--===================forth box==============================-->
+    <div class="col s3 m12">
+      <div class="card-panel side-box-content">
+         <center><h5>Quick Contact</h5></center>
           <form>
             <div class="input-field">
               <input id="last_name" type="text" class="validate" required="required">
@@ -58,7 +33,7 @@
             <div class="input-field">
               <select>
                 <option value="" disabled selected>Choose your option</option>
-                 <option value="1">Roopkund Trek</option>
+                <option value="1">Roopkund Trek</option>
                 <option value="2">Leh Ladakh</option>
                 <option value="3">Valley of Flowers</option>
               </select>
@@ -84,10 +59,5 @@
             </div>
             <input type="submit" class="waves-effect waves-light btn btn-search" name="" value="Send">
           </form>
-        </div>
       </div>
     </div>
-    <!-- Sidebar Over here -->
-  </div>
- <!-- Tour Details Over Here -->
-</div>

@@ -191,65 +191,7 @@
           </div>
         </div>
  <!--===================third box==============================-->
-        <div class="col s3 m12">
-         <div class="card-panel side-box-content">
-           <center><h4  class="box-2-heading">Search Tours</h4></center>
-           <center><p>Find our exciting tours today!</p></center>
-            <div class="row">
-             <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                <i class="fa awesome fa-search material-icons prefix" aria-hidden="true"></i>           
-                  <input id="icon_prefix" type="text" class="validate">
-                  <label for="icon_prefix" class="placeholder" >Search Tour</label>
-                </div>
-              </div>
-             </form>
-           </div>
-          </div>
-        </div>
- <!--===================forth box==============================-->
-    <div class="col s3 m12">
-      <div class="card-panel side-box-content">
-         <center><h4  class="box-2-heading">Quick Contact</h4></center>
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="awesome material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate" placeholder="First Name">
-                <!-- <label for="icon_prefix" class="placeholder">First Name</label> -->
-              </div>
-              <div class="input-field col s12">
-              <i class="fa awesome fa-envelope-o material-icons prefix" aria-hidden="true"></i>
-               <input id="icon_telephone" type="email" class="validate" placeholder="E-mail">
-                <!-- <label for="icon_telephone" class="placeholder">Email</label> -->
-              </div>
-               <div class="input-field col s12">
-                <i class=" awesome material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" class="validate" placeholder="Contact Number">
-                <!-- <label for="icon_telephone" class="placeholder">Contact No</label> -->
-              </div>
-               <div class="input-field col s12">
-                <i class="fa awesome fa-map-marker material-icons prefix" aria-hidden="true"></i>
-                <input id="icon_telephone" type="tel" class="validate" placeholder="Destination">
-                <!-- <label for="icon_telephone" class="placeholder">Destination</label> -->
-              </div>
-               <div class="input-field col s12" style="margin-bottom: 15px;">
-                <i class="fa awesome fa-calendar material-icons prefix" aria-hidden="true"></i>
-                <input id="icon_telephone" type="tel" class="validate" placeholder="Month of Travel">
-                <!-- <label for="icon_telephone" class="placeholder">Month of Travel</label> -->
-              </div>
-              <p class="imNotRobot">
-                <input type="checkbox" id="test5"  />
-                <label for="test5" class="placeholder" >i'm not a robot</label>
-              </p>
-              <center><a class="waves-effect white btn first-box">Submit</a></center>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+        <?php $this->load->view('sidebarFram'); ?>
    <!--==========================end of forth box==============================-->
      </div> 
     </div>

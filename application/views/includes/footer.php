@@ -28,13 +28,23 @@
       </div>
       <div class="col s12 m4 popular-area">
         <h5>New Popular Destination</h5>
-        <ul>
-          <li><a href="#">Destination 1</a></li>
-          <li><a href="#">Destination 2</a></li>
-          <li><a href="#">Destination 3</a></li>
-          <li><a href="#">Destination 4</a></li>
-          <li><a href="#">Destination 5</a></li>
-          <li><a href="#">Destination 6</a></li>
+        <ul class="row">
+          <div class=" col m6 s12">
+            <li><a href="#">Roopkund Trek</a></li>
+            <li><a href="#">Leh Ladakh</a></li>
+            <li><a href="#">Valley of Flowers</a></li>
+            <li><a href="#">Beyul Pamako Trek</a></li>
+            <li><a href="#">The Bailey Trail Trek</a></li>
+            <li><a href="#">Lapti Valley Trek</a></li>
+          </div>
+          <div class=" col m6 s12">
+            <li><a href="#">Bhimashankar</a></li>
+            <li><a href="#">Lohagad</a></li>
+            <li><a href="#">Harihar Trek</a></li>
+            <li><a href="#">Coorg, Karnataka,</a></li>
+            <li><a href="#">Munnar</a></li>
+            <li><a href="#">Kodachadri, Karnataka</a></li>
+          </div>
         </ul>
       </div>
       <div class="col s12 m4 address-area">

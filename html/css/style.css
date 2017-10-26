@@ -105,10 +105,14 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     color: #9bb2ca !important;
     padding: 0px !important;
     border: 2px solid #000;
+    background: #000;
+}
+.btn:hover{
+    background: #000 !important;
+    color: #9bb2ca !important;
 }
 .btn-search:hover {
     width: 100%;
-    color: #000 !important;
     padding: 0px;
     border: 2px solid #000;
 }
