@@ -1,5 +1,11 @@
 var baseURL;
 $(function(){
+
+	/*Date*/
+	
+
+
+
 	$('.modal').modal();
 	baseURL= $("#base_url").val();
 

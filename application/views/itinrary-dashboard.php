@@ -10,30 +10,26 @@
     <div id="test1" class="col s12">
       <div class="row">
     <form id="addItinraryForm" method="post" enctype="multipart/form-data">
-      <div class="row">        
-        <div class="input-field col s12">
+        <div class="input-field col s12 m6">
          <select name="tour_id" id="tour_id">          
               <?php foreach ($allTour as $key => $allTourRow) { ?>
               <option  value="<?php echo $allTourRow["id"]; ?>"><?php echo $allTourRow["name"]; ?></option>
               <?php  } ?>
-            </select> 
+          </select> 
           <label for="title">Select Tour</label>
         </div>
-      </div> 
-      
-     <div class="row">
-          <div class="input-field col s12">
+    
+        <div class="input-field col s12 m6">
             <input  name="date" id="date" type="text" class="validate"> 
-            <label for="date">Date</label>
-          </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
+            <label for="date">Day</label>
+        </div>
+      
+        <div class="input-field col s12 m12">
               <textarea  class="validate materialize-textarea" id="details" name="details">
               </textarea>
               <label for="details">Details</label>
-            </div>
-        </div> 
+        </div>
+        
     </form>
   </div>
 </div>
@@ -50,8 +46,8 @@
     <table border="1" class="responsive-table centered">
     <thead>
       <tr>
-        <th>Order</th>  
-        <th>Date</th>
+        <th>Id</th>  
+        <th>Day</th>
         <th>Details</th>            
         <th>Actions</th>
       </tr>
@@ -64,8 +60,9 @@
         <td><?php echo $allItinraryRow['date']; ?></td>
         <td><?php echo $allItinraryRow['details']; ?></td>           
         <td class="right-align blog-btn">
-        <a data-itinrary-id="<?php echo $allItinraryRow['id']; ?>" class="btn-floating waves-effect waves-light red delete-itinrary"><i class="material-icons">delete</i></a>
-        <a data-itinrary-id="<?php echo $allItinraryRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey edit-itinrary"><i class="material-icons">mode_edit</i></a>
+        <a data-itinrary-id="<?php echo $allItinraryRow['id']; ?>" class="btn-floating waves-effect waves-light edit-itinrary"><i class="material-icons edit-icon">mode_edit</i></a>
+
+        <a data-itinrary-id="<?php echo $allItinraryRow['id']; ?>" class="btn-floating waves-effect waves-light delete-itinrary"><i class="material-icons delete-icon">delete</i></a>
         </td>
       </tr>
       <?php } ?>

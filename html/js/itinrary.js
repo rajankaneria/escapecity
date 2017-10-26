@@ -1,5 +1,17 @@
 var baseURL;
 $(function(){
+
+
+	$('.datepicker').pickadate({
+	    selectMonths: true, // Creates a dropdown to control month
+	    selectYears: 15, // Creates a dropdown of 15 years to control year,
+	    today: 'Today',
+	    clear: 'Clear',
+	    close: 'Ok',
+	    closeOnSelect: false // Close upon selecting a date,
+	  });
+
+
 	$(".modal").modal();
 	$('select').material_select();
 	baseURL=$("#base_url").val();
@@ -17,12 +29,13 @@ $(function(){
 		var itinraryID=$(this).data('tour-id');
 		$.post(baseURL+"tour_details/tourByItinrary/"+itinraryID,function(data){
 			$("#itinraryModal .modal-content").html(data);
-			$('ul.tabs').tabs();
+
 			$('select').material_select();
 			initEditItinrary();
 			initUpdateItinrary();
 			initDeleteItinrary();
 			initAddItinrary();
+			$('ul.tabs').tabs();
 		});
 	});
 /*===Main function over==========*/

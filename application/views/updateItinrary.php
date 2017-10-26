@@ -1,4 +1,7 @@
-<div class="row">
+  <div class="row">
+    <div class="center">
+      <h5>Update Tour</h5>
+    </div>
     <form id="updateItinraryForm" method="post" enctype="multipart/form-data">
        <div class="row">        
         <div class="input-field col s12">
