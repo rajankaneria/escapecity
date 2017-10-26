@@ -64,7 +64,7 @@
     <table border="1" class="responsive-table centered">
             <thead>
               <tr>
-                <th>Order</th>
+                <th>Id</th>
                 <th>Name</th>
                 <th>Tour Type</th>
                 <th>Region</th>   

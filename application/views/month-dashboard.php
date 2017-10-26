@@ -71,7 +71,7 @@
         <th>Order</th>
         <th>Month</th>
         <th>Title</th>    
-        <th>Description</th>
+        <!-- <th>Description</th> -->
         <th>Image</th>            
         <th>Actions</th>
    		</tr>
@@ -84,11 +84,11 @@
           $monthName = date('F', mktime(0, 0, 0, $monthNum, 10)); ?>       
         <td><?php echo $monthName; ?></td>         
         <td><?php echo $monthRow['title']; ?></td>
-        <td><?php echo substr($monthRow['description'], 0,180)."...."; ?></td>        
+        <!-- <td><?php //echo substr($monthRow['description'], 0,180)."...."; ?></td>   -->      
         <td><img src="<?php echo base_url(); ?>html/images/tours/<?php echo $monthRow['image']; ?>" width="170" height="170"/></td>     
         <td class="right-align blog-btn">
-        <a data-month-id="<?php echo $monthRow['id']; ?>" class="btn-floating waves-effect waves-light red delete-month-btn"><i class="material-icons">delete</i></a>
-        <a data-month-id="<?php echo $monthRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey edit-month-btn"><i class="material-icons">mode_edit</i></a>
+        <a data-month-id="<?php echo $monthRow['id']; ?>" class="btn-floating waves-effect waves-light edit-month-btn"><i class="material-icons edit-icon">mode_edit</i></a>
+        <a data-month-id="<?php echo $monthRow['id']; ?>" class="btn-floating waves-effect waves-light delete-month-btn"><i class="material-icons delete-icon">delete</i></a>
         </td>
       </tr>
       <?php } ?>

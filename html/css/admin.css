@@ -124,6 +124,48 @@ td a {
     color: rgba(166, 38, 38, 1) !important;
 }
 
+/*tour Management*/
+
+.edit-month-btn{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+.edit-month-btn:hover{
+  background: rgba(0,0,0,0.3);
+}
+.edit-icon{
+    color: #000 !important;
+}
+
+.delete-month-btn {
+    background: transparent;
+    border: 1px solid rgba(166, 38, 38, 1);
+}
+.delete-month-btn:hover{
+    background: rgba(166, 38, 38,0.3) !important;
+}
+.delete-icon{
+    color: rgba(166, 38, 38, 1) !important;
+}
+
+/**===========================*/
+
+/*Iteerary Tour btns*/
+
+.tour-itinrary-edit-btn{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+.tour-itinrary-edit-btn:hover{
+  background: rgba(0,0,0,0.3);
+}
+/**====================*/
+
+
+
+
 /*testimoonial Button*/
 .test-edit-btn{ 
     background: transparent;
@@ -376,5 +418,6 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
   font-size: 27px !important;
   text-align: left;
   margin-top: 0px;
+  top: 0;
   margin-bottom: 10px;
 }
