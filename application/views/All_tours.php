@@ -26,13 +26,13 @@
       <div class="row">
         <div class="searh-area">
           <center>
-            <h5>Search Tours</h5>
-            <label>Find our exciting tours today!</label>
+            <h5 class="box-2-heading">Search Tours</h5>
+            <!-- <label>Find our exciting tours today!</label> -->
           </center>
           <form>
             <div class="input-field">
               <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
+              <label for="last_name">Tour Name</label>
             </div>
             <input type="submit" class="waves-effect waves-light btn btn-search" name="" value="Search">
           </form>
@@ -41,7 +41,7 @@
         <div></div>
         <!-- Form -->
         <div class="searh-area">
-          <center><h5>Quick Contact</h5></center>
+          <center><h5 class="box-2-heading">Quick Contact</h5></center>
           <form>
             <div class="input-field">
               <input id="last_name" type="text" class="validate" required="required">
@@ -66,7 +66,7 @@
             </div>
             <div class="input-field">
               <select>
-                <option value="" disabled selected>Choose your option</option>
+                <option value="" disabled selected>Choose your Month</option>
                 <option value="January">January</option>
                 <option value="February">February</option>
                 <option value="March">March</option>

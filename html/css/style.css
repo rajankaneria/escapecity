@@ -116,7 +116,13 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     padding: 0px;
     border: 2px solid #000;
 }
-
+.box-2-heading {
+    padding: 0px 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+}
 .dropdown-content li>a, .dropdown-content li>span{
     color: #000;
 }
