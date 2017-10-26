@@ -1,5 +1,14 @@
+
 /* css for slider heading*/
 
+.page-title {
+    font-size: 32px;
+    text-align: center;
+    /* margin-top: 220px; */
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+}
 .page-main-title {
     font-size: 2.4em;
     line-height: 192%;
@@ -49,7 +58,7 @@
 .tabs .indicator {
     position: absolute;
     bottom: 0;
-    max-width: 106px;
+    /*max-width: 106px;*/
     height: 2px;
     background-color:#334960;
     will-change: left, right;
@@ -57,7 +66,7 @@
 /* css for width of tab*/
 .fullwidth-container .tabs .tab {
     margin-top: 4px;
-    width: 12.5%;
+    width: 16%;
 }
 /*css for detail page tab title*/
 .tabs-title
@@ -227,8 +236,10 @@
 /* css for images of photo tab*/
 .itinrary-img img
 {
-   height: 150px;
-   width: 230px;
+   /*height: 150px;*/
+   /*width: 230px;*/
+   height: auto;
+   width: 100%;
    margin-bottom: 15px;
 }
 /*================css for side box==========================*/
@@ -251,12 +262,22 @@
     color: white !important;
     background: #000 !important;
 }
+.prefix{
+    color: #334960 !important;
+    opacity: 0.7 !important;
+}
+.prefix.active{
+    color: #334960 !important;
+    opacity:1 !important;
+}
 /* second box heading*/
 .box-2-heading
 {
-    padding: 30px;
+    padding: 0px 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
     font-size: 25px;
-   
+    text-align: center;   
 }
 .main-side-box{
     /*margin-top: 30px !important;*/
@@ -272,8 +293,27 @@
     font-size: 14px;
 }
 .opening{
-    padding: 20px;
+    padding: 5px;
     padding-top: 5px;
+}
+.opening p{
+    font-size: 14px;
+}
+.opening p:before {
+    content: "\f0da";
+    font-family: Fontawesome;
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+.card-panel.side-box-content input {
+    margin-bottom: 0px;
+}
+
+.imNotRobot{
+    margin-left: 10px;
+    margin-bottom: 25px;
+    margin-top: 0px;
 }
 /* css for side box of detail page*/
 /*.side-box-content{
@@ -295,7 +335,7 @@
     margin-top: 0px;
     color: #334960 !important;
     width: 325px;
-    text-align: center;
+/*    text-align: center;*/
 }
 
 .white-text {
@@ -412,15 +452,28 @@
 }
 
 .rate{
-    border-top: 1px solid lightgrey;
+/*    border-top: 1px solid lightgrey;*/
     text-align: center;
     border-bottom: 1px solid lightgray;
 
 }
-.rate h5
-{
-    margin-top: 35px;
-    margin-bottom: 35px;
+.ratePrice{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 500;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.27);
+    color:  #0d612b;
+}
+.ratePrice:before{
+    font-family: FontAwesome;
+    content: "\f156";
+    padding-right: 5px;
+    font-size: 28px;
+    color: #0d612b;
+}
+.prPerson{
+    margin-top: 0px;
 }
 .inclusion-content
 {

@@ -311,7 +311,9 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 .page-title{
     font-size: 32px;
     text-align: center;
-    margin-top: 220px;
+    /*margin-top: 220px;*/
+    position: relative;
+    top: 130px;
     width: 100%;
 }
 /*============== Responsive for teblate ==========*/
