@@ -1,3 +1,11 @@
+<div class="moadalHeader-title">
+    <div class="row modal-row">
+      <div class="col s12 m6">
+        <h5>Attractions Management</h5>
+    </div>
+  </div>
+</div>
+<hr>
 <div class="row">
     <div class="col s12">
       <ul class="tabs">

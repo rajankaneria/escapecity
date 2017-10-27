@@ -99,7 +99,7 @@
       <?php $this->load->view("photos-dashboard",array("allPhotos"=>$allPhotos,"allTour"=>$allTour)); ?>
     </div>
     <div class="modal-footer">
-      <a id="sendPhotos" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+      <a id="sendPhotos" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Add Photo</a>
     </div>
   </div>
 
@@ -109,7 +109,7 @@
      </div>
 
     <div class="modal-footer">
-      <a  id="updatePhotos" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+      <a  id="updatePhotos" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Upload Photo</a>
     </div>
   </div>
 </div>

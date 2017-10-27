@@ -42,30 +42,24 @@
       <div class="page-title">Photos Management </div>      
       <div class="page-button"><a class="waves-effect waves-light btn blue" id="addPhotos">Add</a></div>
   </div> -->
-   <div class="page-content">
-    <table border="1" class="responsive-table centered">
-    <thead>
-      <tr>
-        <th>ID</th>
-     <!--    <th>Tour</th>   -->     
-        <th>Photos</th>            
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php foreach ($allPhotos as $key => $photosRow) { ?>
-      <tr id="photos-id<?php echo $photosRow['id']; ?>">  
-         <td><?php echo $photosRow['id']; ?></td>         
-     <!--    <td><?php echo $photosRow['tour_name']; ?></td>       -->      
-       <td><img src="<?php echo base_url(); ?>html/images/Detail/<?php echo $photosRow['photos']; ?>" width="200" height="200"/></td> 
-        <td class="right-align blog-btn">
-        <a data-photos-id="<?php echo $photosRow['id']; ?>" class="btn-floating waves-effect waves-light edit-photos"><i class="material-icons edit-icon">mode_edit</i></a>
+   <div class="page-content row">
+
+    <?php foreach ($allPhotos as $key => $photosRow) { ?>
+    <div class="col s6 m4">
+      <div class="imgBox-are">
+        <div class="imgBox">
+        <img src="<?php echo base_url(); ?>html/images/Detail/<?php echo $photosRow['photos']; ?>" height="100"/>
+        <div class="ftr-conteainer">
+        <!-- <div class="id-area"><?php // echo $photosRow['id']; ?></div> -->
+        <div class="btns-area">
+          <!-- <a data-photos-id="<?php //echo $photosRow['id']; ?>" class="btn-floating waves-effect waves-light edit-photos"><i class="material-icons edit-icon">mode_edit</i></a> -->
         <a data-photos-id="<?php echo $photosRow['id']; ?>" class="btn-floating waves-effect waves-light delete-photos"><i class="material-icons delete-icon">delete</i></a>
-        </td>
-      </tr>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
       <?php } ?>
-      </tbody>
-    </table>
    </div>
   </div>
  </div>  

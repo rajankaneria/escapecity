@@ -22,7 +22,7 @@
             <label>Select Tour</label>
           </div>
           <div class="input-field col s12 m12 center">
-            <a href="#!" id="addBannerBtn" class=" waves-effect waves-green btn-flat btn-add">Agree</a>
+            <a href="#!" id="addBannerBtn" class=" waves-effect waves-green btn-flat">Agree</a>
           </div>
         </div>
          </form>

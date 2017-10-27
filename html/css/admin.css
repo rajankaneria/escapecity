@@ -616,10 +616,75 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
   border-top: 1px solid #ddd;
   text-align: center;
 }
-a#sendItinrary {
+/*a#sendItinrary {
     background: #000;
     color: #fff;
     border: 1px solid #000;
+}
+*/
+.modal .btn {
+    background: #ddd;
+}
+
+
+
+/*Photo addmin modal*/
+.imgBox-are{
+  position: relative;
+}
+.imgBox-are img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 25px;
+    border: 3px solid #ddd;
+}
+.ftr-conteainer {
+    position: absolute;
+    bottom: 10px;
+    /* margin: 0 auto; */
+}
+/*.btns-area {
+    position: relative;
+    float: left;
+}*/
+
+/**===*/
+
+.imgBox {
+    position: relative;
+}
+
+.btns-area a {
+    margin: 0px 10px;
+}
+.imgBox-are {
+    position: relative;
+}
+.ftr-conteainer {
+    position: absolute;
+    bottom: 0;
+    /* margin: 0 auto; */
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+    
+}
+.btns-area a {
+    background: rgba(255, 253, 253, 0.83) !important;
+    right: 0px;
+}
+.btns-area {
+    position: relative;
+    margin: 0 auto;
+    /*width: fit-content;*/
+}
+.btns-area {
+    position: relative;
+    margin: 0 auto;
+    /* width: fit-content; */
+    text-align: right;
+    bottom: 5px;
 }
 
 

@@ -116,13 +116,14 @@
 	          </textarea>
 	          <label for="details">Details</label>
 	        </div>
-	        <div class="input-field col s12 center">
-	        	<a href="#!" id="addTourButton" class="waves-effect waves-green btn-flat btn-add">add</a>
-	        </div>
-	    	</div>
+	       </div>
 	     </form>
 
        </div>
     </div>
+    </div>
+
+    <div class="modal-footer">
+    	<a href="#!" id="addTourButton" class="waves-effect waves-green btn-flat">add</a>
     </div>
   </div>
