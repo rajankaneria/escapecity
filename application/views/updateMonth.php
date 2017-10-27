@@ -1,8 +1,15 @@
+<div class="moadalHeader-title">
+    <div class="row modal-row">
+      <div class="col s12 m6">
+        <h5>Update Month</h5>
+    </div>
+  </div>
+</div><hr>
+
 <div class="row">
     <form id="updateMonthForm" method="post" enctype="multipart/form-data">
     
-      <div class="row">
-      <div class="input-field col s12 m12">       
+      <div class="input-field col s12 m4">       
        <select name="month" id="month">
         <option>Select Month</option>        
         <option  <?php if($month=='1'){echo "selected='selected'";} ?> value="1">January</option>
@@ -20,30 +27,29 @@
         </select>    
         <label for="title">Select Month</label>   
       </div>
-    </div> 
-      <div class="row">        
-        <div class="input-field col s12">
+          
+        <div class="input-field col s12 m8">
         <input id="title" name="title" type="text" class="validate" placeholder="Enter your Blog title" value="<?php echo $title; ?>">
           <label for="title">Title</label>
         </div>
-      </div>
-     <div class="row">
-        <div class="input-field col s12"></div>
-          <div class="input-field col s12">
-            <img  width="200" height="auto" src="<?php  echo base_url();?>html/images/tours/<?php echo $image; ?>"> 
-            <br/>
-            <input  name="image" id="image" type="file" class="validate">            
-            <label for="image" style="margin-top: -42px !important;">Image</label>
-          </div>
-      </div> 
+      
+        
+        <div class="input-field col s12 m6 center">
+          <label for="image">Image</label>
+          <img  width="200" height="auto" src="<?php  echo base_url();?>html/images/tours/<?php echo $image; ?>">
+        </div>
 
-      <div class="row">
+        <div class="input-field col s12 m6">
+          <input  name="image" id="image" type="file" class="validate monthUpdate" style="display: none;"> 
+          <button type="button" class="btn btnMonthUpload" onclick="$('.monthUpdate').click()">Upload File</button>           
+          
+        </div>
+
         <div class="input-field col s12">
               <textarea  class="validate materialize-textarea"  id="description" name="description"><?php echo $description; ?>
               </textarea>
               <label for="details">Details</label>
               <input type="hidden" name="month-id" id="month-id" value="<?php echo $id; ?>">
             </div>
-        </div> 
     </form>
   </div>

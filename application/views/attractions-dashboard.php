@@ -1,3 +1,11 @@
+<div class="moadalHeader-title">
+    <div class="row modal-row">
+      <div class="col s12 m6">
+        <h5>Attractions Management</h5>
+    </div>
+  </div>
+</div>
+<hr>
   <div class="row">
     <div class="col s12">
       <ul class="tabs">
@@ -41,10 +49,7 @@
 
  <div>
 
-  <div class="page-header">
-      <div class="page-title">Attractions Management</div>      
-   <!--    <div class="page-button"><a class="waves-effect waves-light btn blue" id="addAttractions">Add</a></div> -->
-  </div>
+
    <div class="page-content">
     <table border="1" class="responsive-table centered">
     <thead>
@@ -65,8 +70,8 @@
          <td><?php echo $attractionsRow['details']; ?></td>              
         
         <td class="right-align blog-btn">
-        <a data-attractions-id="<?php echo $attractionsRow['id']; ?>" class="btn-floating waves-effect waves-light red delete-attractions"><i class="material-icons">delete</i></a>
-        <a data-attractions-id="<?php echo $attractionsRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey edit-attractions"><i class="material-icons">mode_edit</i></a>
+        <a data-attractions-id="<?php echo $attractionsRow['id']; ?>" class="btn-floating waves-effect waves-light edit-attractions"><i class="material-icons edit-icon">mode_edit</i></a>
+        <a data-attractions-id="<?php echo $attractionsRow['id']; ?>" class="btn-floating waves-effect waves-light delete-attractions"><i class="material-icons delete-icon">delete</i></a>
         </td>
       </tr>
       <?php } ?>

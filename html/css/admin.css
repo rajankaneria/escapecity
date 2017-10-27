@@ -99,6 +99,13 @@ td a {
     margin: 0px 10px;
 }
 
+.moadalHeader-title{
+
+}
+.modal hr {
+    background: #fff;
+    border: 0.5px solid #ddd;
+}
 
 
 .tour-edit-btn {
@@ -123,6 +130,28 @@ td a {
 .delete-icon{
     color: rgba(166, 38, 38, 1) !important;
 }
+
+
+/*Banner btns*/
+
+.banner-edit-btn{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+.banner-edit-btn:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.banner-delete-btn{
+    background: transparent;
+    border: 1px solid rgba(166, 38, 38, 1);
+}
+.banner-delete-btn:hover{
+    background: rgba(166, 38, 38,0.3) !important;
+}
+
+
 
 /*tour Management*/
 
@@ -172,6 +201,27 @@ td a {
 .tour-attraction-edit-btn:hover{
   background: rgba(0,0,0,0.3);
 }
+
+/*<-----    edit attraction --->*/
+
+
+.edit-attractions{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+.edit-attractions:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.delete-attractions {
+    background: transparent;
+    border: 1px solid rgba(166, 38, 38, 1);
+}
+.delete-attractions:hover{
+    background: rgba(166, 38, 38,0.3) !important;
+}
+
 /*===================*/
 /*====Tour RATE===*/
 .tour-rate-edit-btn{
@@ -193,6 +243,78 @@ td a {
 .tour-photo-edit-btn:hover{
   background: rgba(0,0,0,0.3);
 }
+
+
+.edit-rateBtn{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+.edit-rateBtn:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.delete-rate{
+    background: transparent;
+    border: 1px solid rgba(166, 38, 38, 1);
+}
+.delete-rate:hover{
+    background: rgba(166, 38, 38,0.3) !important;
+}
+
+
+/*======= PHOTO modal Buttonms*/
+
+
+.edit-photos{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+.edit-photos:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.delete-photos{
+    background: transparent;
+    border: 1px solid rgba(166, 38, 38, 1);
+}
+.delete-photos:hover{
+    background: rgba(166, 38, 38,0.3) !important;
+}
+
+.btnPhotoUpload {
+    background: #ddd;
+    color: #000;
+}
+
+/*======= Testimonoials modal Buttonms*/
+
+
+.test-edit-btn{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+.test-edit-btn:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.test-delete-btn{
+    background: transparent;
+    border: 1px solid rgba(166, 38, 38, 1);
+}
+.test-delete-btn:hover{
+    background: rgba(166, 38, 38,0.3) !important;
+}
+
+.btnTestPhoto {
+    background: #ddd;
+    color: #000;
+}
+
+
+
 /*================*/
 .edit-itinrary{
     background: transparent;
@@ -469,6 +591,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
   margin-top: 0px;
   top: 0;
   margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }
 
 
@@ -501,6 +624,51 @@ a#sendItinrary {
 
 
 
+/*================== Modal Ui Design ======================*/
+
+.moadalHeader-title h5 {
+    text-transform: uppercase;
+}
+.modal-row{
+  margin: 0;
+}
+.tourName {
+    text-align: right;
+}
+.tourDeclaration {
+    font-size: 18px;
+    line-height: 15px;
+    color: rgba(100, 100, 100, 1);
+}
+.modal-imgBox {
+    top: 50px;
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+.modal-imgBox img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #cacaca;
+    padding: 3px;
+}
+.btnUpload {
+    background: #ddd !important;
+    border: 1px solid #ddd;
+    color: #000;
+    font-weight: 400;
+}
+
+.btnUpload-circle {
+    background: rgba(238, 238, 238, 0.78);
+    color: #000;
+    position: absolute;
+    bottom: 14px;
+    right: 8px;
+    border: 1px solid #fff;
+    box-shadow: none;
+    border-radius: 0px;
+}
 
 
 /*============== attractionsModal ===========*/
@@ -514,4 +682,62 @@ a#sendItinrary {
 #attractionsModal .tabs .indicator
 {
   background: #000;
+}
+
+
+/*============== attractionsModal ===========*/
+
+#rateModal .tabs .tab a{
+  color: rgb(158, 158, 158);
+}
+#rateModal .tabs .tab a.active{
+  color: rgb(8, 8, 8);
+}
+#rateModal .tabs .indicator
+{
+  background: #000;
+}
+
+/*============== Photos ===========*/
+
+#photosModal .tabs .tab a{
+  color: rgb(158, 158, 158);
+}
+#photosModal .tabs .tab a.active{
+  color: rgb(8, 8, 8);
+}
+#photosModal .tabs .indicator
+{
+  background: #000;
+}
+
+
+
+/*==================== Modal Footer Button ===============*/
+.modal .modal-close {
+    cursor: pointer;
+    background: #ddd;
+    color: #000;
+  }
+
+/*================ Month Update Modal ===============*/
+
+.btnMonthUpload {
+    position: absolute;
+    top: 50px;
+    background: #ddd;
+    color: #000;
+}
+
+/*================ Over Moth upadte Modal ===========*/
+
+
+
+
+/*Mobile Responsive area*/
+
+@media only screen and (max-width: 992px){
+  .modal {
+    width: 80% !important;
+  }
 }

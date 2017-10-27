@@ -4,6 +4,6 @@
       
     </div>
     <div class="modal-footer">
-      <a href="#!" id="updatebannerButton" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" id="updatebannerButton" class="modal-action btn btnUpload  modal-close waves-effect waves-green">Update Banner</a>
     </div>
   </div>

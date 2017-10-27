@@ -65,7 +65,7 @@
    	<table border="1" class="responsive-table centered">
     <thead>
    		<tr>
-        <th>Order</th>
+        <th>ID</th>
         <th>Title</th>    
         <th>Details</th>
         <th>Image</th>            
@@ -77,8 +77,8 @@
       <tr id="testid<?php echo $testRow['id']; ?>">  
          <td><?php echo $testRow['id']; ?></td>         
         <td><?php echo $testRow['title']; ?></td>
-        <td><textarea><?php echo substr($testRow['details'],0,200)."...."; ?></textarea></td>
-        <td><img src="<?php echo base_url(); ?>html/images/testimonials/<?php echo $testRow['image']; ?>" width="200" height="200"/></td>     
+        <td><?php echo substr($testRow['details'],0,100)."...."; ?></td>
+        <td><img src="<?php echo base_url(); ?>html/images/testimonials/<?php echo $testRow['image']; ?>" height="100"/></td>     
         <td class="right-align blog-btn">
         <a data-test-id="<?php echo $testRow['id']; ?>" class="btn-floating waves-effect waves-light test-edit-btn"><i class="material-icons edit-icon">mode_edit</i></a>
         <a data-test-id="<?php echo $testRow['id']; ?>" class="btn-floating waves-effect waves-light test-delete-btn"><i class="material-icons delete-icon">delete</i></a>

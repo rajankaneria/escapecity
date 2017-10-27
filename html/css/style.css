@@ -110,6 +110,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 .btn:hover{
     background: #000 !important;
     color: #9bb2ca !important;
+    
 }
 .btn-search:hover {
     width: 100%;

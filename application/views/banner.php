@@ -65,7 +65,7 @@
     <table border="1" class="responsive-table centered">    
             <thead>
               <tr>
-                <th>Order</th>       
+                <th>ID</th>       
                 <th>Tour Name</th>
                 <th>Banner</th>
                 <th>action</th>    

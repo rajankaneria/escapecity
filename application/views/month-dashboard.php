@@ -68,7 +68,7 @@
    	<table border="1" class="responsive-table centered">
     <thead>
    		<tr>
-        <th>Order</th>
+        <th>ID</th>
         <th>Month</th>
         <th>Title</th>    
         <!-- <th>Description</th> -->

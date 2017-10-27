@@ -58,14 +58,14 @@
  <div class="card-panel">
 
   <div class="page-header">
-      <div class="page-title">Tour Management</div>      
+      <div class="page-title">Attractions Management</div>      
      <!--  <div class="page-button"><a class="waves-effect waves-light btn blue" id="addAttractions">Attractions List</a></div> -->
   </div>
    <div class="page-content">
     <table border="1" class="responsive-table centered">
             <thead>
               <tr>
-                <th>Order</th>
+                <th>Id</th>
                 <th>Name</th>
                 <th>Tour Type</th>
                 <th>Region</th>   
