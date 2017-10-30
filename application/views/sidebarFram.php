@@ -32,10 +32,14 @@
             </div>
             <div class="input-field">
               <select>
-                <option value="" disabled selected>Choose your option</option>
+                <option value="" disabled selected>Choose your destination</option>
                 <option value="1">Roopkund Trek</option>
                 <option value="2">Leh Ladakh</option>
                 <option value="3">Valley of Flowers</option>
+                <option value="4">Beyul Pamako Trek</option>
+                <option value="5">The Bailey Trail Trek</option>
+                <option value="6">Lapti Valley Trek</option>
+                <option value="7">Bhimashankar</option>
               </select>
               <label for="destination">Destination</label>
             </div>

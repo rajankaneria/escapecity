@@ -53,7 +53,7 @@
       <div class="row">
         <div class="col s4 m4">
            <div class="location-title">Coorg, Karnataka,</div>
-        <div class="parallax-overlay"></div><img src="<?php echo base_url(); ?>html/images/coorg.jpg"></div>
+        <div class="parallax-overlay"></div><img src="<?php echo base_url(); ?>html/images/coorg.JPG"></div>
         <div class="col s4 m4">
            <div class="location-title">Munnar</div>
         <div class="parallax-overlay"></div><img src="<?php echo base_url(); ?>html/images/Munnar.jpg"></div>

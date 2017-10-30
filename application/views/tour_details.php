@@ -50,7 +50,7 @@
           <form>
             <div class="input-field">
               <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
+              <label for="last_name">Tour name</label>
             </div>
             <input type="submit" class="waves-effect waves-light btn btn-search" name="" value="Search">
           </form>
@@ -75,16 +75,20 @@
             </div>
             <div class="input-field">
               <select>
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="" disabled selected>Choose your destination</option>
+                <option value="1">Roopkund Trek</option>
+                <option value="2">Leh Ladakh</option>
+                <option value="3">Valley of Flowers</option>
+                <option value="3">Beyul Pamako Trek</option>
+                <option value="3">The Bailey Trail Trek</option>
+                <option value="3">Lapti Valley Trek</option>
+                <option value="3">Bhimashankar</option>
               </select>
               <label for="destination">Destination</label>
             </div>
             <div class="input-field">
               <select>
-                <option value="" disabled selected>Choose your option</option>
+                <option value="" disabled selected>Choose your month</option>
                 <option value="January">January</option>
                 <option value="February">February</option>
                 <option value="March">March</option>

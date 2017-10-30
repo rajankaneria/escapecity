@@ -23,7 +23,7 @@
           <form>
             <div class="input-field">
               <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
+              <label for="last_name">Tour name</label>
             </div>
             <input type="submit" class="waves-effect waves-light btn btn-search" name="" value="Search">
           </form>
