@@ -333,3 +333,14 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 		display: block !important;
 	}
 }
+
+.testimoni-slider{
+    min-height: 350px !important;
+}
+
+.tour-error-message {
+    text-align: center;
+    padding: 85px;
+    font-size: 18px;
+    color: #757474;
+}

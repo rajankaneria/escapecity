@@ -9,20 +9,20 @@
       <div class="col m4 s12 trip-area">
         <h5>MONTH WISE TRIPS </h5>
         <ul class="col m4 s6" style="margin-top: 7px;">
-          <li><a href="#">January</a></li>
-          <li><a href="#">February</a></li>
-          <li><a href="#">March</a></li>
-          <li><a href="#">April</a></li>
-          <li><a href="#">May</a></li>
-          <li><a href="#">June</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/1/">January</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/2/">February</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/3/">March</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/4/">April</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/5/">May</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/6/">June</a></li>
         </ul>
         <ul class="col m6 s6" style="margin-top: 7px;">
-          <li><a href="#">July</a></li>
-          <li><a href="#">August</a></li>
-          <li><a href="#">September</a></li>
-          <li><a href="#">October</a></li>
-          <li><a href="#">November</a></li>
-          <li><a href="#">December</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/7/">July</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/8/">August</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/9/">September</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/10/">October</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/11/">November</a></li>
+          <li><a href="<?php echo base_url() ?>tour/tourByMonth/12/">December</a></li>
         </ul>
         
       </div>
@@ -50,14 +50,14 @@
       <div class="col s12 m4 address-area">
         <h5>Contact Us</h5>
         <ul class="address"> 
-          <li><strong>Intelliworkz Business</strong></li>
-          <li>Solutions F - 1003 Titanium City Center,</li>
-          <li>Nr. Sachin Tower, Anandnagar Road, Prahaladnagar,</li>
-          <li>Satellite, Ahmedabad - 380015</li>
+          <li><strong>Escape City</strong></li>
+          <li>A-4, 303,L B PARK, Besides Abhishek Restaurant,</li>
+          <li>Opp Bhavik Complex Ghod Dod Road,</li>
+          <li>Surat 395007</li>
         </ul>
         <ul class="contact-number">
-          <i class="call fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 98796 36303</i>
-          <i class="call fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 94278 01299</i>
+          <i class="call fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 97272 20481</i>
+          <i class="call fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 99986 20481</i>
         </ul>
         <ul class="mail-address-area">
           <a href="mailto:info@escapcity.com"><i class="mail-address fa fa-envelope" aria-hidden="true">&nbsp;<span style="font-family: 'Roboto', sans-serif !important;"> info@escapcity.com</span></i>

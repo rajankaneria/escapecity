@@ -211,6 +211,13 @@ class Tour_model extends  CI_Model
 		return $output;
 
 	}
+
+	public function tourByType($tourTypeID){
+
+		$query=$this->db->query("select * from tours JOIN tour_type ON tour_type.t_id=tours.type_id where tours.type_id='$tourTypeID'");
+		$result=$query->result_array();
+		return $result;
+	}
 		
 }
 ?>

@@ -1,7 +1,11 @@
 <div id="detailpage" class="parallax-container" style="top: 100px;margin-bottom: 100px;">
   <div class="parallax">
-    <center><h5 class="ttl-tours">Tours</h5></center>
+    <center><h5 class="ttl-tours"><?php echo $headerData["pageTitle"]; ?></h5></center>
+    <?php if(sizeof($tourDetails) > 0){ ?>
     <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/<?php echo $tourDetails[0]['home_banner']; ?>">
+    <?php }else{ ?>
+    <div class="parallax-overlay"></div><img src="<?php echo base_url();?>html/images/flowers.jpg">
+    <?php } ?>
    </div>
      
  </div>
@@ -19,6 +23,9 @@
           $this->load->view('tourDetail_frame',array("tourRow"=>$tourRow));
 
          } ?>
+         <?php if(sizeof($tourDetails)==0){ ?>
+         <div class="tour-error-message">No <b><?php echo $headerData["pageTitle"]; ?></b> available at the moment.</div>
+         <?php } ?>
       </div>
     </div>
     <!-- Sidebar Area -->

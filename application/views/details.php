@@ -176,7 +176,7 @@
           </div>
         </div>
  <!--===================second box==============================-->
-        <div class="col s3 m12">
+       <!-- <div class="col s3 m12">
           <div class="card-panel side-box-content">
            <h4 class="box-2-heading">Available Dates</h4>
            <div class="opening">
@@ -190,6 +190,7 @@
            </div>
           </div>
         </div>
+      -->
  <!--===================third box==============================-->
         <?php $this->load->view('sidebarFram'); ?>
    <!--==========================end of forth box==============================-->

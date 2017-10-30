@@ -41,10 +41,9 @@
 				<div class="col s12 m12 operator-office">
 					<h5>Office Addres</h5>
 					<address>
-						Intelliworkz Business Solutions 
-						F - 1003 Titanium City Center, Nr. Sachin Tower, 
-						Anandnagar Road, Prahaladnagar, 
-						Satellite, Ahmedabad - 380015
+						<b>Escape City</b><br/> A-4, 303,L B PARK, Besides Abhishek Restaurant,
+						Opp Bhavik Complex Ghod Dod Road,
+						Surat - 395007
 					</address>
 				</div>
 			</div>
@@ -52,8 +51,8 @@
 				<div class="phone col s12 m6">
 					<label>Call Us</label><hr style="border-color: #ded8d8 !important;
     border-top: none;">
-					<i class="fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 98796 36303</i>
-					<i class="fa fa-phone-square" aria-hidden="true">&nbsp;  (+91) 94278 01299</i>
+					<i class="fa fa-phone-square" aria-hidden="true">&nbsp; (+91) 97272 20481</i>
+					<i class="fa fa-phone-square" aria-hidden="true">&nbsp;  (+91) 99986 20481</i>
 				</div>
 				<div class="e-mail col s12 m6">
 					<label>Mail us</label><hr style="border-color: #ded8d8 !important;

@@ -74,10 +74,10 @@
 
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a class="tab-title" href="<?php echo base_url(); ?>home">Home</a></li>
-           <li><a class="tab-title" href="<?php echo base_url(); ?>tours">Camping</a></li>
-           <li><a class="tab-title" href="<?php echo base_url(); ?>tours">City Explore</a></li>
-           <li><a class="tab-title" href="<?php echo base_url(); ?>tours">Tracking</a></li>
-           <li><a class="tab-title" href="<?php echo base_url(); ?>tours">Adventure Activity</a></li>
+           <li><a class="tab-title" href="<?php echo base_url(); ?>tours/camping">Camping</a></li>
+           <li><a class="tab-title" href="<?php echo base_url(); ?>tours/city">City Explore</a></li>
+           <li><a class="tab-title" href="<?php echo base_url(); ?>tours/tracking">Tracking</a></li>
+           <li><a class="tab-title" href="<?php echo base_url(); ?>tours/adventure">Adventure Activity</a></li>
           <!-- <li><a class="tab-title" href="sass.html">Booking Trips</a></li>
           <li><a class="tab-title" href="sass.html">trekking Trips</a></li>
           <li><a  class="tab-title" href="sass.html">Booking</a></li> -->

@@ -93,9 +93,10 @@
     background-color: white !important;
 }
 .lohagadh_container{
-    margin: 0px 60px !important;
+    margin: 0 auto;
     max-width: 1280px;
     width: 85%;
+    overflow: hidden;
 }
 .deails
 {
@@ -334,7 +335,7 @@
     padding-top: 20px;
     margin-top: 0px;
     color: #334960 !important;
-    width: 325px;
+    width: 100%;
 /*    text-align: center;*/
 }
 
