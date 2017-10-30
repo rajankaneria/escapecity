@@ -57,7 +57,7 @@
 				<div class="e-mail col s12 m6">
 					<label>Mail us</label><hr style="border-color: #ded8d8 !important;
     border-top: none;">
-					<a href="mailto:info@escapcity.com"><i class="fa fa-envelope" aria-hidden="true">&nbsp; info@escapcity.com</i></a>
+					<a href="mailto:info@escapcity.com"><i class="fa fa-envelope" aria-hidden="true">&nbsp; info@escapcity.in</i></a>
 					<a href="mailto:escapcity@gmail.com"><i class="fa fa-envelope" aria-hidden="true">&nbsp; escapcity@gmail.com</i></a>
 				</div>
 			</div>

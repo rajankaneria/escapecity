@@ -34,3 +34,10 @@ $(window).scroll(function () {
     }
 });
 
+function sendemail(subject,message){
+    var base_url = $("#base_url").val();
+    $.post(base_url+"contact/sendmail",{subject:subject,message:message},function(){
+        
+    });
+}
+
